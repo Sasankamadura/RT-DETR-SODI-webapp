@@ -31,6 +31,10 @@ venv/
 # Large files (tracked by LFS, but good to document)
 # *.onnx
 
+# Original Source Folders (Not needed in repo, models are in backend/models)
+Improved versions/
+Normal RT-DETR/
+
 # User specific
 .gemini/
 tmp/
