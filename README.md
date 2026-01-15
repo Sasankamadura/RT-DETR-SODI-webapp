@@ -9,7 +9,7 @@ A full-stack web application demonstrating enhancements to the RT-DETR architect
 
 This repository contains the deployment code for serving 4 variants of the RT-DETR ResNet-18 model, complete with a glassmorphic user interface for real-time inference and metric analysis.
 
-## \u2728 Key Features
+## ✨ Key Features
 
 *   **Multi-Model Interface**: Seamlessly switch between the Baseline RT-DETR and 3 improved research variants.
 *   **Real-Time Inference**: Drag-and-drop image upload with instant bounding box generation using ONNX Runtime.
@@ -19,7 +19,7 @@ This repository contains the deployment code for serving 4 variants of the RT-DE
     *   **Inference Stats**: Latency and FPS benchmarks.
 *   **Premium UI**: Fully responsive, dark-themed glassmorphism design.
 
-## \u1f680 The Models
+## 🚀 The Models
 
 This application compares four model variants trained on the **VisDrone2019** dataset:
 
@@ -30,14 +30,14 @@ This application compares four model variants trained on the **VisDrone2019** da
 | `query_imp` | **Query IMP** | Scale-aware query initialization | **36.74%** | ~58 |
 | `aware_loss` | **Aware Loss** | Difficulty-aware loss reweighting| **18.85%** | ~60 |
 
-## \u1f6e0\ufe0f Tech Stack
+## 🛠️ Tech Stack
 
 *   **Frontend**: Vanilla HTML5, CSS3 (Glassmorphism), JavaScript (ES6).
 *   **Backend**: Python FastAPI.
 *   **ML Inference**: ONNX Runtime (GPU/CPU).
 *   **Containerization**: Docker.
 
-## \u1f4bb Quick Start
+## 💻 Quick Start
 
 ### Option A: Docker (Recommended)
 You can build and run the entire application with a single command:
@@ -68,24 +68,24 @@ Access the app at `http://localhost:8000`.
 4.  **Open in Browser**:
     Navigate to `http://localhost:8000/frontend/index.html` (or `http://localhost:8000` if using the unified serving method).
 
-## \u1f4c2 Project Structure
+## 📂 Project Structure
 
 ```
-\u251c\u2500\u2500 backend/
-\u2502   \u251c\u2500\u2500 models/          # .onnx model files (tracked by LFS)
-\u2502   \u251c\u2500\u2500 main.py          # FastAPI application
-\u2502   \u251c\u2500\u2500 model_utils.py   # Preprocessing & Inference logic
-\u2502   \u2514\u2500\u2500 models_config.json # Auto-generated metrics DB
-\u251c\u2500\u2500 frontend/
-\u2502   \u251c\u2500\u2500 index.html       # Main UI
-\u2502   \u251c\u2500\u2500 style.css        # Premium styling
-\u2502   \u2514\u2500\u2500 script.js        # UI Logic & API calls
-\u251c\u2500\u2500 Dockerfile           # Deployment configuration
-\u251c\u2500\u2500 run.py               # Local execution script
-\u2514\u2500\u2500 requirements.txt     # Python dependencies
+├── backend/
+│   ├── models/          # .onnx model files (tracked by LFS)
+│   ├── main.py          # FastAPI application
+│   ├── model_utils.py   # Preprocessing & Inference logic
+│   └── models_config.json # Auto-generated metrics DB
+├── frontend/
+│   ├── index.html       # Main UI
+│   ├── style.css        # Premium styling
+│   └── script.js        # UI Logic & API calls
+├── Dockerfile           # Deployment configuration
+├── run.py               # Local execution script
+└── requirements.txt     # Python dependencies
 ```
 
-## \u26a0\ufe0f Note on Large Files
+## ⚠️ Note on Large Files
 This repository uses **Git LFS** to store the `.onnx` model files (~300MB each). Ensure you have Git LFS installed before cloning.
 
 ---
