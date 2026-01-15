@@ -1,0 +1,11 @@
+# Backend - models_config.json
+# Will be populated with data read from detailed_evaluation_results.json
+
+# Backend - requirements.txt
+fastapi
+uvicorn
+python-multipart
+onnxruntime-gpu
+numpy
+opencv-python-headless
+pillow

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RT-DETR Research Prototype</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar glass-panel">
+            <div class="logo">
+                <i class="fa-solid fa-layer-group"></i>
+                <h2>RT-DETR<span class="highlight"> Research</span></h2>
+            </div>
+
+            <div class="model-selection">
+                <h3>Select Model</h3>
+                <div id="model-list" class="model-list">
+                    <!-- Models will be injected here -->
+                    <div class="loading-spinner"></div>
+                </div>
+            </div>
+
+            <div class="credits">
+                <p>Research Prototype</p>
+                <p class="sub">RT-DETR Enhancement</p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="glass-panel">
+                <h2 id="current-model-name">Select a Model</h2>
+                <div class="status-indicator">
+                    <span class="dot"></span> System Ready
+                </div>
+            </header>
+
+            <!-- Workspace -->
+            <div class="workspace">
+                <!-- Image Upload & Preview -->
+                <div class="preview-area glass-panel">
+                    <div class="upload-zone" id="upload-zone">
+                        <input type="file" id="file-input" accept="image/*" hidden>
+                        <div class="upload-content">
+                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                            <p>Drag & Drop or <span>Browse</span></p>
+                            <p class="sub-text">Supports JPG, PNG</p>
+                        </div>
+                        <div class="preview-container hidden" id="preview-container">
+                            <div class="image-wrapper">
+                                <span class="badge original">Original</span>
+                                <img id="original-preview" src="" alt="Original">
+                            </div>
+                            <div class="arrow-divider">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                            <div class="image-wrapper">
+                                <span class="badge result">Result</span>
+                                <img id="result-preview" src="" alt="Result">
+                                <div class="loading-overlay hidden" id="processing-loader">
+                                    <div class="loader"></div>
+                                    <p>Processing...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Metrics Panel -->
+                <div class="metrics-panel glass-panel">
+                    <h3>Performance Metrics</h3>
+                    <div class="metrics-grid" id="metrics-grid">
+                        <!-- Metrics injected here -->
+                    </div>
+                    <div class="description-box" id="model-description">
+                        <p>Select a model to view details.</p>
+                    </div>
+
+                    <!-- Detailed Evaluation Section -->
+                    <div class="details-section">
+                        <div class="tabs">
+                            <button class="tab-btn active" onclick="switchTab('overview')">Overview</button>
+                            <button class="tab-btn" onclick="switchTab('class-metrics')">Class Metrics</button>
+                            <button class="tab-btn" onclick="switchTab('layers')">Layer Analysis</button>
+                        </div>
+
+                        <div class="tab-content active" id="tab-overview">
+                            <!-- Dynamic Content -->
+                        </div>
+                        <div class="tab-content hidden" id="tab-class-metrics">
+                            <!-- Dynamic Content -->
+                        </div>
+                        <div class="tab-content hidden" id="tab-layers">
+                            <!-- Dynamic Content -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
