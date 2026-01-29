@@ -12,7 +12,8 @@ MODELS_SRC = {
     "p2_layer": "Improved versions/6 - p2 layer",
     "slim_p2": "Improved versions/6_1 - SLIM p2 layer",
     "gnconv_p2": "Improved versions/7 - gnconv + p2 layer",
-    "gnconv_p2_repvgg": "Improved versions/7_1 - gnconv + p2 layer + Repvgg"
+    "gnconv_p2_repvgg": "Improved versions/7_1 - gnconv + p2 layer + Repvgg",
+    "gnconv_slim_p2_repvgg": "Improved versions/7_2 - gnconv + SLIM p2 layer + Repvgg"
 }
 
 OUTPUT_FILE = "d:/APPLICATION/backend/models_config.json"
@@ -92,6 +93,11 @@ def generate_config():
             "name": "Improved: GNConv + P2 + RepVGG", 
             "description": "Advanced architecture with GNConv, P2, and RepVGG blocks.",
             "path": "backend/models/gnconv_p2_repvgg.onnx"
+        },
+        "gnconv_slim_p2_repvgg": {
+            "name": "Improved: GNConv + Slim P2 + RepVGG", 
+            "description": "SOTA: GNConv + Slim P2 + RepVGG fusion.",
+            "path": "backend/models/gnconv_slim_p2_repvgg.onnx"
         }
     }
 
