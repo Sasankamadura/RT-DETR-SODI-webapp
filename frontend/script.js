@@ -61,6 +61,18 @@ function selectModel(id) {
 
     // Populate Tabs
     renderDetailedMetrics(model);
+
+    // Clear previous usage data
+    clearPreview();
+}
+
+function clearPreview() {
+    dom.fileInput.value = "";
+    dom.previewContainer.classList.remove('visible');
+    dom.previewContainer.classList.add('hidden');
+    dom.originalPreview.src = "";
+    dom.resultPreview.src = "";
+    dom.uploadZone.style.borderColor = "";
 }
 
 function renderDetailedMetrics(model) {
@@ -68,12 +80,19 @@ function renderDetailedMetrics(model) {
 
     // 1. Overview Tab
     let overviewHtml = '<table class="data-table"><tr><th>Metric</th><th>Value</th></tr>';
-    if (full.evaluation) {
+
+    // Params (calculated from profiling data if available)
+    if (full.profiling && full.profiling.layer_analysis) {
+        const totalParams = full.profiling.layer_analysis.total_params;
         overviewHtml += `
-            <tr><td>Model Size</td><td>${full.evaluation.model_size_mb.toFixed(2)} MB</td></tr>
-            <tr><td>Params</td><td>${full.evaluation.model_keys}</td></tr>
+            <tr><td>Total Params</td><td>${(totalParams / 1e6).toFixed(2)} M</td></tr>
+            <tr><td>Trainable</td><td>${(totalParams / 1e6).toFixed(2)} M</td></tr>
         `;
+    } else if (full.evaluation) {
+        // Fallback if profiling missing (though we prefer profiling)
+        overviewHtml += `<tr><td>Params</td><td>N/A</td></tr>`;
     }
+
     if (full.fps && full.fps.fps_benchmark && full.fps.fps_benchmark['640x640']) {
         const bench = full.fps.fps_benchmark['640x640'];
         overviewHtml += `
@@ -102,29 +121,34 @@ function renderDetailedMetrics(model) {
     document.getElementById('tab-class-metrics').innerHTML = classHtml;
 
     // 3. Layer Analysis Tab
-    let layerHtml = '<div style="padding:10px">';
+    let layerHtml = '';
     if (full.profiling && full.profiling.layer_analysis) {
         const la = full.profiling.layer_analysis;
-        layerHtml += `<p>Total Params: ${la.total_params.toLocaleString()}</p>`;
-        layerHtml += `<p>Backbone: ${la.components.backbone.percentage.toFixed(1)}%</p>`;
-        layerHtml += `<p>Decoder: ${la.components.decoder.percentage.toFixed(1)}%</p>`;
+        layerHtml += `
+        <table class="data-table">
+            <tr><th>Component</th><th>Percentage</th></tr>
+            <tr><td>Backbone</td><td>${la.components.backbone.percentage.toFixed(1)}%</td></tr>
+            <tr><td>Decoder</td><td>${la.components.decoder.percentage.toFixed(1)}%</td></tr>
+            <tr><td><br></td><td></td></tr>
+            <tr><td><strong>Total Params</strong></td><td><strong>${(la.total_params / 1e6).toFixed(2)} M</strong></td></tr>
+        </table>
+        `;
     } else {
-        layerHtml += '<p>No layer profiling data available</p>';
+        layerHtml += '<div style="padding:10px; color:var(--text-sub)">No layer profiling data available</div>';
     }
-    layerHtml += '</div>';
     document.getElementById('tab-layers').innerHTML = layerHtml;
 }
 
 window.switchTab = function (tabName) {
-    // Hide all
+    // Hide all content
     document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
     document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
 
-    // Show target
+    // Show target content
     document.getElementById(`tab-${tabName}`).classList.remove('hidden');
-    // Highlight button (simplistic matching)
-    const btn = Array.from(document.querySelectorAll('.tab-btn')).find(b => b.textContent.toLowerCase().includes(tabName.split('-')[0]));
-    if (btn) btn.classList.add('active');
+
+    // Highlight button
+    document.getElementById(`btn-${tabName}`).classList.add('active');
 };
 
 // Upload Handling

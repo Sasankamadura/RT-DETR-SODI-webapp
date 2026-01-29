@@ -20,9 +20,15 @@ app.add_middleware(
 )
 
 # Load configuration
+# Load configuration path
 CONFIG_PATH = os.path.join(os.path.dirname(__file__), "models_config.json")
-with open(CONFIG_PATH, "r") as f:
-    MODELS_CONFIG = json.load(f)
+
+def get_config():
+    """Load latest configuration from disk."""
+    if not os.path.exists(CONFIG_PATH):
+        return []
+    with open(CONFIG_PATH, "r") as f:
+        return json.load(f)
 
 # Global model cache (lazy loading)
 loaded_models = {}
@@ -30,7 +36,7 @@ loaded_models = {}
 @app.get("/models")
 async def get_models():
     """Return list of available models with metadata and metrics."""
-    return MODELS_CONFIG
+    return get_config()
 
 @app.post("/predict")
 async def predict(
@@ -39,8 +45,11 @@ async def predict(
 ):
     """Run inference on uploaded image."""
     
+    # Reload config to get latest paths/metadata
+    models_config = get_config()
+
     # optimize: check if model config exists
-    target_config = next((m for m in MODELS_CONFIG if m['id'] == model_id), None)
+    target_config = next((m for m in models_config if m['id'] == model_id), None)
     if not target_config:
         raise HTTPException(status_code=404, detail="Model not found")
     
