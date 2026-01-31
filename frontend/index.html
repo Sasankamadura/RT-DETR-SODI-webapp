@@ -49,6 +49,8 @@
                 </div>
             </header>
 
+
+
             <!-- Workspace -->
             <div class="workspace">
                 <!-- Image Upload & Preview -->
@@ -78,11 +80,43 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Download Controls -->
+                    <div class="download-controls hidden" id="download-controls">
+                        <button class="btn btn-secondary" onclick="downloadResult('image')">
+                            <i class="fa-solid fa-image"></i> Download Image
+                        </button>
+                        <button class="btn btn-secondary" onclick="downloadResult('json')">
+                            <i class="fa-solid fa-file-code"></i> Download JSON
+                        </button>
+                    </div>
+
+                    <!-- Sample Images -->
+                    <div class="samples-panel"
+                        style="margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">
+                        <h3>Sample Images (VisDrone2019)</h3>
+                        <div class="samples-grid" id="samples-grid">
+                            <div class="loading-spinner-small"></div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Metrics Panel -->
                 <div class="metrics-panel glass-panel">
-                    <h3>Performance Metrics</h3>
+                    <div class="metrics-header-row"
+                        style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
+                        <h3 style="margin:0;">Performance Metrics</h3>
+                        <div class="metrics-actions" style="display:flex; gap:10px;">
+                            <button class="btn btn-secondary" style="font-size:0.8rem; padding: 5px 10px;"
+                                onclick="downloadMetrics('csv')">
+                                <i class="fa-solid fa-file-csv"></i> CSV
+                            </button>
+                            <button class="btn btn-secondary" style="font-size:0.8rem; padding: 5px 10px;"
+                                onclick="downloadMetrics('json')">
+                                <i class="fa-solid fa-file-code"></i> JSON
+                            </button>
+                        </div>
+                    </div>
                     <div class="metrics-grid" id="metrics-grid">
                         <!-- Metrics injected here -->
                     </div>
@@ -93,9 +127,12 @@
                     <!-- Detailed Evaluation Section -->
                     <div class="details-section">
                         <div class="tabs">
-                            <button id="btn-overview" class="tab-btn active" onclick="switchTab('overview')">Overview</button>
-                            <button id="btn-class-metrics" class="tab-btn" onclick="switchTab('class-metrics')">Class Metrics</button>
-                            <button id="btn-layers" class="tab-btn" onclick="switchTab('layers')">Layer Analysis</button>
+                            <button id="btn-overview" class="tab-btn active"
+                                onclick="switchTab('overview')">Overview</button>
+                            <button id="btn-class-metrics" class="tab-btn" onclick="switchTab('class-metrics')">Class
+                                Metrics</button>
+                            <button id="btn-layers" class="tab-btn" onclick="switchTab('layers')">Layer
+                                Analysis</button>
                         </div>
 
                         <div class="tab-content active" id="tab-overview">

@@ -47,8 +47,9 @@ class ModelHandler:
         except:
             font = ImageFont.load_default()
             
+        detections = []
         for label, box, score in zip(labels, boxes, scores):
-            x1, y1, x2, y2 = box
+            x1, y1, x2, y2 = box.tolist()
             class_name = CLASS_NAMES.get(int(label), str(int(label)))
             color = "#00FF00"  # Green
             
@@ -59,5 +60,12 @@ class ModelHandler:
             bbox = draw.textbbox((x1, y1), text, font=font)
             draw.rectangle([bbox[0], bbox[1], bbox[2], bbox[3]], fill=color)
             draw.text((x1, y1), text, fill="black", font=font)
+
+            detections.append({
+                "box": [x1, y1, x2, y2],
+                "label_id": int(label),
+                "label": class_name,
+                "score": float(score)
+            })
             
-        return original_image
+        return original_image, detections

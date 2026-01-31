@@ -6,6 +6,10 @@ from typing import List, Optional
 import json
 import os
 import io
+import base64
+import time
+from fastapi.responses import JSONResponse
+from fastapi.staticfiles import StaticFiles
 from .model_utils import ModelHandler
 
 app = FastAPI(title="RT-DETR Research Prototype")
@@ -18,6 +22,13 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Mount sample images
+SAMPLES_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "Sample Visdrone Images")
+if os.path.exists(SAMPLES_DIR):
+    app.mount("/samples-data", StaticFiles(directory=SAMPLES_DIR), name="samples")
+else:
+    print(f"Warning: Samples directory not found at {SAMPLES_DIR}")
 
 # Load configuration
 # Load configuration path
@@ -41,9 +52,10 @@ async def get_models():
 @app.post("/predict")
 async def predict(
     model_id: str = Form(...),
-    file: UploadFile = File(...)
+    file: Optional[UploadFile] = File(None),
+    sample_filename: Optional[str] = Form(None)
 ):
-    """Run inference on uploaded image."""
+    """Run inference on uploaded image or server-side sample."""
     
     # Reload config to get latest paths/metadata
     models_config = get_config()
@@ -67,22 +79,57 @@ async def predict(
             raise HTTPException(status_code=500, detail=f"Failed to load model: {str(e)}")
             
     # Read image
-    image_bytes = await file.read()
+    image_bytes = None
+    if sample_filename:
+        # Securely join path (prevent traversal)
+        safe_filename = os.path.basename(sample_filename)
+        sample_path = os.path.join(SAMPLES_DIR, safe_filename)
+        if not os.path.exists(sample_path):
+             raise HTTPException(status_code=404, detail=f"Sample file not found: {sample_path}")
+        
+        print(f"Loading sample from disk: {sample_path}")
+        with open(sample_path, "rb") as f:
+            image_bytes = f.read()
+    elif file:
+        image_bytes = await file.read()
+    else:
+        raise HTTPException(status_code=400, detail="Either 'file' or 'sample_filename' must be provided.")
+    
     
     try:
+        start_time = time.time()
         handler = loaded_models[model_id]
-        annotated_image = handler.predict(image_bytes)
+        annotated_image, detections = handler.predict(image_bytes)
+        inference_time = time.time() - start_time
         
-        # Return image
+        # Determine original filename for display if possible (not possible from upload stream directly efficiently without client header, using generic)
+        
+        # Convert annotated image to base64
         img_byte_arr = io.BytesIO()
         annotated_image.save(img_byte_arr, format='JPEG')
         img_byte_arr.seek(0)
+        encoded_image = base64.b64encode(img_byte_arr.read()).decode('utf-8')
         
-        return StreamingResponse(img_byte_arr, media_type="image/jpeg")
+        return JSONResponse({
+            "annotated_image": encoded_image,
+            "detections": detections,
+            "inference_time": inference_time
+        })
         
     except Exception as e:
         print(f"Inference error: {e}")
+        import traceback
+        traceback.print_exc()
         raise HTTPException(status_code=500, detail=f"Inference failed: {str(e)}")
+
+@app.get("/samples")
+async def get_samples():
+    """List available sample images."""
+    if not os.path.exists(SAMPLES_DIR):
+        return []
+    
+    files = [f for f in os.listdir(SAMPLES_DIR) if f.lower().endswith(('.png', '.jpg', '.jpeg'))]
+    return [{"filename": f, "url": f"/samples-data/{f}"} for f in files]
 
 @app.get("/")
 def read_root():

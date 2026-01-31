@@ -38,3 +38,6 @@ Normal RT-DETR/
 # User specific
 .gemini/
 tmp/
+
+# Kaggle Scripts
+kaggle_scripts/
