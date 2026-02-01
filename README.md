@@ -1,3 +1,12 @@
+---
+title: RT-DETR Research
+emoji: 🦀
+colorFrom: indigo
+colorTo: blue
+sdk: docker
+pinned: false
+---
+
 # RT-DETR Research Prototype: Small Object Detection Enhancement
 
 ![Project Status](https://img.shields.io/badge/Status-Research_Prototype-blue)
