@@ -24,9 +24,16 @@ RUN pip uninstall -y onnxruntime-gpu && pip install onnxruntime
 # Copy the entire application
 COPY . .
 
-# Expose the port
-EXPOSE 8000
+# Create a non-root user (Hugging Face Spaces runs as user 1000)
+RUN useradd -m -u 1000 user && \
+    chown -R user:user /app
 
-# Command to run the application
-# We use the python -m uvicorn approach
-CMD ["python", "-m", "uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8000"]
+# Switch to the non-root user
+USER user
+
+# Expose port 7860 for Hugging Face
+EXPOSE 7860
+
+# Start the application on port 7860
+# This port works for both Hugging Face Spaces and Local Docker
+CMD ["python", "-m", "uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "7860"]

@@ -1,4 +1,9 @@
-const API_URL = "http://localhost:8000";
+// Automatically determine API URL
+// - If served from backend (same origin) or production: use relative path
+// - If local dev (file:// or Live Server): use localhost:8000
+const API_URL = (window.location.protocol === 'file:' || window.location.port === '5500') 
+    ? "http://localhost:8000" 
+    : "";
 
 const dom = {
     modelList: document.getElementById('model-list'),
