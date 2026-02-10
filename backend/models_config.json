@@ -28152,11 +28152,11 @@
         "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_slim.yml",
         "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim/checkpoint0089.pth",
         "layer_analysis": {
-          "total_params": 33085122,
+          "total_params": 21351960,
           "components": {
             "backbone": {
               "total_params": 11190112,
-              "percentage": 33.822187507726284,
+              "percentage": 52.40789135985643,
               "num_layers": 23,
               "layers": [
                 {
@@ -28415,9 +28415,9 @@
               ]
             },
             "decoder": {
-              "total_params": 7503970,
-              "percentage": 22.68079894038172,
-              "num_layers": 209,
+              "total_params": 4036792,
+              "percentage": 18.905955237832966,
+              "num_layers": 119,
               "layers": [
                 {
                   "name": "decoder.input_proj.0.conv.weight",
@@ -29080,558 +29080,6 @@
                   "trainable": true
                 },
                 {
-                  "name": "decoder.decoder.layers.3.self_attn.in_proj_weight",
-                  "params": 196608,
-                  "shape": [
-                    768,
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.3.self_attn.in_proj_bias",
-                  "params": 768,
-                  "shape": [
-                    768
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.3.self_attn.out_proj.weight",
-                  "params": 65536,
-                  "shape": [
-                    256,
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.3.self_attn.out_proj.bias",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.3.norm1.weight",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.3.norm1.bias",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.3.cross_attn.sampling_offsets.weight",
-                  "params": 65536,
-                  "shape": [
-                    256,
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.3.cross_attn.sampling_offsets.bias",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.3.cross_attn.attention_weights.weight",
-                  "params": 32768,
-                  "shape": [
-                    128,
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.3.cross_attn.attention_weights.bias",
-                  "params": 128,
-                  "shape": [
-                    128
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.3.cross_attn.value_proj.weight",
-                  "params": 65536,
-                  "shape": [
-                    256,
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.3.cross_attn.value_proj.bias",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.3.cross_attn.output_proj.weight",
-                  "params": 65536,
-                  "shape": [
-                    256,
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.3.cross_attn.output_proj.bias",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.3.norm2.weight",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.3.norm2.bias",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.3.linear1.weight",
-                  "params": 262144,
-                  "shape": [
-                    1024,
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.3.linear1.bias",
-                  "params": 1024,
-                  "shape": [
-                    1024
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.3.linear2.weight",
-                  "params": 262144,
-                  "shape": [
-                    256,
-                    1024
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.3.linear2.bias",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.3.norm3.weight",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.3.norm3.bias",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.4.self_attn.in_proj_weight",
-                  "params": 196608,
-                  "shape": [
-                    768,
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.4.self_attn.in_proj_bias",
-                  "params": 768,
-                  "shape": [
-                    768
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.4.self_attn.out_proj.weight",
-                  "params": 65536,
-                  "shape": [
-                    256,
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.4.self_attn.out_proj.bias",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.4.norm1.weight",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.4.norm1.bias",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.4.cross_attn.sampling_offsets.weight",
-                  "params": 65536,
-                  "shape": [
-                    256,
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.4.cross_attn.sampling_offsets.bias",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.4.cross_attn.attention_weights.weight",
-                  "params": 32768,
-                  "shape": [
-                    128,
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.4.cross_attn.attention_weights.bias",
-                  "params": 128,
-                  "shape": [
-                    128
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.4.cross_attn.value_proj.weight",
-                  "params": 65536,
-                  "shape": [
-                    256,
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.4.cross_attn.value_proj.bias",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.4.cross_attn.output_proj.weight",
-                  "params": 65536,
-                  "shape": [
-                    256,
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.4.cross_attn.output_proj.bias",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.4.norm2.weight",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.4.norm2.bias",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.4.linear1.weight",
-                  "params": 262144,
-                  "shape": [
-                    1024,
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.4.linear1.bias",
-                  "params": 1024,
-                  "shape": [
-                    1024
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.4.linear2.weight",
-                  "params": 262144,
-                  "shape": [
-                    256,
-                    1024
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.4.linear2.bias",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.4.norm3.weight",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.4.norm3.bias",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.5.self_attn.in_proj_weight",
-                  "params": 196608,
-                  "shape": [
-                    768,
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.5.self_attn.in_proj_bias",
-                  "params": 768,
-                  "shape": [
-                    768
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.5.self_attn.out_proj.weight",
-                  "params": 65536,
-                  "shape": [
-                    256,
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.5.self_attn.out_proj.bias",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.5.norm1.weight",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.5.norm1.bias",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.5.cross_attn.sampling_offsets.weight",
-                  "params": 65536,
-                  "shape": [
-                    256,
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.5.cross_attn.sampling_offsets.bias",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.5.cross_attn.attention_weights.weight",
-                  "params": 32768,
-                  "shape": [
-                    128,
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.5.cross_attn.attention_weights.bias",
-                  "params": 128,
-                  "shape": [
-                    128
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.5.cross_attn.value_proj.weight",
-                  "params": 65536,
-                  "shape": [
-                    256,
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.5.cross_attn.value_proj.bias",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.5.cross_attn.output_proj.weight",
-                  "params": 65536,
-                  "shape": [
-                    256,
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.5.cross_attn.output_proj.bias",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.5.norm2.weight",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.5.norm2.bias",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.5.linear1.weight",
-                  "params": 262144,
-                  "shape": [
-                    1024,
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.5.linear1.bias",
-                  "params": 1024,
-                  "shape": [
-                    1024
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.5.linear2.weight",
-                  "params": 262144,
-                  "shape": [
-                    256,
-                    1024
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.5.linear2.bias",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.5.norm3.weight",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.decoder.layers.5.norm3.bias",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
                   "name": "decoder.denoising_class_embed.weight",
                   "params": 2816,
                   "shape": [
@@ -29827,57 +29275,6 @@
                   "trainable": true
                 },
                 {
-                  "name": "decoder.dec_score_head.3.weight",
-                  "params": 2560,
-                  "shape": [
-                    10,
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.dec_score_head.3.bias",
-                  "params": 10,
-                  "shape": [
-                    10
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.dec_score_head.4.weight",
-                  "params": 2560,
-                  "shape": [
-                    10,
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.dec_score_head.4.bias",
-                  "params": 10,
-                  "shape": [
-                    10
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.dec_score_head.5.weight",
-                  "params": 2560,
-                  "shape": [
-                    10,
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.dec_score_head.5.bias",
-                  "params": 10,
-                  "shape": [
-                    10
-                  ],
-                  "trainable": true
-                },
-                {
                   "name": "decoder.dec_bbox_head.0.layers.0.weight",
                   "params": 65536,
                   "shape": [
@@ -30029,166 +29426,13 @@
                     4
                   ],
                   "trainable": true
-                },
-                {
-                  "name": "decoder.dec_bbox_head.3.layers.0.weight",
-                  "params": 65536,
-                  "shape": [
-                    256,
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.dec_bbox_head.3.layers.0.bias",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.dec_bbox_head.3.layers.1.weight",
-                  "params": 65536,
-                  "shape": [
-                    256,
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.dec_bbox_head.3.layers.1.bias",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.dec_bbox_head.3.layers.2.weight",
-                  "params": 1024,
-                  "shape": [
-                    4,
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.dec_bbox_head.3.layers.2.bias",
-                  "params": 4,
-                  "shape": [
-                    4
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.dec_bbox_head.4.layers.0.weight",
-                  "params": 65536,
-                  "shape": [
-                    256,
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.dec_bbox_head.4.layers.0.bias",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.dec_bbox_head.4.layers.1.weight",
-                  "params": 65536,
-                  "shape": [
-                    256,
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.dec_bbox_head.4.layers.1.bias",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.dec_bbox_head.4.layers.2.weight",
-                  "params": 1024,
-                  "shape": [
-                    4,
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.dec_bbox_head.4.layers.2.bias",
-                  "params": 4,
-                  "shape": [
-                    4
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.dec_bbox_head.5.layers.0.weight",
-                  "params": 65536,
-                  "shape": [
-                    256,
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.dec_bbox_head.5.layers.0.bias",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.dec_bbox_head.5.layers.1.weight",
-                  "params": 65536,
-                  "shape": [
-                    256,
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.dec_bbox_head.5.layers.1.bias",
-                  "params": 256,
-                  "shape": [
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.dec_bbox_head.5.layers.2.weight",
-                  "params": 1024,
-                  "shape": [
-                    4,
-                    256
-                  ],
-                  "trainable": true
-                },
-                {
-                  "name": "decoder.dec_bbox_head.5.layers.2.bias",
-                  "params": 4,
-                  "shape": [
-                    4
-                  ],
-                  "trainable": true
                 }
               ]
             },
             "encoder": {
-              "total_params": 14391040,
-              "percentage": 43.497013551891996,
-              "num_layers": 186,
+              "total_params": 6125056,
+              "percentage": 28.68615340231061,
+              "num_layers": 204,
               "layers": [
                 {
                   "name": "encoder.input_proj.0.0.weight",
@@ -30481,9 +29725,9 @@
                 },
                 {
                   "name": "encoder.fpn_blocks.0.conv1.conv.weight",
-                  "params": 131072,
+                  "params": 65536,
                   "shape": [
-                    256,
+                    128,
                     512,
                     1,
                     1
@@ -30492,25 +29736,25 @@
                 },
                 {
                   "name": "encoder.fpn_blocks.0.conv1.norm.weight",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.0.conv1.norm.bias",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.0.conv2.conv.weight",
-                  "params": 131072,
+                  "params": 65536,
                   "shape": [
-                    256,
+                    128,
                     512,
                     1,
                     1
@@ -30519,26 +29763,26 @@
                 },
                 {
                   "name": "encoder.fpn_blocks.0.conv2.norm.weight",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.0.conv2.norm.bias",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.0.bottlenecks.0.conv1.conv.weight",
-                  "params": 589824,
+                  "params": 147456,
                   "shape": [
-                    256,
-                    256,
+                    128,
+                    128,
                     3,
                     3
                   ],
@@ -30546,26 +29790,26 @@
                 },
                 {
                   "name": "encoder.fpn_blocks.0.bottlenecks.0.conv1.norm.weight",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.0.bottlenecks.0.conv1.norm.bias",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.0.bottlenecks.0.conv2.conv.weight",
-                  "params": 65536,
+                  "params": 16384,
                   "shape": [
-                    256,
-                    256,
+                    128,
+                    128,
                     1,
                     1
                   ],
@@ -30573,26 +29817,26 @@
                 },
                 {
                   "name": "encoder.fpn_blocks.0.bottlenecks.0.conv2.norm.weight",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.0.bottlenecks.0.conv2.norm.bias",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.0.bottlenecks.1.conv1.conv.weight",
-                  "params": 589824,
+                  "params": 147456,
                   "shape": [
-                    256,
-                    256,
+                    128,
+                    128,
                     3,
                     3
                   ],
@@ -30600,26 +29844,26 @@
                 },
                 {
                   "name": "encoder.fpn_blocks.0.bottlenecks.1.conv1.norm.weight",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.0.bottlenecks.1.conv1.norm.bias",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.0.bottlenecks.1.conv2.conv.weight",
-                  "params": 65536,
+                  "params": 16384,
                   "shape": [
-                    256,
-                    256,
+                    128,
+                    128,
                     1,
                     1
                   ],
@@ -30627,26 +29871,26 @@
                 },
                 {
                   "name": "encoder.fpn_blocks.0.bottlenecks.1.conv2.norm.weight",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.0.bottlenecks.1.conv2.norm.bias",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.0.bottlenecks.2.conv1.conv.weight",
-                  "params": 589824,
+                  "params": 147456,
                   "shape": [
-                    256,
-                    256,
+                    128,
+                    128,
                     3,
                     3
                   ],
@@ -30654,26 +29898,26 @@
                 },
                 {
                   "name": "encoder.fpn_blocks.0.bottlenecks.2.conv1.norm.weight",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.0.bottlenecks.2.conv1.norm.bias",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.0.bottlenecks.2.conv2.conv.weight",
-                  "params": 65536,
+                  "params": 16384,
                   "shape": [
-                    256,
-                    256,
+                    128,
+                    128,
                     1,
                     1
                   ],
@@ -30681,6 +29925,33 @@
                 },
                 {
                   "name": "encoder.fpn_blocks.0.bottlenecks.2.conv2.norm.weight",
+                  "params": 128,
+                  "shape": [
+                    128
+                  ],
+                  "trainable": true
+                },
+                {
+                  "name": "encoder.fpn_blocks.0.bottlenecks.2.conv2.norm.bias",
+                  "params": 128,
+                  "shape": [
+                    128
+                  ],
+                  "trainable": true
+                },
+                {
+                  "name": "encoder.fpn_blocks.0.conv3.conv.weight",
+                  "params": 32768,
+                  "shape": [
+                    256,
+                    128,
+                    1,
+                    1
+                  ],
+                  "trainable": true
+                },
+                {
+                  "name": "encoder.fpn_blocks.0.conv3.norm.weight",
                   "params": 256,
                   "shape": [
                     256
@@ -30688,7 +29959,7 @@
                   "trainable": true
                 },
                 {
-                  "name": "encoder.fpn_blocks.0.bottlenecks.2.conv2.norm.bias",
+                  "name": "encoder.fpn_blocks.0.conv3.norm.bias",
                   "params": 256,
                   "shape": [
                     256
@@ -30697,9 +29968,9 @@
                 },
                 {
                   "name": "encoder.fpn_blocks.1.conv1.conv.weight",
-                  "params": 131072,
+                  "params": 65536,
                   "shape": [
-                    256,
+                    128,
                     512,
                     1,
                     1
@@ -30708,25 +29979,25 @@
                 },
                 {
                   "name": "encoder.fpn_blocks.1.conv1.norm.weight",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.1.conv1.norm.bias",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.1.conv2.conv.weight",
-                  "params": 131072,
+                  "params": 65536,
                   "shape": [
-                    256,
+                    128,
                     512,
                     1,
                     1
@@ -30735,26 +30006,26 @@
                 },
                 {
                   "name": "encoder.fpn_blocks.1.conv2.norm.weight",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.1.conv2.norm.bias",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.1.bottlenecks.0.conv1.conv.weight",
-                  "params": 589824,
+                  "params": 147456,
                   "shape": [
-                    256,
-                    256,
+                    128,
+                    128,
                     3,
                     3
                   ],
@@ -30762,26 +30033,26 @@
                 },
                 {
                   "name": "encoder.fpn_blocks.1.bottlenecks.0.conv1.norm.weight",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.1.bottlenecks.0.conv1.norm.bias",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.1.bottlenecks.0.conv2.conv.weight",
-                  "params": 65536,
+                  "params": 16384,
                   "shape": [
-                    256,
-                    256,
+                    128,
+                    128,
                     1,
                     1
                   ],
@@ -30789,26 +30060,26 @@
                 },
                 {
                   "name": "encoder.fpn_blocks.1.bottlenecks.0.conv2.norm.weight",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.1.bottlenecks.0.conv2.norm.bias",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.1.bottlenecks.1.conv1.conv.weight",
-                  "params": 589824,
+                  "params": 147456,
                   "shape": [
-                    256,
-                    256,
+                    128,
+                    128,
                     3,
                     3
                   ],
@@ -30816,26 +30087,26 @@
                 },
                 {
                   "name": "encoder.fpn_blocks.1.bottlenecks.1.conv1.norm.weight",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.1.bottlenecks.1.conv1.norm.bias",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.1.bottlenecks.1.conv2.conv.weight",
-                  "params": 65536,
+                  "params": 16384,
                   "shape": [
-                    256,
-                    256,
+                    128,
+                    128,
                     1,
                     1
                   ],
@@ -30843,26 +30114,26 @@
                 },
                 {
                   "name": "encoder.fpn_blocks.1.bottlenecks.1.conv2.norm.weight",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.1.bottlenecks.1.conv2.norm.bias",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.1.bottlenecks.2.conv1.conv.weight",
-                  "params": 589824,
+                  "params": 147456,
                   "shape": [
-                    256,
-                    256,
+                    128,
+                    128,
                     3,
                     3
                   ],
@@ -30870,26 +30141,26 @@
                 },
                 {
                   "name": "encoder.fpn_blocks.1.bottlenecks.2.conv1.norm.weight",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.1.bottlenecks.2.conv1.norm.bias",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.1.bottlenecks.2.conv2.conv.weight",
-                  "params": 65536,
+                  "params": 16384,
                   "shape": [
-                    256,
-                    256,
+                    128,
+                    128,
                     1,
                     1
                   ],
@@ -30897,6 +30168,33 @@
                 },
                 {
                   "name": "encoder.fpn_blocks.1.bottlenecks.2.conv2.norm.weight",
+                  "params": 128,
+                  "shape": [
+                    128
+                  ],
+                  "trainable": true
+                },
+                {
+                  "name": "encoder.fpn_blocks.1.bottlenecks.2.conv2.norm.bias",
+                  "params": 128,
+                  "shape": [
+                    128
+                  ],
+                  "trainable": true
+                },
+                {
+                  "name": "encoder.fpn_blocks.1.conv3.conv.weight",
+                  "params": 32768,
+                  "shape": [
+                    256,
+                    128,
+                    1,
+                    1
+                  ],
+                  "trainable": true
+                },
+                {
+                  "name": "encoder.fpn_blocks.1.conv3.norm.weight",
                   "params": 256,
                   "shape": [
                     256
@@ -30904,7 +30202,7 @@
                   "trainable": true
                 },
                 {
-                  "name": "encoder.fpn_blocks.1.bottlenecks.2.conv2.norm.bias",
+                  "name": "encoder.fpn_blocks.1.conv3.norm.bias",
                   "params": 256,
                   "shape": [
                     256
@@ -30913,9 +30211,9 @@
                 },
                 {
                   "name": "encoder.fpn_blocks.2.conv1.conv.weight",
-                  "params": 32768,
+                  "params": 16384,
                   "shape": [
-                    128,
+                    64,
                     256,
                     1,
                     1
@@ -30924,25 +30222,25 @@
                 },
                 {
                   "name": "encoder.fpn_blocks.2.conv1.norm.weight",
-                  "params": 128,
+                  "params": 64,
                   "shape": [
-                    128
+                    64
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.2.conv1.norm.bias",
-                  "params": 128,
+                  "params": 64,
                   "shape": [
-                    128
+                    64
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.2.conv2.conv.weight",
-                  "params": 32768,
+                  "params": 16384,
                   "shape": [
-                    128,
+                    64,
                     256,
                     1,
                     1
@@ -30951,26 +30249,26 @@
                 },
                 {
                   "name": "encoder.fpn_blocks.2.conv2.norm.weight",
-                  "params": 128,
+                  "params": 64,
                   "shape": [
-                    128
+                    64
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.2.conv2.norm.bias",
-                  "params": 128,
+                  "params": 64,
                   "shape": [
-                    128
+                    64
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.2.bottlenecks.0.conv1.conv.weight",
-                  "params": 147456,
+                  "params": 36864,
                   "shape": [
-                    128,
-                    128,
+                    64,
+                    64,
                     3,
                     3
                   ],
@@ -30978,26 +30276,26 @@
                 },
                 {
                   "name": "encoder.fpn_blocks.2.bottlenecks.0.conv1.norm.weight",
-                  "params": 128,
+                  "params": 64,
                   "shape": [
-                    128
+                    64
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.2.bottlenecks.0.conv1.norm.bias",
-                  "params": 128,
+                  "params": 64,
                   "shape": [
-                    128
+                    64
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.2.bottlenecks.0.conv2.conv.weight",
-                  "params": 16384,
+                  "params": 4096,
                   "shape": [
-                    128,
-                    128,
+                    64,
+                    64,
                     1,
                     1
                   ],
@@ -31005,26 +30303,26 @@
                 },
                 {
                   "name": "encoder.fpn_blocks.2.bottlenecks.0.conv2.norm.weight",
-                  "params": 128,
+                  "params": 64,
                   "shape": [
-                    128
+                    64
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.2.bottlenecks.0.conv2.norm.bias",
-                  "params": 128,
+                  "params": 64,
                   "shape": [
-                    128
+                    64
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.2.bottlenecks.1.conv1.conv.weight",
-                  "params": 147456,
+                  "params": 36864,
                   "shape": [
-                    128,
-                    128,
+                    64,
+                    64,
                     3,
                     3
                   ],
@@ -31032,26 +30330,26 @@
                 },
                 {
                   "name": "encoder.fpn_blocks.2.bottlenecks.1.conv1.norm.weight",
-                  "params": 128,
+                  "params": 64,
                   "shape": [
-                    128
+                    64
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.2.bottlenecks.1.conv1.norm.bias",
-                  "params": 128,
+                  "params": 64,
                   "shape": [
-                    128
+                    64
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.2.bottlenecks.1.conv2.conv.weight",
-                  "params": 16384,
+                  "params": 4096,
                   "shape": [
-                    128,
-                    128,
+                    64,
+                    64,
                     1,
                     1
                   ],
@@ -31059,26 +30357,26 @@
                 },
                 {
                   "name": "encoder.fpn_blocks.2.bottlenecks.1.conv2.norm.weight",
-                  "params": 128,
+                  "params": 64,
                   "shape": [
-                    128
+                    64
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.2.bottlenecks.1.conv2.norm.bias",
-                  "params": 128,
+                  "params": 64,
                   "shape": [
-                    128
+                    64
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.2.bottlenecks.2.conv1.conv.weight",
-                  "params": 147456,
+                  "params": 36864,
                   "shape": [
-                    128,
-                    128,
+                    64,
+                    64,
                     3,
                     3
                   ],
@@ -31086,26 +30384,26 @@
                 },
                 {
                   "name": "encoder.fpn_blocks.2.bottlenecks.2.conv1.norm.weight",
-                  "params": 128,
+                  "params": 64,
                   "shape": [
-                    128
+                    64
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.2.bottlenecks.2.conv1.norm.bias",
-                  "params": 128,
+                  "params": 64,
                   "shape": [
-                    128
+                    64
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.fpn_blocks.2.bottlenecks.2.conv2.conv.weight",
-                  "params": 16384,
+                  "params": 4096,
                   "shape": [
-                    128,
-                    128,
+                    64,
+                    64,
                     1,
                     1
                   ],
@@ -31113,6 +30411,33 @@
                 },
                 {
                   "name": "encoder.fpn_blocks.2.bottlenecks.2.conv2.norm.weight",
+                  "params": 64,
+                  "shape": [
+                    64
+                  ],
+                  "trainable": true
+                },
+                {
+                  "name": "encoder.fpn_blocks.2.bottlenecks.2.conv2.norm.bias",
+                  "params": 64,
+                  "shape": [
+                    64
+                  ],
+                  "trainable": true
+                },
+                {
+                  "name": "encoder.fpn_blocks.2.conv3.conv.weight",
+                  "params": 8192,
+                  "shape": [
+                    128,
+                    64,
+                    1,
+                    1
+                  ],
+                  "trainable": true
+                },
+                {
+                  "name": "encoder.fpn_blocks.2.conv3.norm.weight",
                   "params": 128,
                   "shape": [
                     128
@@ -31120,7 +30445,7 @@
                   "trainable": true
                 },
                 {
-                  "name": "encoder.fpn_blocks.2.bottlenecks.2.conv2.norm.bias",
+                  "name": "encoder.fpn_blocks.2.conv3.norm.bias",
                   "params": 128,
                   "shape": [
                     128
@@ -31210,9 +30535,9 @@
                 },
                 {
                   "name": "encoder.pan_blocks.0.conv1.conv.weight",
-                  "params": 131072,
+                  "params": 65536,
                   "shape": [
-                    256,
+                    128,
                     512,
                     1,
                     1
@@ -31221,25 +30546,25 @@
                 },
                 {
                   "name": "encoder.pan_blocks.0.conv1.norm.weight",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.0.conv1.norm.bias",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.0.conv2.conv.weight",
-                  "params": 131072,
+                  "params": 65536,
                   "shape": [
-                    256,
+                    128,
                     512,
                     1,
                     1
@@ -31248,26 +30573,26 @@
                 },
                 {
                   "name": "encoder.pan_blocks.0.conv2.norm.weight",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.0.conv2.norm.bias",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.0.bottlenecks.0.conv1.conv.weight",
-                  "params": 589824,
+                  "params": 147456,
                   "shape": [
-                    256,
-                    256,
+                    128,
+                    128,
                     3,
                     3
                   ],
@@ -31275,26 +30600,26 @@
                 },
                 {
                   "name": "encoder.pan_blocks.0.bottlenecks.0.conv1.norm.weight",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.0.bottlenecks.0.conv1.norm.bias",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.0.bottlenecks.0.conv2.conv.weight",
-                  "params": 65536,
+                  "params": 16384,
                   "shape": [
-                    256,
-                    256,
+                    128,
+                    128,
                     1,
                     1
                   ],
@@ -31302,26 +30627,26 @@
                 },
                 {
                   "name": "encoder.pan_blocks.0.bottlenecks.0.conv2.norm.weight",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.0.bottlenecks.0.conv2.norm.bias",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.0.bottlenecks.1.conv1.conv.weight",
-                  "params": 589824,
+                  "params": 147456,
                   "shape": [
-                    256,
-                    256,
+                    128,
+                    128,
                     3,
                     3
                   ],
@@ -31329,26 +30654,26 @@
                 },
                 {
                   "name": "encoder.pan_blocks.0.bottlenecks.1.conv1.norm.weight",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.0.bottlenecks.1.conv1.norm.bias",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.0.bottlenecks.1.conv2.conv.weight",
-                  "params": 65536,
+                  "params": 16384,
                   "shape": [
-                    256,
-                    256,
+                    128,
+                    128,
                     1,
                     1
                   ],
@@ -31356,26 +30681,26 @@
                 },
                 {
                   "name": "encoder.pan_blocks.0.bottlenecks.1.conv2.norm.weight",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.0.bottlenecks.1.conv2.norm.bias",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.0.bottlenecks.2.conv1.conv.weight",
-                  "params": 589824,
+                  "params": 147456,
                   "shape": [
-                    256,
-                    256,
+                    128,
+                    128,
                     3,
                     3
                   ],
@@ -31383,26 +30708,26 @@
                 },
                 {
                   "name": "encoder.pan_blocks.0.bottlenecks.2.conv1.norm.weight",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.0.bottlenecks.2.conv1.norm.bias",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.0.bottlenecks.2.conv2.conv.weight",
-                  "params": 65536,
+                  "params": 16384,
                   "shape": [
-                    256,
-                    256,
+                    128,
+                    128,
                     1,
                     1
                   ],
@@ -31410,6 +30735,33 @@
                 },
                 {
                   "name": "encoder.pan_blocks.0.bottlenecks.2.conv2.norm.weight",
+                  "params": 128,
+                  "shape": [
+                    128
+                  ],
+                  "trainable": true
+                },
+                {
+                  "name": "encoder.pan_blocks.0.bottlenecks.2.conv2.norm.bias",
+                  "params": 128,
+                  "shape": [
+                    128
+                  ],
+                  "trainable": true
+                },
+                {
+                  "name": "encoder.pan_blocks.0.conv3.conv.weight",
+                  "params": 32768,
+                  "shape": [
+                    256,
+                    128,
+                    1,
+                    1
+                  ],
+                  "trainable": true
+                },
+                {
+                  "name": "encoder.pan_blocks.0.conv3.norm.weight",
                   "params": 256,
                   "shape": [
                     256
@@ -31417,7 +30769,7 @@
                   "trainable": true
                 },
                 {
-                  "name": "encoder.pan_blocks.0.bottlenecks.2.conv2.norm.bias",
+                  "name": "encoder.pan_blocks.0.conv3.norm.bias",
                   "params": 256,
                   "shape": [
                     256
@@ -31426,9 +30778,9 @@
                 },
                 {
                   "name": "encoder.pan_blocks.1.conv1.conv.weight",
-                  "params": 131072,
+                  "params": 65536,
                   "shape": [
-                    256,
+                    128,
                     512,
                     1,
                     1
@@ -31437,25 +30789,25 @@
                 },
                 {
                   "name": "encoder.pan_blocks.1.conv1.norm.weight",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.1.conv1.norm.bias",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.1.conv2.conv.weight",
-                  "params": 131072,
+                  "params": 65536,
                   "shape": [
-                    256,
+                    128,
                     512,
                     1,
                     1
@@ -31464,26 +30816,26 @@
                 },
                 {
                   "name": "encoder.pan_blocks.1.conv2.norm.weight",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.1.conv2.norm.bias",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.1.bottlenecks.0.conv1.conv.weight",
-                  "params": 589824,
+                  "params": 147456,
                   "shape": [
-                    256,
-                    256,
+                    128,
+                    128,
                     3,
                     3
                   ],
@@ -31491,26 +30843,26 @@
                 },
                 {
                   "name": "encoder.pan_blocks.1.bottlenecks.0.conv1.norm.weight",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.1.bottlenecks.0.conv1.norm.bias",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.1.bottlenecks.0.conv2.conv.weight",
-                  "params": 65536,
+                  "params": 16384,
                   "shape": [
-                    256,
-                    256,
+                    128,
+                    128,
                     1,
                     1
                   ],
@@ -31518,26 +30870,26 @@
                 },
                 {
                   "name": "encoder.pan_blocks.1.bottlenecks.0.conv2.norm.weight",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.1.bottlenecks.0.conv2.norm.bias",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.1.bottlenecks.1.conv1.conv.weight",
-                  "params": 589824,
+                  "params": 147456,
                   "shape": [
-                    256,
-                    256,
+                    128,
+                    128,
                     3,
                     3
                   ],
@@ -31545,26 +30897,26 @@
                 },
                 {
                   "name": "encoder.pan_blocks.1.bottlenecks.1.conv1.norm.weight",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.1.bottlenecks.1.conv1.norm.bias",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.1.bottlenecks.1.conv2.conv.weight",
-                  "params": 65536,
+                  "params": 16384,
                   "shape": [
-                    256,
-                    256,
+                    128,
+                    128,
                     1,
                     1
                   ],
@@ -31572,26 +30924,26 @@
                 },
                 {
                   "name": "encoder.pan_blocks.1.bottlenecks.1.conv2.norm.weight",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.1.bottlenecks.1.conv2.norm.bias",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.1.bottlenecks.2.conv1.conv.weight",
-                  "params": 589824,
+                  "params": 147456,
                   "shape": [
-                    256,
-                    256,
+                    128,
+                    128,
                     3,
                     3
                   ],
@@ -31599,26 +30951,26 @@
                 },
                 {
                   "name": "encoder.pan_blocks.1.bottlenecks.2.conv1.norm.weight",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.1.bottlenecks.2.conv1.norm.bias",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.1.bottlenecks.2.conv2.conv.weight",
-                  "params": 65536,
+                  "params": 16384,
                   "shape": [
-                    256,
-                    256,
+                    128,
+                    128,
                     1,
                     1
                   ],
@@ -31626,6 +30978,33 @@
                 },
                 {
                   "name": "encoder.pan_blocks.1.bottlenecks.2.conv2.norm.weight",
+                  "params": 128,
+                  "shape": [
+                    128
+                  ],
+                  "trainable": true
+                },
+                {
+                  "name": "encoder.pan_blocks.1.bottlenecks.2.conv2.norm.bias",
+                  "params": 128,
+                  "shape": [
+                    128
+                  ],
+                  "trainable": true
+                },
+                {
+                  "name": "encoder.pan_blocks.1.conv3.conv.weight",
+                  "params": 32768,
+                  "shape": [
+                    256,
+                    128,
+                    1,
+                    1
+                  ],
+                  "trainable": true
+                },
+                {
+                  "name": "encoder.pan_blocks.1.conv3.norm.weight",
                   "params": 256,
                   "shape": [
                     256
@@ -31633,7 +31012,7 @@
                   "trainable": true
                 },
                 {
-                  "name": "encoder.pan_blocks.1.bottlenecks.2.conv2.norm.bias",
+                  "name": "encoder.pan_blocks.1.conv3.norm.bias",
                   "params": 256,
                   "shape": [
                     256
@@ -31642,9 +31021,9 @@
                 },
                 {
                   "name": "encoder.pan_blocks.2.conv1.conv.weight",
-                  "params": 131072,
+                  "params": 65536,
                   "shape": [
-                    256,
+                    128,
                     512,
                     1,
                     1
@@ -31653,25 +31032,25 @@
                 },
                 {
                   "name": "encoder.pan_blocks.2.conv1.norm.weight",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.2.conv1.norm.bias",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.2.conv2.conv.weight",
-                  "params": 131072,
+                  "params": 65536,
                   "shape": [
-                    256,
+                    128,
                     512,
                     1,
                     1
@@ -31680,26 +31059,26 @@
                 },
                 {
                   "name": "encoder.pan_blocks.2.conv2.norm.weight",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.2.conv2.norm.bias",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.2.bottlenecks.0.conv1.conv.weight",
-                  "params": 589824,
+                  "params": 147456,
                   "shape": [
-                    256,
-                    256,
+                    128,
+                    128,
                     3,
                     3
                   ],
@@ -31707,26 +31086,26 @@
                 },
                 {
                   "name": "encoder.pan_blocks.2.bottlenecks.0.conv1.norm.weight",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.2.bottlenecks.0.conv1.norm.bias",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.2.bottlenecks.0.conv2.conv.weight",
-                  "params": 65536,
+                  "params": 16384,
                   "shape": [
-                    256,
-                    256,
+                    128,
+                    128,
                     1,
                     1
                   ],
@@ -31734,26 +31113,26 @@
                 },
                 {
                   "name": "encoder.pan_blocks.2.bottlenecks.0.conv2.norm.weight",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.2.bottlenecks.0.conv2.norm.bias",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.2.bottlenecks.1.conv1.conv.weight",
-                  "params": 589824,
+                  "params": 147456,
                   "shape": [
-                    256,
-                    256,
+                    128,
+                    128,
                     3,
                     3
                   ],
@@ -31761,26 +31140,26 @@
                 },
                 {
                   "name": "encoder.pan_blocks.2.bottlenecks.1.conv1.norm.weight",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.2.bottlenecks.1.conv1.norm.bias",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.2.bottlenecks.1.conv2.conv.weight",
-                  "params": 65536,
+                  "params": 16384,
                   "shape": [
-                    256,
-                    256,
+                    128,
+                    128,
                     1,
                     1
                   ],
@@ -31788,26 +31167,26 @@
                 },
                 {
                   "name": "encoder.pan_blocks.2.bottlenecks.1.conv2.norm.weight",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.2.bottlenecks.1.conv2.norm.bias",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.2.bottlenecks.2.conv1.conv.weight",
-                  "params": 589824,
+                  "params": 147456,
                   "shape": [
-                    256,
-                    256,
+                    128,
+                    128,
                     3,
                     3
                   ],
@@ -31815,26 +31194,26 @@
                 },
                 {
                   "name": "encoder.pan_blocks.2.bottlenecks.2.conv1.norm.weight",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.2.bottlenecks.2.conv1.norm.bias",
-                  "params": 256,
+                  "params": 128,
                   "shape": [
-                    256
+                    128
                   ],
                   "trainable": true
                 },
                 {
                   "name": "encoder.pan_blocks.2.bottlenecks.2.conv2.conv.weight",
-                  "params": 65536,
+                  "params": 16384,
                   "shape": [
-                    256,
-                    256,
+                    128,
+                    128,
                     1,
                     1
                   ],
@@ -31842,6 +31221,33 @@
                 },
                 {
                   "name": "encoder.pan_blocks.2.bottlenecks.2.conv2.norm.weight",
+                  "params": 128,
+                  "shape": [
+                    128
+                  ],
+                  "trainable": true
+                },
+                {
+                  "name": "encoder.pan_blocks.2.bottlenecks.2.conv2.norm.bias",
+                  "params": 128,
+                  "shape": [
+                    128
+                  ],
+                  "trainable": true
+                },
+                {
+                  "name": "encoder.pan_blocks.2.conv3.conv.weight",
+                  "params": 32768,
+                  "shape": [
+                    256,
+                    128,
+                    1,
+                    1
+                  ],
+                  "trainable": true
+                },
+                {
+                  "name": "encoder.pan_blocks.2.conv3.norm.weight",
                   "params": 256,
                   "shape": [
                     256
@@ -31849,7 +31255,7 @@
                   "trainable": true
                 },
                 {
-                  "name": "encoder.pan_blocks.2.bottlenecks.2.conv2.norm.bias",
+                  "name": "encoder.pan_blocks.2.conv3.norm.bias",
                   "params": 256,
                   "shape": [
                     256
@@ -31867,12 +31273,12 @@
         },
         "encoder_decoder": {
           "encoder": {
-            "params": 91607808,
+            "params": 34778112,
             "layers": [
               {
                 "name": "encoder",
                 "type": "HybridEncoderSlim",
-                "params": 14391040
+                "params": 6125056
               },
               {
                 "name": "encoder.input_proj",
@@ -32042,440 +31448,485 @@
               {
                 "name": "encoder.fpn_blocks",
                 "type": "ModuleList",
-                "params": 5023744
+                "params": 1480960
               },
               {
                 "name": "encoder.fpn_blocks.0",
                 "type": "CSPRepLayer",
-                "params": 2232320
+                "params": 657920
               },
               {
                 "name": "encoder.fpn_blocks.0.conv1",
                 "type": "ConvNormLayer",
-                "params": 131584
+                "params": 65792
               },
               {
                 "name": "encoder.fpn_blocks.0.conv1.conv",
                 "type": "Conv2d",
-                "params": 131072
+                "params": 65536
               },
               {
                 "name": "encoder.fpn_blocks.0.conv1.norm",
                 "type": "BatchNorm2d",
-                "params": 512
+                "params": 256
               },
               {
                 "name": "encoder.fpn_blocks.0.conv2",
                 "type": "ConvNormLayer",
-                "params": 131584
+                "params": 65792
               },
               {
                 "name": "encoder.fpn_blocks.0.conv2.conv",
                 "type": "Conv2d",
-                "params": 131072
+                "params": 65536
               },
               {
                 "name": "encoder.fpn_blocks.0.conv2.norm",
                 "type": "BatchNorm2d",
-                "params": 512
+                "params": 256
               },
               {
                 "name": "encoder.fpn_blocks.0.bottlenecks",
                 "type": "Sequential",
-                "params": 1969152
+                "params": 493056
               },
               {
                 "name": "encoder.fpn_blocks.0.bottlenecks.0",
                 "type": "RepVggBlock",
-                "params": 656384
+                "params": 164352
               },
               {
                 "name": "encoder.fpn_blocks.0.bottlenecks.0.conv1",
                 "type": "ConvNormLayer",
-                "params": 590336
+                "params": 147712
               },
               {
                 "name": "encoder.fpn_blocks.0.bottlenecks.0.conv1.conv",
                 "type": "Conv2d",
-                "params": 589824
+                "params": 147456
               },
               {
                 "name": "encoder.fpn_blocks.0.bottlenecks.0.conv1.norm",
                 "type": "BatchNorm2d",
-                "params": 512
+                "params": 256
               },
               {
                 "name": "encoder.fpn_blocks.0.bottlenecks.0.conv2",
                 "type": "ConvNormLayer",
-                "params": 66048
+                "params": 16640
               },
               {
                 "name": "encoder.fpn_blocks.0.bottlenecks.0.conv2.conv",
                 "type": "Conv2d",
-                "params": 65536
+                "params": 16384
               },
               {
                 "name": "encoder.fpn_blocks.0.bottlenecks.0.conv2.norm",
                 "type": "BatchNorm2d",
-                "params": 512
+                "params": 256
               },
               {
                 "name": "encoder.fpn_blocks.0.bottlenecks.1",
                 "type": "RepVggBlock",
-                "params": 656384
+                "params": 164352
               },
               {
                 "name": "encoder.fpn_blocks.0.bottlenecks.1.conv1",
                 "type": "ConvNormLayer",
-                "params": 590336
+                "params": 147712
               },
               {
                 "name": "encoder.fpn_blocks.0.bottlenecks.1.conv1.conv",
                 "type": "Conv2d",
-                "params": 589824
+                "params": 147456
               },
               {
                 "name": "encoder.fpn_blocks.0.bottlenecks.1.conv1.norm",
                 "type": "BatchNorm2d",
-                "params": 512
+                "params": 256
               },
               {
                 "name": "encoder.fpn_blocks.0.bottlenecks.1.conv2",
                 "type": "ConvNormLayer",
-                "params": 66048
+                "params": 16640
               },
               {
                 "name": "encoder.fpn_blocks.0.bottlenecks.1.conv2.conv",
                 "type": "Conv2d",
-                "params": 65536
+                "params": 16384
               },
               {
                 "name": "encoder.fpn_blocks.0.bottlenecks.1.conv2.norm",
                 "type": "BatchNorm2d",
-                "params": 512
+                "params": 256
               },
               {
                 "name": "encoder.fpn_blocks.0.bottlenecks.2",
                 "type": "RepVggBlock",
-                "params": 656384
+                "params": 164352
               },
               {
                 "name": "encoder.fpn_blocks.0.bottlenecks.2.conv1",
                 "type": "ConvNormLayer",
-                "params": 590336
+                "params": 147712
               },
               {
                 "name": "encoder.fpn_blocks.0.bottlenecks.2.conv1.conv",
                 "type": "Conv2d",
-                "params": 589824
+                "params": 147456
               },
               {
                 "name": "encoder.fpn_blocks.0.bottlenecks.2.conv1.norm",
                 "type": "BatchNorm2d",
-                "params": 512
+                "params": 256
               },
               {
                 "name": "encoder.fpn_blocks.0.bottlenecks.2.conv2",
                 "type": "ConvNormLayer",
-                "params": 66048
+                "params": 16640
               },
               {
                 "name": "encoder.fpn_blocks.0.bottlenecks.2.conv2.conv",
                 "type": "Conv2d",
-                "params": 65536
+                "params": 16384
               },
               {
                 "name": "encoder.fpn_blocks.0.bottlenecks.2.conv2.norm",
+                "type": "BatchNorm2d",
+                "params": 256
+              },
+              {
+                "name": "encoder.fpn_blocks.0.conv3",
+                "type": "ConvNormLayer",
+                "params": 33280
+              },
+              {
+                "name": "encoder.fpn_blocks.0.conv3.conv",
+                "type": "Conv2d",
+                "params": 32768
+              },
+              {
+                "name": "encoder.fpn_blocks.0.conv3.norm",
                 "type": "BatchNorm2d",
                 "params": 512
               },
               {
                 "name": "encoder.fpn_blocks.1",
                 "type": "CSPRepLayer",
-                "params": 2232320
+                "params": 657920
               },
               {
                 "name": "encoder.fpn_blocks.1.conv1",
                 "type": "ConvNormLayer",
-                "params": 131584
+                "params": 65792
               },
               {
                 "name": "encoder.fpn_blocks.1.conv1.conv",
                 "type": "Conv2d",
-                "params": 131072
+                "params": 65536
               },
               {
                 "name": "encoder.fpn_blocks.1.conv1.norm",
                 "type": "BatchNorm2d",
-                "params": 512
+                "params": 256
               },
               {
                 "name": "encoder.fpn_blocks.1.conv2",
                 "type": "ConvNormLayer",
-                "params": 131584
+                "params": 65792
               },
               {
                 "name": "encoder.fpn_blocks.1.conv2.conv",
                 "type": "Conv2d",
-                "params": 131072
+                "params": 65536
               },
               {
                 "name": "encoder.fpn_blocks.1.conv2.norm",
                 "type": "BatchNorm2d",
-                "params": 512
+                "params": 256
               },
               {
                 "name": "encoder.fpn_blocks.1.bottlenecks",
                 "type": "Sequential",
-                "params": 1969152
+                "params": 493056
               },
               {
                 "name": "encoder.fpn_blocks.1.bottlenecks.0",
                 "type": "RepVggBlock",
-                "params": 656384
+                "params": 164352
               },
               {
                 "name": "encoder.fpn_blocks.1.bottlenecks.0.conv1",
                 "type": "ConvNormLayer",
-                "params": 590336
+                "params": 147712
               },
               {
                 "name": "encoder.fpn_blocks.1.bottlenecks.0.conv1.conv",
                 "type": "Conv2d",
-                "params": 589824
+                "params": 147456
               },
               {
                 "name": "encoder.fpn_blocks.1.bottlenecks.0.conv1.norm",
                 "type": "BatchNorm2d",
-                "params": 512
+                "params": 256
               },
               {
                 "name": "encoder.fpn_blocks.1.bottlenecks.0.conv2",
                 "type": "ConvNormLayer",
-                "params": 66048
+                "params": 16640
               },
               {
                 "name": "encoder.fpn_blocks.1.bottlenecks.0.conv2.conv",
                 "type": "Conv2d",
-                "params": 65536
+                "params": 16384
               },
               {
                 "name": "encoder.fpn_blocks.1.bottlenecks.0.conv2.norm",
                 "type": "BatchNorm2d",
-                "params": 512
+                "params": 256
               },
               {
                 "name": "encoder.fpn_blocks.1.bottlenecks.1",
                 "type": "RepVggBlock",
-                "params": 656384
+                "params": 164352
               },
               {
                 "name": "encoder.fpn_blocks.1.bottlenecks.1.conv1",
                 "type": "ConvNormLayer",
-                "params": 590336
+                "params": 147712
               },
               {
                 "name": "encoder.fpn_blocks.1.bottlenecks.1.conv1.conv",
                 "type": "Conv2d",
-                "params": 589824
+                "params": 147456
               },
               {
                 "name": "encoder.fpn_blocks.1.bottlenecks.1.conv1.norm",
                 "type": "BatchNorm2d",
-                "params": 512
+                "params": 256
               },
               {
                 "name": "encoder.fpn_blocks.1.bottlenecks.1.conv2",
                 "type": "ConvNormLayer",
-                "params": 66048
+                "params": 16640
               },
               {
                 "name": "encoder.fpn_blocks.1.bottlenecks.1.conv2.conv",
                 "type": "Conv2d",
-                "params": 65536
+                "params": 16384
               },
               {
                 "name": "encoder.fpn_blocks.1.bottlenecks.1.conv2.norm",
                 "type": "BatchNorm2d",
-                "params": 512
+                "params": 256
               },
               {
                 "name": "encoder.fpn_blocks.1.bottlenecks.2",
                 "type": "RepVggBlock",
-                "params": 656384
+                "params": 164352
               },
               {
                 "name": "encoder.fpn_blocks.1.bottlenecks.2.conv1",
                 "type": "ConvNormLayer",
-                "params": 590336
+                "params": 147712
               },
               {
                 "name": "encoder.fpn_blocks.1.bottlenecks.2.conv1.conv",
                 "type": "Conv2d",
-                "params": 589824
+                "params": 147456
               },
               {
                 "name": "encoder.fpn_blocks.1.bottlenecks.2.conv1.norm",
                 "type": "BatchNorm2d",
-                "params": 512
+                "params": 256
               },
               {
                 "name": "encoder.fpn_blocks.1.bottlenecks.2.conv2",
                 "type": "ConvNormLayer",
-                "params": 66048
+                "params": 16640
               },
               {
                 "name": "encoder.fpn_blocks.1.bottlenecks.2.conv2.conv",
                 "type": "Conv2d",
-                "params": 65536
+                "params": 16384
               },
               {
                 "name": "encoder.fpn_blocks.1.bottlenecks.2.conv2.norm",
+                "type": "BatchNorm2d",
+                "params": 256
+              },
+              {
+                "name": "encoder.fpn_blocks.1.conv3",
+                "type": "ConvNormLayer",
+                "params": 33280
+              },
+              {
+                "name": "encoder.fpn_blocks.1.conv3.conv",
+                "type": "Conv2d",
+                "params": 32768
+              },
+              {
+                "name": "encoder.fpn_blocks.1.conv3.norm",
                 "type": "BatchNorm2d",
                 "params": 512
               },
               {
                 "name": "encoder.fpn_blocks.2",
                 "type": "CSPRepLayer",
-                "params": 559104
+                "params": 165120
               },
               {
                 "name": "encoder.fpn_blocks.2.conv1",
                 "type": "ConvNormLayer",
-                "params": 33024
+                "params": 16512
               },
               {
                 "name": "encoder.fpn_blocks.2.conv1.conv",
                 "type": "Conv2d",
-                "params": 32768
+                "params": 16384
               },
               {
                 "name": "encoder.fpn_blocks.2.conv1.norm",
                 "type": "BatchNorm2d",
-                "params": 256
+                "params": 128
               },
               {
                 "name": "encoder.fpn_blocks.2.conv2",
                 "type": "ConvNormLayer",
-                "params": 33024
+                "params": 16512
               },
               {
                 "name": "encoder.fpn_blocks.2.conv2.conv",
                 "type": "Conv2d",
-                "params": 32768
+                "params": 16384
               },
               {
                 "name": "encoder.fpn_blocks.2.conv2.norm",
                 "type": "BatchNorm2d",
-                "params": 256
+                "params": 128
               },
               {
                 "name": "encoder.fpn_blocks.2.bottlenecks",
                 "type": "Sequential",
-                "params": 493056
+                "params": 123648
               },
               {
                 "name": "encoder.fpn_blocks.2.bottlenecks.0",
                 "type": "RepVggBlock",
-                "params": 164352
+                "params": 41216
               },
               {
                 "name": "encoder.fpn_blocks.2.bottlenecks.0.conv1",
                 "type": "ConvNormLayer",
-                "params": 147712
+                "params": 36992
               },
               {
                 "name": "encoder.fpn_blocks.2.bottlenecks.0.conv1.conv",
                 "type": "Conv2d",
-                "params": 147456
+                "params": 36864
               },
               {
                 "name": "encoder.fpn_blocks.2.bottlenecks.0.conv1.norm",
                 "type": "BatchNorm2d",
-                "params": 256
+                "params": 128
               },
               {
                 "name": "encoder.fpn_blocks.2.bottlenecks.0.conv2",
                 "type": "ConvNormLayer",
-                "params": 16640
+                "params": 4224
               },
               {
                 "name": "encoder.fpn_blocks.2.bottlenecks.0.conv2.conv",
                 "type": "Conv2d",
-                "params": 16384
+                "params": 4096
               },
               {
                 "name": "encoder.fpn_blocks.2.bottlenecks.0.conv2.norm",
                 "type": "BatchNorm2d",
-                "params": 256
+                "params": 128
               },
               {
                 "name": "encoder.fpn_blocks.2.bottlenecks.1",
                 "type": "RepVggBlock",
-                "params": 164352
+                "params": 41216
               },
               {
                 "name": "encoder.fpn_blocks.2.bottlenecks.1.conv1",
                 "type": "ConvNormLayer",
-                "params": 147712
+                "params": 36992
               },
               {
                 "name": "encoder.fpn_blocks.2.bottlenecks.1.conv1.conv",
                 "type": "Conv2d",
-                "params": 147456
+                "params": 36864
               },
               {
                 "name": "encoder.fpn_blocks.2.bottlenecks.1.conv1.norm",
                 "type": "BatchNorm2d",
-                "params": 256
+                "params": 128
               },
               {
                 "name": "encoder.fpn_blocks.2.bottlenecks.1.conv2",
                 "type": "ConvNormLayer",
-                "params": 16640
+                "params": 4224
               },
               {
                 "name": "encoder.fpn_blocks.2.bottlenecks.1.conv2.conv",
                 "type": "Conv2d",
-                "params": 16384
+                "params": 4096
               },
               {
                 "name": "encoder.fpn_blocks.2.bottlenecks.1.conv2.norm",
                 "type": "BatchNorm2d",
-                "params": 256
+                "params": 128
               },
               {
                 "name": "encoder.fpn_blocks.2.bottlenecks.2",
                 "type": "RepVggBlock",
-                "params": 164352
+                "params": 41216
               },
               {
                 "name": "encoder.fpn_blocks.2.bottlenecks.2.conv1",
                 "type": "ConvNormLayer",
-                "params": 147712
+                "params": 36992
               },
               {
                 "name": "encoder.fpn_blocks.2.bottlenecks.2.conv1.conv",
                 "type": "Conv2d",
-                "params": 147456
+                "params": 36864
               },
               {
                 "name": "encoder.fpn_blocks.2.bottlenecks.2.conv1.norm",
                 "type": "BatchNorm2d",
-                "params": 256
+                "params": 128
               },
               {
                 "name": "encoder.fpn_blocks.2.bottlenecks.2.conv2",
                 "type": "ConvNormLayer",
-                "params": 16640
+                "params": 4224
               },
               {
                 "name": "encoder.fpn_blocks.2.bottlenecks.2.conv2.conv",
                 "type": "Conv2d",
-                "params": 16384
+                "params": 4096
               },
               {
                 "name": "encoder.fpn_blocks.2.bottlenecks.2.conv2.norm",
+                "type": "BatchNorm2d",
+                "params": 128
+              },
+              {
+                "name": "encoder.fpn_blocks.2.conv3",
+                "type": "ConvNormLayer",
+                "params": 8448
+              },
+              {
+                "name": "encoder.fpn_blocks.2.conv3.conv",
+                "type": "Conv2d",
+                "params": 8192
+              },
+              {
+                "name": "encoder.fpn_blocks.2.conv3.norm",
                 "type": "BatchNorm2d",
                 "params": 256
               },
@@ -32532,452 +31983,497 @@
               {
                 "name": "encoder.pan_blocks",
                 "type": "ModuleList",
-                "params": 6696960
+                "params": 1973760
               },
               {
                 "name": "encoder.pan_blocks.0",
                 "type": "CSPRepLayer",
-                "params": 2232320
+                "params": 657920
               },
               {
                 "name": "encoder.pan_blocks.0.conv1",
                 "type": "ConvNormLayer",
-                "params": 131584
+                "params": 65792
               },
               {
                 "name": "encoder.pan_blocks.0.conv1.conv",
                 "type": "Conv2d",
-                "params": 131072
+                "params": 65536
               },
               {
                 "name": "encoder.pan_blocks.0.conv1.norm",
                 "type": "BatchNorm2d",
-                "params": 512
+                "params": 256
               },
               {
                 "name": "encoder.pan_blocks.0.conv2",
                 "type": "ConvNormLayer",
-                "params": 131584
+                "params": 65792
               },
               {
                 "name": "encoder.pan_blocks.0.conv2.conv",
                 "type": "Conv2d",
-                "params": 131072
+                "params": 65536
               },
               {
                 "name": "encoder.pan_blocks.0.conv2.norm",
                 "type": "BatchNorm2d",
-                "params": 512
+                "params": 256
               },
               {
                 "name": "encoder.pan_blocks.0.bottlenecks",
                 "type": "Sequential",
-                "params": 1969152
+                "params": 493056
               },
               {
                 "name": "encoder.pan_blocks.0.bottlenecks.0",
                 "type": "RepVggBlock",
-                "params": 656384
+                "params": 164352
               },
               {
                 "name": "encoder.pan_blocks.0.bottlenecks.0.conv1",
                 "type": "ConvNormLayer",
-                "params": 590336
+                "params": 147712
               },
               {
                 "name": "encoder.pan_blocks.0.bottlenecks.0.conv1.conv",
                 "type": "Conv2d",
-                "params": 589824
+                "params": 147456
               },
               {
                 "name": "encoder.pan_blocks.0.bottlenecks.0.conv1.norm",
                 "type": "BatchNorm2d",
-                "params": 512
+                "params": 256
               },
               {
                 "name": "encoder.pan_blocks.0.bottlenecks.0.conv2",
                 "type": "ConvNormLayer",
-                "params": 66048
+                "params": 16640
               },
               {
                 "name": "encoder.pan_blocks.0.bottlenecks.0.conv2.conv",
                 "type": "Conv2d",
-                "params": 65536
+                "params": 16384
               },
               {
                 "name": "encoder.pan_blocks.0.bottlenecks.0.conv2.norm",
                 "type": "BatchNorm2d",
-                "params": 512
+                "params": 256
               },
               {
                 "name": "encoder.pan_blocks.0.bottlenecks.1",
                 "type": "RepVggBlock",
-                "params": 656384
+                "params": 164352
               },
               {
                 "name": "encoder.pan_blocks.0.bottlenecks.1.conv1",
                 "type": "ConvNormLayer",
-                "params": 590336
+                "params": 147712
               },
               {
                 "name": "encoder.pan_blocks.0.bottlenecks.1.conv1.conv",
                 "type": "Conv2d",
-                "params": 589824
+                "params": 147456
               },
               {
                 "name": "encoder.pan_blocks.0.bottlenecks.1.conv1.norm",
                 "type": "BatchNorm2d",
-                "params": 512
+                "params": 256
               },
               {
                 "name": "encoder.pan_blocks.0.bottlenecks.1.conv2",
                 "type": "ConvNormLayer",
-                "params": 66048
+                "params": 16640
               },
               {
                 "name": "encoder.pan_blocks.0.bottlenecks.1.conv2.conv",
                 "type": "Conv2d",
-                "params": 65536
+                "params": 16384
               },
               {
                 "name": "encoder.pan_blocks.0.bottlenecks.1.conv2.norm",
                 "type": "BatchNorm2d",
-                "params": 512
+                "params": 256
               },
               {
                 "name": "encoder.pan_blocks.0.bottlenecks.2",
                 "type": "RepVggBlock",
-                "params": 656384
+                "params": 164352
               },
               {
                 "name": "encoder.pan_blocks.0.bottlenecks.2.conv1",
                 "type": "ConvNormLayer",
-                "params": 590336
+                "params": 147712
               },
               {
                 "name": "encoder.pan_blocks.0.bottlenecks.2.conv1.conv",
                 "type": "Conv2d",
-                "params": 589824
+                "params": 147456
               },
               {
                 "name": "encoder.pan_blocks.0.bottlenecks.2.conv1.norm",
                 "type": "BatchNorm2d",
-                "params": 512
+                "params": 256
               },
               {
                 "name": "encoder.pan_blocks.0.bottlenecks.2.conv2",
                 "type": "ConvNormLayer",
-                "params": 66048
+                "params": 16640
               },
               {
                 "name": "encoder.pan_blocks.0.bottlenecks.2.conv2.conv",
                 "type": "Conv2d",
-                "params": 65536
+                "params": 16384
               },
               {
                 "name": "encoder.pan_blocks.0.bottlenecks.2.conv2.norm",
+                "type": "BatchNorm2d",
+                "params": 256
+              },
+              {
+                "name": "encoder.pan_blocks.0.conv3",
+                "type": "ConvNormLayer",
+                "params": 33280
+              },
+              {
+                "name": "encoder.pan_blocks.0.conv3.conv",
+                "type": "Conv2d",
+                "params": 32768
+              },
+              {
+                "name": "encoder.pan_blocks.0.conv3.norm",
                 "type": "BatchNorm2d",
                 "params": 512
               },
               {
                 "name": "encoder.pan_blocks.1",
                 "type": "CSPRepLayer",
-                "params": 2232320
+                "params": 657920
               },
               {
                 "name": "encoder.pan_blocks.1.conv1",
                 "type": "ConvNormLayer",
-                "params": 131584
+                "params": 65792
               },
               {
                 "name": "encoder.pan_blocks.1.conv1.conv",
                 "type": "Conv2d",
-                "params": 131072
+                "params": 65536
               },
               {
                 "name": "encoder.pan_blocks.1.conv1.norm",
                 "type": "BatchNorm2d",
-                "params": 512
+                "params": 256
               },
               {
                 "name": "encoder.pan_blocks.1.conv2",
                 "type": "ConvNormLayer",
-                "params": 131584
+                "params": 65792
               },
               {
                 "name": "encoder.pan_blocks.1.conv2.conv",
                 "type": "Conv2d",
-                "params": 131072
+                "params": 65536
               },
               {
                 "name": "encoder.pan_blocks.1.conv2.norm",
                 "type": "BatchNorm2d",
-                "params": 512
+                "params": 256
               },
               {
                 "name": "encoder.pan_blocks.1.bottlenecks",
                 "type": "Sequential",
-                "params": 1969152
+                "params": 493056
               },
               {
                 "name": "encoder.pan_blocks.1.bottlenecks.0",
                 "type": "RepVggBlock",
-                "params": 656384
+                "params": 164352
               },
               {
                 "name": "encoder.pan_blocks.1.bottlenecks.0.conv1",
                 "type": "ConvNormLayer",
-                "params": 590336
+                "params": 147712
               },
               {
                 "name": "encoder.pan_blocks.1.bottlenecks.0.conv1.conv",
                 "type": "Conv2d",
-                "params": 589824
+                "params": 147456
               },
               {
                 "name": "encoder.pan_blocks.1.bottlenecks.0.conv1.norm",
                 "type": "BatchNorm2d",
-                "params": 512
+                "params": 256
               },
               {
                 "name": "encoder.pan_blocks.1.bottlenecks.0.conv2",
                 "type": "ConvNormLayer",
-                "params": 66048
+                "params": 16640
               },
               {
                 "name": "encoder.pan_blocks.1.bottlenecks.0.conv2.conv",
                 "type": "Conv2d",
-                "params": 65536
+                "params": 16384
               },
               {
                 "name": "encoder.pan_blocks.1.bottlenecks.0.conv2.norm",
                 "type": "BatchNorm2d",
-                "params": 512
+                "params": 256
               },
               {
                 "name": "encoder.pan_blocks.1.bottlenecks.1",
                 "type": "RepVggBlock",
-                "params": 656384
+                "params": 164352
               },
               {
                 "name": "encoder.pan_blocks.1.bottlenecks.1.conv1",
                 "type": "ConvNormLayer",
-                "params": 590336
+                "params": 147712
               },
               {
                 "name": "encoder.pan_blocks.1.bottlenecks.1.conv1.conv",
                 "type": "Conv2d",
-                "params": 589824
+                "params": 147456
               },
               {
                 "name": "encoder.pan_blocks.1.bottlenecks.1.conv1.norm",
                 "type": "BatchNorm2d",
-                "params": 512
+                "params": 256
               },
               {
                 "name": "encoder.pan_blocks.1.bottlenecks.1.conv2",
                 "type": "ConvNormLayer",
-                "params": 66048
+                "params": 16640
               },
               {
                 "name": "encoder.pan_blocks.1.bottlenecks.1.conv2.conv",
                 "type": "Conv2d",
-                "params": 65536
+                "params": 16384
               },
               {
                 "name": "encoder.pan_blocks.1.bottlenecks.1.conv2.norm",
                 "type": "BatchNorm2d",
-                "params": 512
+                "params": 256
               },
               {
                 "name": "encoder.pan_blocks.1.bottlenecks.2",
                 "type": "RepVggBlock",
-                "params": 656384
+                "params": 164352
               },
               {
                 "name": "encoder.pan_blocks.1.bottlenecks.2.conv1",
                 "type": "ConvNormLayer",
-                "params": 590336
+                "params": 147712
               },
               {
                 "name": "encoder.pan_blocks.1.bottlenecks.2.conv1.conv",
                 "type": "Conv2d",
-                "params": 589824
+                "params": 147456
               },
               {
                 "name": "encoder.pan_blocks.1.bottlenecks.2.conv1.norm",
                 "type": "BatchNorm2d",
-                "params": 512
+                "params": 256
               },
               {
                 "name": "encoder.pan_blocks.1.bottlenecks.2.conv2",
                 "type": "ConvNormLayer",
-                "params": 66048
+                "params": 16640
               },
               {
                 "name": "encoder.pan_blocks.1.bottlenecks.2.conv2.conv",
                 "type": "Conv2d",
-                "params": 65536
+                "params": 16384
               },
               {
                 "name": "encoder.pan_blocks.1.bottlenecks.2.conv2.norm",
+                "type": "BatchNorm2d",
+                "params": 256
+              },
+              {
+                "name": "encoder.pan_blocks.1.conv3",
+                "type": "ConvNormLayer",
+                "params": 33280
+              },
+              {
+                "name": "encoder.pan_blocks.1.conv3.conv",
+                "type": "Conv2d",
+                "params": 32768
+              },
+              {
+                "name": "encoder.pan_blocks.1.conv3.norm",
                 "type": "BatchNorm2d",
                 "params": 512
               },
               {
                 "name": "encoder.pan_blocks.2",
                 "type": "CSPRepLayer",
-                "params": 2232320
+                "params": 657920
               },
               {
                 "name": "encoder.pan_blocks.2.conv1",
                 "type": "ConvNormLayer",
-                "params": 131584
+                "params": 65792
               },
               {
                 "name": "encoder.pan_blocks.2.conv1.conv",
                 "type": "Conv2d",
-                "params": 131072
+                "params": 65536
               },
               {
                 "name": "encoder.pan_blocks.2.conv1.norm",
                 "type": "BatchNorm2d",
-                "params": 512
+                "params": 256
               },
               {
                 "name": "encoder.pan_blocks.2.conv2",
                 "type": "ConvNormLayer",
-                "params": 131584
+                "params": 65792
               },
               {
                 "name": "encoder.pan_blocks.2.conv2.conv",
                 "type": "Conv2d",
-                "params": 131072
+                "params": 65536
               },
               {
                 "name": "encoder.pan_blocks.2.conv2.norm",
                 "type": "BatchNorm2d",
-                "params": 512
+                "params": 256
               },
               {
                 "name": "encoder.pan_blocks.2.bottlenecks",
                 "type": "Sequential",
-                "params": 1969152
+                "params": 493056
               },
               {
                 "name": "encoder.pan_blocks.2.bottlenecks.0",
                 "type": "RepVggBlock",
-                "params": 656384
+                "params": 164352
               },
               {
                 "name": "encoder.pan_blocks.2.bottlenecks.0.conv1",
                 "type": "ConvNormLayer",
-                "params": 590336
+                "params": 147712
               },
               {
                 "name": "encoder.pan_blocks.2.bottlenecks.0.conv1.conv",
                 "type": "Conv2d",
-                "params": 589824
+                "params": 147456
               },
               {
                 "name": "encoder.pan_blocks.2.bottlenecks.0.conv1.norm",
                 "type": "BatchNorm2d",
-                "params": 512
+                "params": 256
               },
               {
                 "name": "encoder.pan_blocks.2.bottlenecks.0.conv2",
                 "type": "ConvNormLayer",
-                "params": 66048
+                "params": 16640
               },
               {
                 "name": "encoder.pan_blocks.2.bottlenecks.0.conv2.conv",
                 "type": "Conv2d",
-                "params": 65536
+                "params": 16384
               },
               {
                 "name": "encoder.pan_blocks.2.bottlenecks.0.conv2.norm",
                 "type": "BatchNorm2d",
-                "params": 512
+                "params": 256
               },
               {
                 "name": "encoder.pan_blocks.2.bottlenecks.1",
                 "type": "RepVggBlock",
-                "params": 656384
+                "params": 164352
               },
               {
                 "name": "encoder.pan_blocks.2.bottlenecks.1.conv1",
                 "type": "ConvNormLayer",
-                "params": 590336
+                "params": 147712
               },
               {
                 "name": "encoder.pan_blocks.2.bottlenecks.1.conv1.conv",
                 "type": "Conv2d",
-                "params": 589824
+                "params": 147456
               },
               {
                 "name": "encoder.pan_blocks.2.bottlenecks.1.conv1.norm",
                 "type": "BatchNorm2d",
-                "params": 512
+                "params": 256
               },
               {
                 "name": "encoder.pan_blocks.2.bottlenecks.1.conv2",
                 "type": "ConvNormLayer",
-                "params": 66048
+                "params": 16640
               },
               {
                 "name": "encoder.pan_blocks.2.bottlenecks.1.conv2.conv",
                 "type": "Conv2d",
-                "params": 65536
+                "params": 16384
               },
               {
                 "name": "encoder.pan_blocks.2.bottlenecks.1.conv2.norm",
                 "type": "BatchNorm2d",
-                "params": 512
+                "params": 256
               },
               {
                 "name": "encoder.pan_blocks.2.bottlenecks.2",
                 "type": "RepVggBlock",
-                "params": 656384
+                "params": 164352
               },
               {
                 "name": "encoder.pan_blocks.2.bottlenecks.2.conv1",
                 "type": "ConvNormLayer",
-                "params": 590336
+                "params": 147712
               },
               {
                 "name": "encoder.pan_blocks.2.bottlenecks.2.conv1.conv",
                 "type": "Conv2d",
-                "params": 589824
+                "params": 147456
               },
               {
                 "name": "encoder.pan_blocks.2.bottlenecks.2.conv1.norm",
                 "type": "BatchNorm2d",
-                "params": 512
+                "params": 256
               },
               {
                 "name": "encoder.pan_blocks.2.bottlenecks.2.conv2",
                 "type": "ConvNormLayer",
-                "params": 66048
+                "params": 16640
               },
               {
                 "name": "encoder.pan_blocks.2.bottlenecks.2.conv2.conv",
                 "type": "Conv2d",
-                "params": 65536
+                "params": 16384
               },
               {
                 "name": "encoder.pan_blocks.2.bottlenecks.2.conv2.norm",
+                "type": "BatchNorm2d",
+                "params": 256
+              },
+              {
+                "name": "encoder.pan_blocks.2.conv3",
+                "type": "ConvNormLayer",
+                "params": 33280
+              },
+              {
+                "name": "encoder.pan_blocks.2.conv3.conv",
+                "type": "Conv2d",
+                "params": 32768
+              },
+              {
+                "name": "encoder.pan_blocks.2.conv3.norm",
                 "type": "BatchNorm2d",
                 "params": 512
               }
             ]
           },
           "decoder": {
-            "params": 38618704,
+            "params": 20410042,
             "layers": [
               {
                 "name": "decoder",
                 "type": "RTDETRTransformer",
-                "params": 7503970
+                "params": 4036792
               },
               {
                 "name": "decoder.input_proj",
@@ -33047,12 +32543,12 @@
               {
                 "name": "decoder.decoder",
                 "type": "TransformerDecoder",
-                "params": 6123264
+                "params": 3061632
               },
               {
                 "name": "decoder.decoder.layers",
                 "type": "ModuleList",
-                "params": 6123264
+                "params": 3061632
               },
               {
                 "name": "decoder.decoder.layers.0",
@@ -33250,201 +32746,6 @@
                 "params": 512
               },
               {
-                "name": "decoder.decoder.layers.3",
-                "type": "TransformerDecoderLayer",
-                "params": 1020544
-              },
-              {
-                "name": "decoder.decoder.layers.3.self_attn",
-                "type": "MultiheadAttention",
-                "params": 263168
-              },
-              {
-                "name": "decoder.decoder.layers.3.self_attn.out_proj",
-                "type": "NonDynamicallyQuantizableLinear",
-                "params": 65792
-              },
-              {
-                "name": "decoder.decoder.layers.3.norm1",
-                "type": "LayerNorm",
-                "params": 512
-              },
-              {
-                "name": "decoder.decoder.layers.3.cross_attn",
-                "type": "MSDeformableAttention",
-                "params": 230272
-              },
-              {
-                "name": "decoder.decoder.layers.3.cross_attn.sampling_offsets",
-                "type": "Linear",
-                "params": 65792
-              },
-              {
-                "name": "decoder.decoder.layers.3.cross_attn.attention_weights",
-                "type": "Linear",
-                "params": 32896
-              },
-              {
-                "name": "decoder.decoder.layers.3.cross_attn.value_proj",
-                "type": "Linear",
-                "params": 65792
-              },
-              {
-                "name": "decoder.decoder.layers.3.cross_attn.output_proj",
-                "type": "Linear",
-                "params": 65792
-              },
-              {
-                "name": "decoder.decoder.layers.3.norm2",
-                "type": "LayerNorm",
-                "params": 512
-              },
-              {
-                "name": "decoder.decoder.layers.3.linear1",
-                "type": "Linear",
-                "params": 263168
-              },
-              {
-                "name": "decoder.decoder.layers.3.linear2",
-                "type": "Linear",
-                "params": 262400
-              },
-              {
-                "name": "decoder.decoder.layers.3.norm3",
-                "type": "LayerNorm",
-                "params": 512
-              },
-              {
-                "name": "decoder.decoder.layers.4",
-                "type": "TransformerDecoderLayer",
-                "params": 1020544
-              },
-              {
-                "name": "decoder.decoder.layers.4.self_attn",
-                "type": "MultiheadAttention",
-                "params": 263168
-              },
-              {
-                "name": "decoder.decoder.layers.4.self_attn.out_proj",
-                "type": "NonDynamicallyQuantizableLinear",
-                "params": 65792
-              },
-              {
-                "name": "decoder.decoder.layers.4.norm1",
-                "type": "LayerNorm",
-                "params": 512
-              },
-              {
-                "name": "decoder.decoder.layers.4.cross_attn",
-                "type": "MSDeformableAttention",
-                "params": 230272
-              },
-              {
-                "name": "decoder.decoder.layers.4.cross_attn.sampling_offsets",
-                "type": "Linear",
-                "params": 65792
-              },
-              {
-                "name": "decoder.decoder.layers.4.cross_attn.attention_weights",
-                "type": "Linear",
-                "params": 32896
-              },
-              {
-                "name": "decoder.decoder.layers.4.cross_attn.value_proj",
-                "type": "Linear",
-                "params": 65792
-              },
-              {
-                "name": "decoder.decoder.layers.4.cross_attn.output_proj",
-                "type": "Linear",
-                "params": 65792
-              },
-              {
-                "name": "decoder.decoder.layers.4.norm2",
-                "type": "LayerNorm",
-                "params": 512
-              },
-              {
-                "name": "decoder.decoder.layers.4.linear1",
-                "type": "Linear",
-                "params": 263168
-              },
-              {
-                "name": "decoder.decoder.layers.4.linear2",
-                "type": "Linear",
-                "params": 262400
-              },
-              {
-                "name": "decoder.decoder.layers.4.norm3",
-                "type": "LayerNorm",
-                "params": 512
-              },
-              {
-                "name": "decoder.decoder.layers.5",
-                "type": "TransformerDecoderLayer",
-                "params": 1020544
-              },
-              {
-                "name": "decoder.decoder.layers.5.self_attn",
-                "type": "MultiheadAttention",
-                "params": 263168
-              },
-              {
-                "name": "decoder.decoder.layers.5.self_attn.out_proj",
-                "type": "NonDynamicallyQuantizableLinear",
-                "params": 65792
-              },
-              {
-                "name": "decoder.decoder.layers.5.norm1",
-                "type": "LayerNorm",
-                "params": 512
-              },
-              {
-                "name": "decoder.decoder.layers.5.cross_attn",
-                "type": "MSDeformableAttention",
-                "params": 230272
-              },
-              {
-                "name": "decoder.decoder.layers.5.cross_attn.sampling_offsets",
-                "type": "Linear",
-                "params": 65792
-              },
-              {
-                "name": "decoder.decoder.layers.5.cross_attn.attention_weights",
-                "type": "Linear",
-                "params": 32896
-              },
-              {
-                "name": "decoder.decoder.layers.5.cross_attn.value_proj",
-                "type": "Linear",
-                "params": 65792
-              },
-              {
-                "name": "decoder.decoder.layers.5.cross_attn.output_proj",
-                "type": "Linear",
-                "params": 65792
-              },
-              {
-                "name": "decoder.decoder.layers.5.norm2",
-                "type": "LayerNorm",
-                "params": 512
-              },
-              {
-                "name": "decoder.decoder.layers.5.linear1",
-                "type": "Linear",
-                "params": 263168
-              },
-              {
-                "name": "decoder.decoder.layers.5.linear2",
-                "type": "Linear",
-                "params": 262400
-              },
-              {
-                "name": "decoder.decoder.layers.5.norm3",
-                "type": "LayerNorm",
-                "params": 512
-              },
-              {
                 "name": "decoder.denoising_class_embed",
                 "type": "Embedding",
                 "params": 2816
@@ -33517,7 +32818,7 @@
               {
                 "name": "decoder.dec_score_head",
                 "type": "ModuleList",
-                "params": 15420
+                "params": 7710
               },
               {
                 "name": "decoder.dec_score_head.0",
@@ -33535,24 +32836,9 @@
                 "params": 2570
               },
               {
-                "name": "decoder.dec_score_head.3",
-                "type": "Linear",
-                "params": 2570
-              },
-              {
-                "name": "decoder.dec_score_head.4",
-                "type": "Linear",
-                "params": 2570
-              },
-              {
-                "name": "decoder.dec_score_head.5",
-                "type": "Linear",
-                "params": 2570
-              },
-              {
                 "name": "decoder.dec_bbox_head",
                 "type": "ModuleList",
-                "params": 795672
+                "params": 397836
               },
               {
                 "name": "decoder.dec_bbox_head.0",
@@ -33628,181 +32914,105 @@
                 "name": "decoder.dec_bbox_head.2.layers.2",
                 "type": "Linear",
                 "params": 1028
-              },
-              {
-                "name": "decoder.dec_bbox_head.3",
-                "type": "MLP",
-                "params": 132612
-              },
-              {
-                "name": "decoder.dec_bbox_head.3.layers",
-                "type": "ModuleList",
-                "params": 132612
-              },
-              {
-                "name": "decoder.dec_bbox_head.3.layers.0",
-                "type": "Linear",
-                "params": 65792
-              },
-              {
-                "name": "decoder.dec_bbox_head.3.layers.1",
-                "type": "Linear",
-                "params": 65792
-              },
-              {
-                "name": "decoder.dec_bbox_head.3.layers.2",
-                "type": "Linear",
-                "params": 1028
-              },
-              {
-                "name": "decoder.dec_bbox_head.4",
-                "type": "MLP",
-                "params": 132612
-              },
-              {
-                "name": "decoder.dec_bbox_head.4.layers",
-                "type": "ModuleList",
-                "params": 132612
-              },
-              {
-                "name": "decoder.dec_bbox_head.4.layers.0",
-                "type": "Linear",
-                "params": 65792
-              },
-              {
-                "name": "decoder.dec_bbox_head.4.layers.1",
-                "type": "Linear",
-                "params": 65792
-              },
-              {
-                "name": "decoder.dec_bbox_head.4.layers.2",
-                "type": "Linear",
-                "params": 1028
-              },
-              {
-                "name": "decoder.dec_bbox_head.5",
-                "type": "MLP",
-                "params": 132612
-              },
-              {
-                "name": "decoder.dec_bbox_head.5.layers",
-                "type": "ModuleList",
-                "params": 132612
-              },
-              {
-                "name": "decoder.dec_bbox_head.5.layers.0",
-                "type": "Linear",
-                "params": 65792
-              },
-              {
-                "name": "decoder.dec_bbox_head.5.layers.1",
-                "type": "Linear",
-                "params": 65792
-              },
-              {
-                "name": "decoder.dec_bbox_head.5.layers.2",
-                "type": "Linear",
-                "params": 1028
               }
             ],
             "num_queries": 300,
-            "num_decoder_layers": 6
+            "num_decoder_layers": 3
           }
         },
         "memory": {
-          "param_memory_mb": 126.20972442626953,
-          "buffer_memory_mb": 0.1869964599609375,
-          "total_memory_mb": 126.39672088623047
+          "param_memory_mb": 81.45126342773438,
+          "buffer_memory_mb": 0.154815673828125,
+          "total_memory_mb": 81.6060791015625
         }
       },
       "model_evaluation": {
         "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_slim.yml",
         "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim/checkpoint0089.pth",
         "device": "cuda",
-        "total_params": 42379074,
-        "trainable_params": 42350562,
+        "total_params": 23676504,
+        "trainable_params": 23647992,
         "layer_stats": {
           "backbone": {
             "total_params": 11190112,
             "num_layers": 23
           },
           "encoder": {
-            "total_params": 23684992,
-            "num_layers": 222
+            "total_params": 8449600,
+            "num_layers": 240
           },
           "decoder": {
-            "total_params": 7503970,
-            "num_layers": 209
+            "total_params": 4036792,
+            "num_layers": 119
           }
         },
         "flops": {
-          "torchinfo_params": 48499522,
-          "torchinfo_mult_adds": 68589798192,
-          "torchinfo_gflops": 68.589798192
+          "torchinfo_params": 26735320,
+          "torchinfo_mult_adds": 36076211364,
+          "torchinfo_gflops": 36.076211364
         },
         "memory": {
-          "allocated_mb": 176.474609375,
-          "reserved_mb": 526.0,
-          "max_allocated_mb": 370.712890625
+          "allocated_mb": 104.2314453125,
+          "reserved_mb": 432.0,
+          "max_allocated_mb": 299.0322265625
         }
       },
       "fps": {
         "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_slim.yml",
         "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim/checkpoint0089.pth",
         "device": "cuda",
-        "total_params": 42379074,
-        "trainable_params": 42350562,
+        "total_params": 23676504,
+        "trainable_params": 23647992,
         "layer_stats": {
           "backbone": {
             "total_params": 11190112,
             "num_layers": 23
           },
           "encoder": {
-            "total_params": 23684992,
-            "num_layers": 222
+            "total_params": 8449600,
+            "num_layers": 240
           },
           "decoder": {
-            "total_params": 7503970,
-            "num_layers": 209
+            "total_params": 4036792,
+            "num_layers": 119
           }
         },
         "flops": {
-          "torchinfo_params": 48499522,
-          "torchinfo_mult_adds": 68589798192,
-          "torchinfo_gflops": 68.589798192
+          "torchinfo_params": 26735320,
+          "torchinfo_mult_adds": 36076211364,
+          "torchinfo_gflops": 36.076211364
         },
         "memory": {
-          "allocated_mb": 176.474609375,
-          "reserved_mb": 526.0,
-          "max_allocated_mb": 370.712890625
+          "allocated_mb": 104.2314453125,
+          "reserved_mb": 432.0,
+          "max_allocated_mb": 299.0322265625
         },
         "fps_benchmark": {
           "640x640": {
-            "latency_mean_ms": 49.14234559520992,
-            "latency_std_ms": 5.394755958260875,
-            "latency_min_ms": 40.227141995273996,
-            "latency_max_ms": 68.46154799859505,
-            "fps_mean": 20.349049030689198,
-            "fps_std": 185.36519682020486
+            "latency_mean_ms": 25.660441579893813,
+            "latency_std_ms": 0.7540634506566026,
+            "latency_min_ms": 24.589647000539117,
+            "latency_max_ms": 30.527834001986776,
+            "fps_mean": 38.97049070205978,
+            "fps_std": 1326.1483488282684
           }
         }
       },
       "evaluation": {
         "checkpoint_path": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim/checkpoint0089.pth",
-        "file_size_mb": 505.86369800567627,
+        "file_size_mb": 326.6632356643677,
         "keys": [
           "model",
           "date",
           "last_epoch",
           "optimizer",
           "lr_scheduler",
-          "ema",
-          "scaler"
+          "ema"
         ],
-        "model_keys": 696,
-        "model_size_mb": 126.39672088623047,
-        "ema_keys": 696,
-        "ema_size_mb": 126.39672088623047,
+        "model_keys": 642,
+        "model_size_mb": 81.6060791015625,
+        "ema_keys": 642,
+        "ema_size_mb": 81.6060791015625,
         "has_ema": true,
         "has_optimizer": true,
         "has_lr_scheduler": true
@@ -33812,169 +33022,169 @@
         "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim/checkpoint0089.pth",
         "epoch": "unknown",
         "overall_metrics": {
-          "AP@0.5:0.95": 0.25984849994500225,
-          "AP@0.5": 0.42483471495522956,
-          "AP@0.75": 0.26462435245620847,
-          "AP_small": 0.1799615278421239,
-          "AP_medium": 0.35309075201680024,
-          "AP_large": 0.4670948883982463,
-          "AR@1": 0.10995486084727302,
-          "AR@10": 0.31025533442170905,
-          "AR@100": 0.4080078198621658,
-          "AR_small": 0.325107733118729,
-          "AR_medium": 0.5163352801133649,
-          "AR_large": 0.6254810494485806
+          "AP@0.5:0.95": 0.23831936874203746,
+          "AP@0.5": 0.3913239887979471,
+          "AP@0.75": 0.2460672231059801,
+          "AP_small": 0.15686589586577135,
+          "AP_medium": 0.3301855211276272,
+          "AP_large": 0.44384456385454074,
+          "AR@1": 0.10205573591847303,
+          "AR@10": 0.29382347275419685,
+          "AR@100": 0.3908984520815737,
+          "AR_small": 0.30014875465977225,
+          "AR_medium": 0.5051163683785783,
+          "AR_large": 0.6257697298071703
         },
         "per_class_metrics": {
           "1": {
             "name": "pedestrian",
-            "ap_50_95": 0.25984849994500225,
-            "ap_50": 0.42483471495522956,
-            "ap_75": 0.26462435245620847,
-            "ap_small": 0.1799615278421239,
-            "ap_medium": 0.35309075201680024,
-            "ap_large": 0.4670948883982463,
-            "ar_1": 0.10995486084727302,
-            "ar_10": 0.31025533442170905,
-            "ar_100": 0.4080078198621658,
-            "ar_small": 0.325107733118729,
-            "ar_medium": 0.5163352801133649,
-            "ar_large": 0.6254810494485806
+            "ap_50_95": 0.23831936874203746,
+            "ap_50": 0.3913239887979471,
+            "ap_75": 0.2460672231059801,
+            "ap_small": 0.15686589586577135,
+            "ap_medium": 0.3301855211276272,
+            "ap_large": 0.44384456385454074,
+            "ar_1": 0.10205573591847303,
+            "ar_10": 0.29382347275419685,
+            "ar_100": 0.3908984520815737,
+            "ar_small": 0.30014875465977225,
+            "ar_medium": 0.5051163683785783,
+            "ar_large": 0.6257697298071703
           },
           "2": {
             "name": "people",
-            "ap_50_95": 0.25984849994500225,
-            "ap_50": 0.42483471495522956,
-            "ap_75": 0.26462435245620847,
-            "ap_small": 0.1799615278421239,
-            "ap_medium": 0.35309075201680024,
-            "ap_large": 0.4670948883982463,
-            "ar_1": 0.10995486084727302,
-            "ar_10": 0.31025533442170905,
-            "ar_100": 0.4080078198621658,
-            "ar_small": 0.325107733118729,
-            "ar_medium": 0.5163352801133649,
-            "ar_large": 0.6254810494485806
+            "ap_50_95": 0.23831936874203746,
+            "ap_50": 0.3913239887979471,
+            "ap_75": 0.2460672231059801,
+            "ap_small": 0.15686589586577135,
+            "ap_medium": 0.3301855211276272,
+            "ap_large": 0.44384456385454074,
+            "ar_1": 0.10205573591847303,
+            "ar_10": 0.29382347275419685,
+            "ar_100": 0.3908984520815737,
+            "ar_small": 0.30014875465977225,
+            "ar_medium": 0.5051163683785783,
+            "ar_large": 0.6257697298071703
           },
           "3": {
             "name": "bicycle",
-            "ap_50_95": 0.25984849994500225,
-            "ap_50": 0.42483471495522956,
-            "ap_75": 0.26462435245620847,
-            "ap_small": 0.1799615278421239,
-            "ap_medium": 0.35309075201680024,
-            "ap_large": 0.4670948883982463,
-            "ar_1": 0.10995486084727302,
-            "ar_10": 0.31025533442170905,
-            "ar_100": 0.4080078198621658,
-            "ar_small": 0.325107733118729,
-            "ar_medium": 0.5163352801133649,
-            "ar_large": 0.6254810494485806
+            "ap_50_95": 0.23831936874203746,
+            "ap_50": 0.3913239887979471,
+            "ap_75": 0.2460672231059801,
+            "ap_small": 0.15686589586577135,
+            "ap_medium": 0.3301855211276272,
+            "ap_large": 0.44384456385454074,
+            "ar_1": 0.10205573591847303,
+            "ar_10": 0.29382347275419685,
+            "ar_100": 0.3908984520815737,
+            "ar_small": 0.30014875465977225,
+            "ar_medium": 0.5051163683785783,
+            "ar_large": 0.6257697298071703
           },
           "4": {
             "name": "car",
-            "ap_50_95": 0.25984849994500225,
-            "ap_50": 0.42483471495522956,
-            "ap_75": 0.26462435245620847,
-            "ap_small": 0.1799615278421239,
-            "ap_medium": 0.35309075201680024,
-            "ap_large": 0.4670948883982463,
-            "ar_1": 0.10995486084727302,
-            "ar_10": 0.31025533442170905,
-            "ar_100": 0.4080078198621658,
-            "ar_small": 0.325107733118729,
-            "ar_medium": 0.5163352801133649,
-            "ar_large": 0.6254810494485806
+            "ap_50_95": 0.23831936874203746,
+            "ap_50": 0.3913239887979471,
+            "ap_75": 0.2460672231059801,
+            "ap_small": 0.15686589586577135,
+            "ap_medium": 0.3301855211276272,
+            "ap_large": 0.44384456385454074,
+            "ar_1": 0.10205573591847303,
+            "ar_10": 0.29382347275419685,
+            "ar_100": 0.3908984520815737,
+            "ar_small": 0.30014875465977225,
+            "ar_medium": 0.5051163683785783,
+            "ar_large": 0.6257697298071703
           },
           "5": {
             "name": "van",
-            "ap_50_95": 0.25984849994500225,
-            "ap_50": 0.42483471495522956,
-            "ap_75": 0.26462435245620847,
-            "ap_small": 0.1799615278421239,
-            "ap_medium": 0.35309075201680024,
-            "ap_large": 0.4670948883982463,
-            "ar_1": 0.10995486084727302,
-            "ar_10": 0.31025533442170905,
-            "ar_100": 0.4080078198621658,
-            "ar_small": 0.325107733118729,
-            "ar_medium": 0.5163352801133649,
-            "ar_large": 0.6254810494485806
+            "ap_50_95": 0.23831936874203746,
+            "ap_50": 0.3913239887979471,
+            "ap_75": 0.2460672231059801,
+            "ap_small": 0.15686589586577135,
+            "ap_medium": 0.3301855211276272,
+            "ap_large": 0.44384456385454074,
+            "ar_1": 0.10205573591847303,
+            "ar_10": 0.29382347275419685,
+            "ar_100": 0.3908984520815737,
+            "ar_small": 0.30014875465977225,
+            "ar_medium": 0.5051163683785783,
+            "ar_large": 0.6257697298071703
           },
           "6": {
             "name": "truck",
-            "ap_50_95": 0.25984849994500225,
-            "ap_50": 0.42483471495522956,
-            "ap_75": 0.26462435245620847,
-            "ap_small": 0.1799615278421239,
-            "ap_medium": 0.35309075201680024,
-            "ap_large": 0.4670948883982463,
-            "ar_1": 0.10995486084727302,
-            "ar_10": 0.31025533442170905,
-            "ar_100": 0.4080078198621658,
-            "ar_small": 0.325107733118729,
-            "ar_medium": 0.5163352801133649,
-            "ar_large": 0.6254810494485806
+            "ap_50_95": 0.23831936874203746,
+            "ap_50": 0.3913239887979471,
+            "ap_75": 0.2460672231059801,
+            "ap_small": 0.15686589586577135,
+            "ap_medium": 0.3301855211276272,
+            "ap_large": 0.44384456385454074,
+            "ar_1": 0.10205573591847303,
+            "ar_10": 0.29382347275419685,
+            "ar_100": 0.3908984520815737,
+            "ar_small": 0.30014875465977225,
+            "ar_medium": 0.5051163683785783,
+            "ar_large": 0.6257697298071703
           },
           "7": {
             "name": "tricycle",
-            "ap_50_95": 0.25984849994500225,
-            "ap_50": 0.42483471495522956,
-            "ap_75": 0.26462435245620847,
-            "ap_small": 0.1799615278421239,
-            "ap_medium": 0.35309075201680024,
-            "ap_large": 0.4670948883982463,
-            "ar_1": 0.10995486084727302,
-            "ar_10": 0.31025533442170905,
-            "ar_100": 0.4080078198621658,
-            "ar_small": 0.325107733118729,
-            "ar_medium": 0.5163352801133649,
-            "ar_large": 0.6254810494485806
+            "ap_50_95": 0.23831936874203746,
+            "ap_50": 0.3913239887979471,
+            "ap_75": 0.2460672231059801,
+            "ap_small": 0.15686589586577135,
+            "ap_medium": 0.3301855211276272,
+            "ap_large": 0.44384456385454074,
+            "ar_1": 0.10205573591847303,
+            "ar_10": 0.29382347275419685,
+            "ar_100": 0.3908984520815737,
+            "ar_small": 0.30014875465977225,
+            "ar_medium": 0.5051163683785783,
+            "ar_large": 0.6257697298071703
           },
           "8": {
             "name": "awning-tricycle",
-            "ap_50_95": 0.25984849994500225,
-            "ap_50": 0.42483471495522956,
-            "ap_75": 0.26462435245620847,
-            "ap_small": 0.1799615278421239,
-            "ap_medium": 0.35309075201680024,
-            "ap_large": 0.4670948883982463,
-            "ar_1": 0.10995486084727302,
-            "ar_10": 0.31025533442170905,
-            "ar_100": 0.4080078198621658,
-            "ar_small": 0.325107733118729,
-            "ar_medium": 0.5163352801133649,
-            "ar_large": 0.6254810494485806
+            "ap_50_95": 0.23831936874203746,
+            "ap_50": 0.3913239887979471,
+            "ap_75": 0.2460672231059801,
+            "ap_small": 0.15686589586577135,
+            "ap_medium": 0.3301855211276272,
+            "ap_large": 0.44384456385454074,
+            "ar_1": 0.10205573591847303,
+            "ar_10": 0.29382347275419685,
+            "ar_100": 0.3908984520815737,
+            "ar_small": 0.30014875465977225,
+            "ar_medium": 0.5051163683785783,
+            "ar_large": 0.6257697298071703
           },
           "9": {
             "name": "bus",
-            "ap_50_95": 0.25984849994500225,
-            "ap_50": 0.42483471495522956,
-            "ap_75": 0.26462435245620847,
-            "ap_small": 0.1799615278421239,
-            "ap_medium": 0.35309075201680024,
-            "ap_large": 0.4670948883982463,
-            "ar_1": 0.10995486084727302,
-            "ar_10": 0.31025533442170905,
-            "ar_100": 0.4080078198621658,
-            "ar_small": 0.325107733118729,
-            "ar_medium": 0.5163352801133649,
-            "ar_large": 0.6254810494485806
+            "ap_50_95": 0.23831936874203746,
+            "ap_50": 0.3913239887979471,
+            "ap_75": 0.2460672231059801,
+            "ap_small": 0.15686589586577135,
+            "ap_medium": 0.3301855211276272,
+            "ap_large": 0.44384456385454074,
+            "ar_1": 0.10205573591847303,
+            "ar_10": 0.29382347275419685,
+            "ar_100": 0.3908984520815737,
+            "ar_small": 0.30014875465977225,
+            "ar_medium": 0.5051163683785783,
+            "ar_large": 0.6257697298071703
           },
           "10": {
             "name": "motor",
-            "ap_50_95": 0.25984849994500225,
-            "ap_50": 0.42483471495522956,
-            "ap_75": 0.26462435245620847,
-            "ap_small": 0.1799615278421239,
-            "ap_medium": 0.35309075201680024,
-            "ap_large": 0.4670948883982463,
-            "ar_1": 0.10995486084727302,
-            "ar_10": 0.31025533442170905,
-            "ar_100": 0.4080078198621658,
-            "ar_small": 0.325107733118729,
-            "ar_medium": 0.5163352801133649,
-            "ar_large": 0.6254810494485806
+            "ap_50_95": 0.23831936874203746,
+            "ap_50": 0.3913239887979471,
+            "ap_75": 0.2460672231059801,
+            "ap_small": 0.15686589586577135,
+            "ap_medium": 0.3301855211276272,
+            "ap_large": 0.44384456385454074,
+            "ar_1": 0.10205573591847303,
+            "ar_10": 0.29382347275419685,
+            "ar_100": 0.3908984520815737,
+            "ar_small": 0.30014875465977225,
+            "ar_medium": 0.5051163683785783,
+            "ar_large": 0.6257697298071703
           }
         },
         "size_distribution": {
@@ -33996,15 +33206,16 @@
         },
         "recommendations": [
           "\u26a0  Small object AP is significantly lower than overall AP",
-          "\u2713 Strong performance on large objects"
+          "\u2713 Strong performance on large objects",
+          "\u26a0  Large gap between recall and precision"
         ]
       }
     },
     "summary_metrics": {
-      "mAP_50": "42.48%",
-      "AP_Small": "18.00%",
-      "FPS": "20.3",
-      "Params": "33.1 M"
+      "mAP_50": "39.13%",
+      "AP_Small": "15.69%",
+      "FPS": "39.0",
+      "Params": "21.4 M"
     }
   },
   {

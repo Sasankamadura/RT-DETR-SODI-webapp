@@ -10,7 +10,7 @@ MODELS_SRC = {
     "aware_loss": "Improved versions/3- Aware Loss Reweighting",
     "gnconv": "Improved versions/5 - gnconv",
     "p2_layer": "Improved versions/6 - p2 layer",
-    "slim_p2": "Improved versions/6_1 - SLIM p2 layer",
+    "slim_p2": "Improved versions/6_1 - SLIM p2 layer C",
     "gnconv_p2": "Improved versions/7 - gnconv + p2 layer",
     "gnconv_p2_repvgg": "Improved versions/7_1 - gnconv + p2 layer + Repvgg",
     "gnconv_slim_p2_repvgg": "Improved versions/7_2 - gnconv + SLIM p2 layer + Repvgg"
