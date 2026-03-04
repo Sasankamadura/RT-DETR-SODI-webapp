@@ -1,0 +1,20 @@
+{
+  "checkpoint_path": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_visdrone_eb2/checkpoint0093.pth",
+  "file_size_mb": 282.2527093887329,
+  "keys": [
+    "model",
+    "date",
+    "last_epoch",
+    "optimizer",
+    "lr_scheduler",
+    "ema",
+    "scaler"
+  ],
+  "model_keys": 1033,
+  "model_size_mb": 71.36790466308594,
+  "ema_keys": 1033,
+  "ema_size_mb": 71.36790466308594,
+  "has_ema": true,
+  "has_optimizer": true,
+  "has_lr_scheduler": true
+}

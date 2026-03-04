@@ -147,6 +147,7 @@ body {
     color: var(--primary);
     background: linear-gradient(135deg, var(--primary) 0%, #db2777 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 800;
 }
@@ -210,6 +211,27 @@ body {
 .model-item.active {
     background: var(--primary-glow);
     border-color: var(--primary);
+}
+
+.model-item.experimental {
+    border-left: 4px solid #f59e0b;
+    /* Amber/Orange */
+}
+
+.model-item.experimental.active {
+    background: rgba(245, 158, 11, 0.15);
+    border-color: #f59e0b;
+}
+
+.model-item.experimental .model-name::after {
+    content: "EXP";
+    font-size: 0.6rem;
+    background: #f59e0b;
+    color: #000;
+    padding: 1px 4px;
+    border-radius: 3px;
+    margin-left: 8px;
+    vertical-align: middle;
 }
 
 .model-name {
@@ -675,11 +697,13 @@ header {
     body {
         height: auto;
         overflow-y: auto;
-        display: block; /* Remove flex centering */
+        display: block;
+        /* Remove flex centering */
     }
 
     .background-blobs {
-        position: fixed; /* Keep background fixed */
+        position: fixed;
+        /* Keep background fixed */
     }
 
     .app-container {
@@ -687,7 +711,8 @@ header {
         width: 100%;
         height: auto;
         gap: 0;
-        padding: 0; /* Remove padding to maximize space */
+        padding: 0;
+        /* Remove padding to maximize space */
     }
 
     /* Sidebar Mobile */
@@ -697,7 +722,8 @@ header {
         max-height: none;
         padding: 16px;
         flex-direction: column;
-        align-items: stretch; /* Stretch content */
+        align-items: stretch;
+        /* Stretch content */
         overflow: visible;
         margin-bottom: 0;
         border-radius: 0;
@@ -705,7 +731,8 @@ header {
         border-right: none;
         border-top: none;
         border-bottom: 1px solid var(--glass-border);
-        background: rgba(15, 23, 42, 0.95); /* More solid background */
+        background: rgba(15, 23, 42, 0.95);
+        /* More solid background */
     }
 
     .sidebar .logo {
@@ -716,17 +743,18 @@ header {
 
     .model-selection {
         margin-bottom: 10px;
-        max-height: 150px; /* Reduced height */
+        max-height: 150px;
+        /* Reduced height */
         overflow-y: auto;
         border: 1px solid var(--glass-border);
         border-radius: 8px;
         padding: 5px;
     }
-    
+
     .logo i {
         font-size: 1.2rem;
     }
-    
+
     .sidebar .credits {
         display: none;
     }
@@ -744,16 +772,18 @@ header {
         flex-direction: column;
         gap: 10px;
         text-align: center;
-        display: none; /* Hide header on mobile to save space, redundant with sidebar title? No, sidebar has title. Header has "Select a Model" or Current model name. Keep it but compact. */
+        display: none;
+        /* Hide header on mobile to save space, redundant with sidebar title? No, sidebar has title. Header has "Select a Model" or Current model name. Keep it but compact. */
         display: flex;
     }
-    
+
     header h2 {
         font-size: 1rem;
     }
 
     .workspace {
-        overflow-y: visible; /* Let grid expand */
+        overflow-y: visible;
+        /* Let grid expand */
     }
 
     /* Preview Area */
@@ -767,32 +797,34 @@ header {
     }
 
     .preview-container {
-        flex-direction: column; /* Stack images */
+        flex-direction: column;
+        /* Stack images */
         gap: 20px;
         padding: 10px;
         /* Force flow */
-        position: relative; 
-        top: auto; 
+        position: relative;
+        top: auto;
         left: auto;
         width: 100%;
         height: auto;
         background: transparent;
         opacity: 0;
         pointer-events: none;
-        display: none; /* Hide when not active to prevent spacing issues */
+        display: none;
+        /* Hide when not active to prevent spacing issues */
     }
-    
+
     .preview-container.visible {
         opacity: 1;
         pointer-events: auto;
         display: flex;
     }
-    
+
     /* Trick to hide upload content when preview is visible on mobile */
     .upload-zone:has(.preview-container.visible) .upload-content {
         display: none;
     }
-    
+
     /* Fallback if :has not supported (metrics will just be below) - but let's assume it works or user scrolls. 
        Actually, if :has doesn't work, the preview-container will just appear below.
     */
@@ -800,7 +832,8 @@ header {
     .image-wrapper {
         width: 100%;
         height: auto;
-        aspect-ratio: 16/9; /* Maintain aspect ratio */
+        aspect-ratio: 16/9;
+        /* Maintain aspect ratio */
         max-height: 300px;
     }
 
@@ -819,7 +852,7 @@ header {
         align-items: flex-start;
         gap: 10px;
     }
-    
+
     .metrics-actions {
         width: 100%;
         justify-content: space-between;
@@ -827,16 +860,18 @@ header {
 
     .tabs {
         width: 100%;
-        overflow-x: auto; /* Scrollable tabs */
+        overflow-x: auto;
+        /* Scrollable tabs */
         white-space: nowrap;
         margin-bottom: 15px;
     }
-    
-    .data-table th, .data-table td {
+
+    .data-table th,
+    .data-table td {
         padding: 8px;
         font-size: 0.8rem;
     }
-    
+
     .samples-grid {
         grid-template-columns: repeat(3, 1fr);
     }

@@ -81,11 +81,14 @@ class UIManager {
     // --- Rendering Methods ---
 
     renderModelList(models, onSelect) {
-        this.dom.modelList.innerHTML = models.map(model => `
-            <div class="model-item" data-id="${model.id}" id="model-${model.id}">
-                <span class="model-name">${model.name}</span>
-            </div>
-        `).join('');
+        this.dom.modelList.innerHTML = models.map(model => {
+            const isExperimental = model.version === 'Experimental';
+            return `
+                <div class="model-item ${isExperimental ? 'experimental' : ''}" data-id="${model.id}" id="model-${model.id}">
+                    <span class="model-name">${model.name}</span>
+                </div>
+            `;
+        }).join('');
 
         // Add event listeners locally to avoid global pollution
         this.dom.modelList.querySelectorAll('.model-item').forEach(item => {
