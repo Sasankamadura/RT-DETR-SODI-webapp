@@ -124,7 +124,10 @@ class RTDETRBackendApp:
             print(f"Loading model: {target_config['name']}")
             try:
                 model_path = target_config['path']
-                self.loaded_models[model_id] = ModelHandler(model_path)
+                version = target_config.get('version', 'Final')
+                indexing_type = "0-indexed" if version == "Final" else "1-indexed"
+                
+                self.loaded_models[model_id] = ModelHandler(model_path, indexing_type=indexing_type)
             except Exception as e:
                 print(f"Error loading model: {e}")
                 raise HTTPException(status_code=500, detail=f"Failed to load model: {str(e)}")

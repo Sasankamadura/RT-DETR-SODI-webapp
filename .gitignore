@@ -34,6 +34,8 @@ venv/
 # Original Source Folders (Not needed in repo, models are in backend/models)
 Improved versions/
 Normal RT-DETR/
+Final Models/
+experimented models/
 
 # User specific
 .gemini/

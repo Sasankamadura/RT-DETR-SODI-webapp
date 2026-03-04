@@ -4,15 +4,21 @@ from PIL import Image, ImageDraw, ImageFont
 import io
 
 # VisDrone class names
-CLASS_NAMES = {
+CLASS_NAMES_1_INDEXED = {
     1: 'pedestrian', 2: 'people', 3: 'bicycle', 4: 'car', 5: 'van',
     6: 'truck', 7: 'tricycle', 8: 'awning-tricycle', 9: 'bus', 10: 'motor'
 }
 
+CLASS_NAMES_0_INDEXED = {
+    0: 'pedestrian', 1: 'people', 2: 'bicycle', 3: 'car', 4: 'van',
+    5: 'truck', 6: 'tricycle', 7: 'awning-tricycle', 8: 'bus', 9: 'motor'
+}
+
 class ModelHandler:
-    def __init__(self, model_path):
+    def __init__(self, model_path, indexing_type="0-indexed"):
         self.session = ort.InferenceSession(model_path, providers=['CUDAExecutionProvider', 'CPUExecutionProvider'])
         self.input_name = self.session.get_inputs()[0].name
+        self.class_names = CLASS_NAMES_0_INDEXED if indexing_type == "0-indexed" else CLASS_NAMES_1_INDEXED
 
     def preprocess(self, image_bytes):
         image = Image.open(io.BytesIO(image_bytes)).convert('RGB')
@@ -50,7 +56,7 @@ class ModelHandler:
         detections = []
         for label, box, score in zip(labels, boxes, scores):
             x1, y1, x2, y2 = box.tolist()
-            class_name = CLASS_NAMES.get(int(label), str(int(label)))
+            class_name = self.class_names.get(int(label), str(int(label)))
             color = "#00FF00"  # Green
             
             draw.rectangle([x1, y1, x2, y2], outline=color, width=3)
