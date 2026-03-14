@@ -109,8 +109,8 @@ class UIManager {
         this.dom.currentModelName.textContent = model.name;
         this.dom.description.innerHTML = `<p>${model.description}</p>`;
 
-        // Render Summary Metrics
-        this.dom.metricsGrid.innerHTML = Object.entries(model.summary_metrics).map(([key, value]) => `
+        // Render Summary Metrics (with fallback to empty object if undefined)
+        this.dom.metricsGrid.innerHTML = Object.entries(model.summary_metrics || {}).map(([key, value]) => `
             <div class="metric-card">
                 <span class="label">${key.replace('_', ' ')}</span>
                 <span class="value" style="color: ${value !== 'N/A' ? '#10b981' : '#9ca3af'}">${value}</span>
@@ -440,9 +440,11 @@ class RTDETRApp {
         let csv = "Metric,Value\n";
 
         // Summary
-        Object.entries(model.summary_metrics).forEach(([key, value]) => {
-            csv += `${key},${value}\n`;
-        });
+        if (model.summary_metrics) {
+            Object.entries(model.summary_metrics).forEach(([key, value]) => {
+                csv += `${key},${value}\n`;
+            });
+        }
 
         // FPS
         const fps = model.full_metrics.fps?.fps_benchmark?.['640x640'];

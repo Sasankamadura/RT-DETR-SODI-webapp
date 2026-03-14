@@ -235,6 +235,7 @@
         },
         "summary_metrics": {
             "mAP_50": "42.95%",
+            "mAP_small": "16.28%",
             "FPS": "40.7",
             "Params": "20.1 M",
             "Decoders": "3"
@@ -300,7 +301,48 @@
                         "AP_50_95": 0.2832
                     }
                 }
+            },
+            "fps": {
+                "fps_benchmark": {
+                    "640x640": {
+                        "latency_mean_ms": 45.49315764499796,
+                        "latency_std_ms": 0.9986676782758848,
+                        "latency_min_ms": 44.558898999980556,
+                        "latency_max_ms": 56.66467600008218,
+                        "fps_mean": 21.981327561463555,
+                        "fps_std": 1001.3340991734261
+                    }
+                }
+            },
+            "profiling": {
+                "layer_analysis": {
+                    "total_params": 20058874,
+                    "components": {
+                        "backbone": {
+                            "total_params": 7202562,
+                            "percentage": 35.90711,
+                            "num_layers": 296
+                        },
+                        "encoder": {
+                            "total_params": 8786752,
+                            "percentage": 43.804812,
+                            "num_layers": 258
+                        },
+                        "decoder": {
+                            "total_params": 4069560,
+                            "percentage": 20.288078,
+                            "num_layers": 119
+                        }
+                    }
+                }
             }
+        },
+        "summary_metrics": {
+            "mAP_50": "48.28%",
+            "mAP_small": "20.12%",
+            "FPS": "21.98",
+            "Params": "17.85 M",
+            "Decoders": "3"
         }
     },
     {
@@ -539,6 +581,7 @@
         },
         "summary_metrics": {
             "mAP_50": "43.38%",
+            "mAP_small": "18.97%",
             "FPS": "25.0",
             "Params": "21.9 M",
             "Decoders": "3"
@@ -782,6 +825,7 @@
         },
         "summary_metrics": {
             "mAP_50": "42.13%",
+            "mAP_small": "18.05%",
             "FPS": "30.6",
             "Params": "21.3 M",
             "Decoders": "3"
@@ -847,7 +891,48 @@
                         "AP_50_95": 0.248
                     }
                 }
+            },
+            "fps": {
+                "fps_benchmark": {
+                    "640x640": {
+                        "latency_mean_ms": 42.387573495047945,
+                        "latency_std_ms": 0.93782736591218,
+                        "latency_min_ms": 41.87073700040855,
+                        "latency_max_ms": 53.515415000219946,
+                        "fps_mean": 23.59181990251997,
+                        "fps_std": 1066.2943270239803
+                    }
+                }
+            },
+            "profiling": {
+                "layer_analysis": {
+                    "total_params": 19211416,
+                    "components": {
+                        "backbone": {
+                            "total_params": 11190112,
+                            "percentage": 58.247201,
+                            "num_layers": 23
+                        },
+                        "encoder": {
+                            "total_params": 3951744,
+                            "percentage": 20.56977,
+                            "num_layers": 348
+                        },
+                        "decoder": {
+                            "total_params": 4069560,
+                            "percentage": 21.18303,
+                            "num_layers": 119
+                        }
+                    }
+                }
             }
+        },
+        "summary_metrics": {
+            "mAP_50": "44.15%",
+            "mAP_small": "18.16%",
+            "FPS": "23.59",
+            "Params": "19.21 M",
+            "Decoders": "3"
         }
     },
     {
@@ -1087,6 +1172,7 @@
         },
         "summary_metrics": {
             "mAP_50": "44.92%",
+            "mAP_small": "19.75%",
             "FPS": "32.1",
             "Params": "22.2 M",
             "Decoders": "3"
@@ -1152,7 +1238,48 @@
                         "AP_50_95": 0.2485
                     }
                 }
+            },
+            "fps": {
+                "fps_benchmark": {
+                    "640x640": {
+                        "latency_mean_ms": 21.917254404997948,
+                        "latency_std_ms": 0.495870844931372,
+                        "latency_min_ms": 21.267740000439517,
+                        "latency_max_ms": 24.130970000442176,
+                        "fps_mean": 45.62615287122656,
+                        "fps_std": 2016.6541554553362
+                    }
+                }
+            },
+            "profiling": {
+                "layer_analysis": {
+                    "total_params": 21855736,
+                    "components": {
+                        "backbone": {
+                            "total_params": 11190112,
+                            "percentage": 51.199886,
+                            "num_layers": 23
+                        },
+                        "encoder": {
+                            "total_params": 6736128,
+                            "percentage": 30.82087,
+                            "num_layers": 165
+                        },
+                        "decoder": {
+                            "total_params": 3929496,
+                            "percentage": 17.979244,
+                            "num_layers": 116
+                        }
+                    }
+                }
             }
+        },
+        "summary_metrics": {
+            "mAP_50": "43.83%",
+            "mAP_small": "16.74%",
+            "FPS": "45.63",
+            "Params": "20.08 M",
+            "Decoders": "3"
         }
     },
     {
@@ -1391,6 +1518,7 @@
         },
         "summary_metrics": {
             "mAP_50": "42.88%",
+            "mAP_small": "18.72%",
             "FPS": "36.2",
             "Params": "21.4 M",
             "Decoders": "3"
@@ -1630,6 +1758,7 @@
         },
         "summary_metrics": {
             "mAP_50": "39.68%",
+            "mAP_small": "17.01%",
             "FPS": "25.3",
             "Params": "21.9 M",
             "Decoders": "3"
@@ -1870,6 +1999,7 @@
         },
         "summary_metrics": {
             "mAP_50": "39.56%",
+            "mAP_small": "16.69%",
             "FPS": "33.9",
             "Params": "21.3 M",
             "Decoders": "3"
@@ -2108,6 +2238,7 @@
         },
         "summary_metrics": {
             "mAP_50": "18.85%",
+            "mAP_small": "9.12%",
             "FPS": "46.7",
             "Params": "20.1 M",
             "Decoders": "3"
@@ -2346,6 +2477,7 @@
         },
         "summary_metrics": {
             "mAP_50": "38.66%",
+            "mAP_small": "15.40%",
             "FPS": "32.3",
             "Params": "16.5 M",
             "Decoders": "3"
@@ -2585,6 +2717,7 @@
         },
         "summary_metrics": {
             "mAP_50": "43.15%",
+            "mAP_small": "19.92%",
             "FPS": "28.2",
             "Params": "18.6 M",
             "Decoders": "3"
@@ -2823,6 +2956,7 @@
         },
         "summary_metrics": {
             "mAP_50": "36.23%",
+            "mAP_small": "14.61%",
             "FPS": "46.6",
             "Params": "20.1 M",
             "Decoders": "3"
@@ -3062,6 +3196,7 @@
         },
         "summary_metrics": {
             "mAP_50": "41.18%",
+            "mAP_small": "17.71%",
             "FPS": "44.5",
             "Params": "24.5 M",
             "Decoders": "3"
@@ -3301,6 +3436,7 @@
         },
         "summary_metrics": {
             "mAP_50": "36.74%",
+            "mAP_small": "14.68%",
             "FPS": "44.1",
             "Params": "20.1 M",
             "Decoders": "3"
@@ -3540,6 +3676,7 @@
         },
         "summary_metrics": {
             "mAP_50": "42.48%",
+            "mAP_small": "19.51%",
             "FPS": "20.3",
             "Params": "33.1 M",
             "Decoders": "6"
@@ -3779,6 +3916,7 @@
         },
         "summary_metrics": {
             "mAP_50": "39.13%",
+            "mAP_small": "16.96%",
             "FPS": "39.0",
             "Params": "21.4 M",
             "Decoders": "3"
@@ -4017,6 +4155,7 @@
         },
         "summary_metrics": {
             "mAP_50": "35.59%",
+            "mAP_small": "14.15%",
             "FPS": "32.9",
             "Params": "19.0 M",
             "Decoders": "3"
@@ -4256,6 +4395,7 @@
         },
         "summary_metrics": {
             "mAP_50": "41.56%",
+            "mAP_small": "18.87%",
             "FPS": "20.1",
             "Params": "27.2 M",
             "Decoders": "6"
@@ -4496,6 +4636,7 @@
         },
         "summary_metrics": {
             "mAP_50": "37.51%",
+            "mAP_small": "16.23%",
             "FPS": "28.2",
             "Params": "20.0 M",
             "Decoders": "3"
@@ -4734,6 +4875,7 @@
         },
         "summary_metrics": {
             "mAP_50": "43.13%",
+            "mAP_small": "20.13%",
             "FPS": "14.7",
             "Params": "28.1 M",
             "Decoders": "6"
@@ -4971,6 +5113,7 @@
         },
         "summary_metrics": {
             "mAP_50": "44.31%",
+            "mAP_small": "20.59%",
             "FPS": "18.6",
             "Params": "29.3 M",
             "Decoders": "6"
@@ -5210,6 +5353,7 @@
         },
         "summary_metrics": {
             "mAP_50": "38.68%",
+            "mAP_small": "17.01%",
             "FPS": "27.5",
             "Params": "20.8 M",
             "Decoders": "3"
@@ -5449,6 +5593,7 @@
         },
         "summary_metrics": {
             "mAP_50": "38.17%",
+            "mAP_small": "16.39%",
             "FPS": "23.2",
             "Params": "20.6 M",
             "Decoders": "3"
@@ -5688,6 +5833,7 @@
         },
         "summary_metrics": {
             "mAP_50": "39.94%",
+            "mAP_small": "18.38%",
             "FPS": "37.4",
             "Params": "22.2 M",
             "Decoders": "3"
