@@ -14,6 +14,20 @@ CLASS_NAMES_0_INDEXED = {
     5: 'truck', 6: 'tricycle', 7: 'awning-tricycle', 8: 'bus', 9: 'motor'
 }
 
+# Distinct colour per class (0-indexed, matches CLASS_NAMES_0_INDEXED)
+CLASS_COLORS = {
+    0: "#FF4C4C",   # pedestrian     – red
+    1: "#FF9F1C",   # people         – orange
+    2: "#FFE94E",   # bicycle        – yellow
+    3: "#4CFF4C",   # car            – lime green
+    4: "#1CB0FF",   # van            – sky blue
+    5: "#A64CFF",   # truck          – purple
+    6: "#FF4CDD",   # tricycle       – pink
+    7: "#4CFFE0",   # awning-tricycle– cyan
+    8: "#FF8C4C",   # bus            – amber
+    9: "#FFFFFF",   # motor          – white
+}
+
 class ModelHandler:
     def __init__(self, model_path, indexing_type="0-indexed"):
         self.session = ort.InferenceSession(model_path, providers=['CUDAExecutionProvider', 'CPUExecutionProvider'])
@@ -57,7 +71,7 @@ class ModelHandler:
         for label, box, score in zip(labels, boxes, scores):
             x1, y1, x2, y2 = box.tolist()
             class_name = self.class_names.get(int(label), str(int(label)))
-            color = "#00FF00"  # Green
+            color = CLASS_COLORS.get(int(label), "#00FF00")
             
             draw.rectangle([x1, y1, x2, y2], outline=color, width=3)
             text = f"{class_name} {score:.2f}"
@@ -65,7 +79,7 @@ class ModelHandler:
             # Text background
             bbox = draw.textbbox((x1, y1), text, font=font)
             draw.rectangle([bbox[0], bbox[1], bbox[2], bbox[3]], fill=color)
-            draw.text((x1, y1), text, fill="black", font=font)
+            draw.text((x1, y1), text, fill="black" if color != "#FFFFFF" else "#000000", font=font)
 
             detections.append({
                 "box": [x1, y1, x2, y2],
