@@ -18,7 +18,10 @@ class ModelService {
     }
 
     async fetchModels() {
-        const res = await fetch(`${this.baseUrl}/models`);
+        // Appending timestamp to strictly bypass aggressive browser caching
+        const res = await fetch(`${this.baseUrl}/models?t=${new Date().getTime()}`, {
+            cache: 'no-store'
+        });
         if (!res.ok) throw new Error(`Failed to fetch models: ${res.statusText}`);
         return await res.json();
     }
@@ -145,13 +148,15 @@ class UIManager {
         this.dom.tabs.overview.innerHTML = overviewHtml;
 
         // 2. Class Metrics Tab
-        let classHtml = '<table class="data-table"><tr><th>Class</th><th>AP 50</th><th>AP Small</th></tr>';
+        let classHtml = '<table class="data-table"><tr><th>Class</th><th>AP 50</th><th>AP 50-95</th></tr>';
         if (full.detailed?.per_class_metrics) {
-            Object.values(full.detailed.per_class_metrics).forEach(m => {
+            Object.entries(full.detailed.per_class_metrics).forEach(([className, m]) => {
+                const ap50 = (m.AP_50 * 100).toFixed(1);
+                const ap50_95 = (m.AP_50_95 * 100).toFixed(1);
                 classHtml += `<tr>
-                    <td>${m.name}</td>
-                    <td>${(m.ap_50 * 100).toFixed(1)}%</td>
-                    <td>${(m.ap_small * 100).toFixed(1)}%</td>
+                    <td>${className}</td>
+                    <td>${ap50}%</td>
+                    <td>${ap50_95}%</td>
                 </tr>`;
             });
         } else {
@@ -167,8 +172,9 @@ class UIManager {
             layerHtml += `
             <table class="data-table">
                 <tr><th>Component</th><th>Percentage</th></tr>
-                <tr><td>Backbone</td><td>${la.components.backbone.percentage.toFixed(1)}%</td></tr>
-                <tr><td>Decoder</td><td>${la.components.decoder.percentage.toFixed(1)}%</td></tr>
+                <tr><td>Backbone</td><td>${la.components.backbone ? la.components.backbone.percentage.toFixed(1) : 0}%</td></tr>
+                ${la.components.encoder ? `<tr><td>Encoder</td><td>${la.components.encoder.percentage.toFixed(1)}%</td></tr>` : ''}
+                <tr><td>Decoder</td><td>${la.components.decoder ? la.components.decoder.percentage.toFixed(1) : 0}%</td></tr>
                 <tr><td><br></td><td></td></tr>
                 <tr><td><strong>Total Params</strong></td><td><strong>${(la.total_params / 1e6).toFixed(2)} M</strong></td></tr>
             </table>
@@ -446,10 +452,10 @@ class RTDETRApp {
         }
 
         // Class Metrics
-        csv += "\nClass Metrics\nClass Name,AP 50,AP 50-95,AP Small\n";
+        csv += "\nClass Metrics\nClass Name,AP 50,AP 50-95\n";
         if (model.full_metrics.detailed?.per_class_metrics) {
-            Object.values(model.full_metrics.detailed.per_class_metrics).forEach(m => {
-                csv += `${m.name},${m.ap_50},${m.ap_50_95},${m.ap_small}\n`;
+            Object.entries(model.full_metrics.detailed.per_class_metrics).forEach(([className, m]) => {
+                csv += `${className},${m.AP_50},${m.AP_50_95}\n`;
             });
         }
 
@@ -458,8 +464,9 @@ class RTDETRApp {
         if (model.full_metrics.profiling?.layer_analysis) {
             const la = model.full_metrics.profiling.layer_analysis;
             csv += `Total Params,${la.total_params}\n`;
-            csv += `Backbone Params,${la.components.backbone.total_params}\n`;
-            csv += `Decoder Params,${la.components.decoder.total_params}\n`;
+            if (la.components.backbone) csv += `Backbone Params,${la.components.backbone.total_params}\n`;
+            if (la.components.encoder) csv += `Encoder Params,${la.components.encoder.total_params}\n`;
+            if (la.components.decoder) csv += `Decoder Params,${la.components.decoder.total_params}\n`;
         }
         return csv;
     }
