@@ -6,8 +6,6 @@
     "path": "backend/models/baseline_final.onnx",
     "full_metrics": {
       "profiling": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_visdrone_r18vd.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_visdrone_r18vd/checkpoint0101.pth",
         "layer_analysis": {
           "total_params": 20084728,
           "components": {
@@ -50,8 +48,6 @@
         }
       },
       "model_evaluation": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_visdrone_r18vd.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_visdrone_r18vd/checkpoint0101.pth",
         "device": "cuda",
         "total_params": 21855736,
         "trainable_params": 21827224,
@@ -81,8 +77,6 @@
         }
       },
       "fps": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_visdrone_r18vd.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_visdrone_r18vd/checkpoint0101.pth",
         "device": "cuda",
         "total_params": 21855736,
         "trainable_params": 21827224,
@@ -122,7 +116,6 @@
         }
       },
       "evaluation": {
-        "checkpoint_path": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_visdrone_r18vd/checkpoint0101.pth",
         "file_size_mb": 307.13245487213135,
         "keys": [
           "model",
@@ -141,9 +134,6 @@
         "has_lr_scheduler": true
       },
       "detailed": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_visdrone_r18vd.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_visdrone_r18vd/checkpoint0101.pth",
-        "epoch": "unknown",
         "overall_metrics": {
           "AP@0.5:0.95": 0.25224693939696263,
           "AP@0.5": 0.4294888624942396,
@@ -216,12 +206,7 @@
             "medium": 2725.917956099316,
             "large": 17455.64138576779
           }
-        },
-        "recommendations": [
-          "\u26a0  Small object AP is significantly lower than overall AP",
-          "\u2713 Strong performance on large objects",
-          "\u26a0  Large gap between recall and precision"
-        ]
+        }
       },
       "eval_performance": {
         "mAP_50_95": 0.2493,
@@ -359,8 +344,6 @@
     "path": "backend/models/gnconv_p_layer_final.onnx",
     "full_metrics": {
       "profiling": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_gnconv_repvgg.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_gnconv_repvgg/checkpoint0101.pth",
         "layer_analysis": {
           "total_params": 21939160,
           "components": {
@@ -403,8 +386,6 @@
         }
       },
       "model_evaluation": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_gnconv_repvgg.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_gnconv_repvgg/checkpoint0101.pth",
         "device": "cuda",
         "total_params": 24152920,
         "trainable_params": 24124408,
@@ -434,8 +415,6 @@
         }
       },
       "fps": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_gnconv_repvgg.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_gnconv_repvgg/checkpoint0101.pth",
         "device": "cuda",
         "total_params": 24152920,
         "trainable_params": 24124408,
@@ -475,7 +454,6 @@
         }
       },
       "evaluation": {
-        "checkpoint_path": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_gnconv_repvgg/checkpoint0101.pth",
         "file_size_mb": 335.64967823028564,
         "keys": [
           "model",
@@ -494,9 +472,6 @@
         "has_lr_scheduler": true
       },
       "detailed": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_gnconv_repvgg.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_gnconv_repvgg/checkpoint0101.pth",
-        "epoch": "unknown",
         "overall_metrics": {
           "AP@0.5:0.95": 0.25621603528375736,
           "AP@0.5": 0.43378385494212096,
@@ -569,12 +544,7 @@
             "medium": 2725.917956099316,
             "large": 17455.64138576779
           }
-        },
-        "recommendations": [
-          "\u26a0  Small object AP is significantly lower than overall AP",
-          "\u2713 Strong performance on large objects",
-          "\u26a0  Large gap between recall and precision"
-        ]
+        }
       },
       "eval_performance": {
         "mAP_50_95": 0.2739,
@@ -604,8 +574,6 @@
     "path": "backend/models/gnconv_slim_p_layer_final.onnx",
     "full_metrics": {
       "profiling": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_slim_gnconv_reversed.yml",
-        "checkpoint": "/kaggle/input/notebooks/sasankabandara14/final-trainin-rt-train-vis-gnconv-slimp2-8-1/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim_gnconv_reversed/checkpoint0101.pth",
         "layer_analysis": {
           "total_params": 21292536,
           "components": {
@@ -648,8 +616,6 @@
         }
       },
       "model_evaluation": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_slim_gnconv_reversed.yml",
-        "checkpoint": "/kaggle/input/notebooks/sasankabandara14/final-trainin-rt-train-vis-gnconv-slimp2-8-1/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim_gnconv_reversed/checkpoint0101.pth",
         "device": "cuda",
         "total_params": 23506296,
         "trainable_params": 23477784,
@@ -679,8 +645,6 @@
         }
       },
       "fps": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_slim_gnconv_reversed.yml",
-        "checkpoint": "/kaggle/input/notebooks/sasankabandara14/final-trainin-rt-train-vis-gnconv-slimp2-8-1/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim_gnconv_reversed/checkpoint0101.pth",
         "device": "cuda",
         "total_params": 23506296,
         "trainable_params": 23477784,
@@ -720,7 +684,6 @@
         }
       },
       "evaluation": {
-        "checkpoint_path": "/kaggle/input/notebooks/sasankabandara14/final-trainin-rt-train-vis-gnconv-slimp2-8-1/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim_gnconv_reversed/checkpoint0101.pth",
         "file_size_mb": 325.7742509841919,
         "keys": [
           "model",
@@ -739,9 +702,6 @@
         "has_lr_scheduler": true
       },
       "detailed": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_slim_gnconv_reversed.yml",
-        "checkpoint": "/kaggle/input/notebooks/sasankabandara14/final-trainin-rt-train-vis-gnconv-slimp2-8-1/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim_gnconv_reversed/checkpoint0101.pth",
-        "epoch": "unknown",
         "overall_metrics": {
           "AP@0.5:0.95": 0.24755043384037792,
           "AP@0.5": 0.4213496306058865,
@@ -814,12 +774,7 @@
             "medium": 2725.917956099316,
             "large": 17455.64138576779
           }
-        },
-        "recommendations": [
-          "\u26a0  Small object AP is significantly lower than overall AP",
-          "\u2713 Strong performance on large objects",
-          "\u26a0  Large gap between recall and precision"
-        ]
+        }
       },
       "eval_performance": {
         "mAP_50_95": 0.2648,
@@ -957,8 +912,6 @@
     "path": "backend/models/p_layer_final.onnx",
     "full_metrics": {
       "profiling": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2/checkpoint0101.pth",
         "layer_analysis": {
           "total_params": 22213912,
           "components": {
@@ -1001,8 +954,6 @@
         }
       },
       "model_evaluation": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2/checkpoint0101.pth",
         "device": "cuda",
         "total_params": 24870424,
         "trainable_params": 24841912,
@@ -1032,8 +983,6 @@
         }
       },
       "fps": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2/checkpoint0101.pth",
         "device": "cuda",
         "total_params": 24870424,
         "trainable_params": 24841912,
@@ -1073,7 +1022,6 @@
         }
       },
       "evaluation": {
-        "checkpoint_path": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2/checkpoint0101.pth",
         "file_size_mb": 339.8294954299927,
         "keys": [
           "model",
@@ -1093,9 +1041,6 @@
         "has_lr_scheduler": true
       },
       "detailed": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2/checkpoint0101.pth",
-        "epoch": "unknown",
         "overall_metrics": {
           "AP@0.5:0.95": 0.26996401871727654,
           "AP@0.5": 0.44923726535912106,
@@ -1168,12 +1113,7 @@
             "medium": 2725.917956099316,
             "large": 17455.64138576779
           }
-        },
-        "recommendations": [
-          "\u26a0  Small object AP is significantly lower than overall AP",
-          "\u2713 Strong performance on large objects",
-          "\u26a0  Large gap between recall and precision"
-        ]
+        }
       },
       "eval_performance": {
         "mAP_50_95": 0.2825,
@@ -1311,8 +1251,6 @@
     "path": "backend/models/slim_p_layer_final.onnx",
     "full_metrics": {
       "profiling": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_slim.yml",
-        "checkpoint": "/kaggle/input/notebooks/movidudinusara/final-training-rt-detrr18-visd-slimp2layer/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim/checkpoint0101.pth",
         "layer_analysis": {
           "total_params": 21351960,
           "components": {
@@ -1355,8 +1293,6 @@
         }
       },
       "model_evaluation": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_slim.yml",
-        "checkpoint": "/kaggle/input/notebooks/movidudinusara/final-training-rt-detrr18-visd-slimp2layer/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim/checkpoint0101.pth",
         "device": "cuda",
         "total_params": 23676504,
         "trainable_params": 23647992,
@@ -1386,8 +1322,6 @@
         }
       },
       "fps": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_slim.yml",
-        "checkpoint": "/kaggle/input/notebooks/movidudinusara/final-training-rt-detrr18-visd-slimp2layer/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim/checkpoint0101.pth",
         "device": "cuda",
         "total_params": 23676504,
         "trainable_params": 23647992,
@@ -1427,7 +1361,6 @@
         }
       },
       "evaluation": {
-        "checkpoint_path": "/kaggle/input/notebooks/movidudinusara/final-training-rt-detrr18-visd-slimp2layer/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim/checkpoint0101.pth",
         "file_size_mb": 326.6631746292114,
         "keys": [
           "model",
@@ -1446,9 +1379,6 @@
         "has_lr_scheduler": true
       },
       "detailed": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_slim.yml",
-        "checkpoint": "/kaggle/input/notebooks/movidudinusara/final-training-rt-detrr18-visd-slimp2layer/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim/checkpoint0101.pth",
-        "epoch": "unknown",
         "overall_metrics": {
           "AP@0.5:0.95": 0.2544343726046601,
           "AP@0.5": 0.42878555190016643,
@@ -1521,12 +1451,7 @@
             "medium": 2725.917956099316,
             "large": 17455.64138576779
           }
-        },
-        "recommendations": [
-          "\u26a0  Small object AP is significantly lower than overall AP",
-          "\u2713 Strong performance on large objects",
-          "\u26a0  Large gap between recall and precision"
-        ]
+        }
       },
       "eval_performance": {
         "mAP_50_95": 0.2699,
@@ -1552,12 +1477,10 @@
   {
     "id": "gnconv_p_experimental",
     "name": "(gnConV+p2)",
-    "description": "Experimental version of (gnConV+p2) with 3 decoder layers.",
+    "description": "Experimental validation run of the RT-DETR variant featuring a GnConv-based P2 layer for improved small object detection. Uses the standard ResNet-18vd backbone and RepVGG-based encoder (P3-P5). Trained on a 9-class subset of VisDrone for 90 epochs, with a learning rate drop at epochs 60 and 80 (unlike final models which drop at 85). Uses 3 decoder layers with 300 queries.",
     "path": "backend/models/gnconv_p_experimental.onnx",
     "full_metrics": {
       "profiling": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_gnconv_repvgg.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_gnconv_repvgg/checkpoint0089.pth",
         "layer_analysis": {
           "total_params": 21939160,
           "components": {
@@ -1600,8 +1523,6 @@
         }
       },
       "model_evaluation": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_gnconv_repvgg.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_gnconv_repvgg/checkpoint0089.pth",
         "device": "cuda",
         "total_params": 24152920,
         "trainable_params": 24124408,
@@ -1631,8 +1552,6 @@
         }
       },
       "fps": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_gnconv_repvgg.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_gnconv_repvgg/checkpoint0089.pth",
         "device": "cuda",
         "total_params": 24152920,
         "trainable_params": 24124408,
@@ -1672,7 +1591,6 @@
         }
       },
       "evaluation": {
-        "checkpoint_path": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_gnconv_repvgg/checkpoint0089.pth",
         "file_size_mb": 335.6498613357544,
         "keys": [
           "model",
@@ -1692,9 +1610,6 @@
         "has_lr_scheduler": true
       },
       "detailed": {
-        "config": "configs/rtdetr/rtdetr_r18vd_p2_gnconv_repvgg.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_gnconv_repvgg/checkpoint0089.pth",
-        "epoch": "unknown",
         "overall_metrics": {
           "AP@0.5:0.95": 0.241674876609752,
           "AP@0.5": 0.3968360903068085,
@@ -1763,11 +1678,7 @@
             "medium": 2821.476985517941,
             "large": 17998.86336965633
           }
-        },
-        "recommendations": [
-          "\u26a0  Small object AP is significantly lower than overall AP",
-          "\u2713 Strong performance on large objects"
-        ]
+        }
       },
       "eval_performance": {
         "mAP_50_95": 0.2634,
@@ -1793,12 +1704,10 @@
   {
     "id": "gnconv_slimp_experimental",
     "name": "(gnConv+SLIMp2)",
-    "description": "Experimental version of (gnConv+SLIMp2) with 3 decoder layers.",
+    "description": "Experimental validation run of the RT-DETR variant featuring a slimmed-down GnConv P2 layer (128 channels) for efficient high-resolution feature extraction. Uses the standard ResNet-18vd backbone and RepVGG-based encoder (P3-P5). Trained on a 9-class subset of VisDrone for 90 epochs, with a learning rate drop at epochs 60 and 80 (unlike final models which drop at 85). Uses 3 decoder layers with 300 queries.",
     "path": "backend/models/gnconv_slimp_experimental.onnx",
     "full_metrics": {
       "profiling": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_slim_gnconv_reversed.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim_gnconv_reversed/checkpoint0089.pth",
         "layer_analysis": {
           "total_params": 21292536,
           "components": {
@@ -1841,8 +1750,6 @@
         }
       },
       "model_evaluation": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_slim_gnconv_reversed.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim_gnconv_reversed/checkpoint0089.pth",
         "device": "cuda",
         "total_params": 23506296,
         "trainable_params": 23477784,
@@ -1872,8 +1779,6 @@
         }
       },
       "fps": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_slim_gnconv_reversed.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim_gnconv_reversed/checkpoint0089.pth",
         "device": "cuda",
         "total_params": 23506296,
         "trainable_params": 23477784,
@@ -1913,7 +1818,6 @@
         }
       },
       "evaluation": {
-        "checkpoint_path": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim_gnconv_reversed/checkpoint0089.pth",
         "file_size_mb": 325.77443408966064,
         "keys": [
           "model",
@@ -1933,9 +1837,6 @@
         "has_lr_scheduler": true
       },
       "detailed": {
-        "config": "configs/rtdetr/rtdetr_r18vd_p2_slim_gnconv_reversed.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim_gnconv_reversed/checkpoint0089.pth",
-        "epoch": "unknown",
         "overall_metrics": {
           "AP@0.5:0.95": 0.23920679712951798,
           "AP@0.5": 0.3956396155901253,
@@ -2004,12 +1905,7 @@
             "medium": 2821.476985517941,
             "large": 17998.86336965633
           }
-        },
-        "recommendations": [
-          "\u26a0  Small object AP is significantly lower than overall AP",
-          "\u2713 Strong performance on large objects",
-          "\u26a0  Large gap between recall and precision"
-        ]
+        }
       },
       "eval_performance": {
         "mAP_50_95": 0.2609,
@@ -2035,12 +1931,10 @@
   {
     "id": "aware_loss_reweighting_experimental",
     "name": "Aware Loss Reweighting",
-    "description": "Experimental version of Aware Loss Reweighting with 3 decoder layers.",
+    "description": "Experimental validation run of RT-DETR implementing aware loss reweighting. Uses the standard ResNet-18vd backbone and RepVGG-based encoder (P3-P5). Trained on a 9-class subset of VisDrone for 90 epochs, with learning rate drops at epochs 60 and 80. Uses 3 decoder layers with 300 queries.",
     "path": "backend/models/aware_loss_reweighting_experimental.onnx",
     "full_metrics": {
       "profiling": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_visdrone_r18vd.yml",
-        "checkpoint": "/kaggle/input/rt-detr-aware-loss-reweightning/checkpoint0089.pth",
         "layer_analysis": {
           "total_params": 20084728,
           "components": {
@@ -2083,8 +1977,6 @@
         }
       },
       "model_evaluation": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_visdrone_r18vd.yml",
-        "checkpoint": "/kaggle/input/rt-detr-aware-loss-reweightning/checkpoint0089.pth",
         "device": "cuda",
         "total_params": 21855736,
         "trainable_params": 21827224,
@@ -2114,8 +2006,6 @@
         }
       },
       "fps": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_visdrone_r18vd.yml",
-        "checkpoint": "/kaggle/input/rt-detr-aware-loss-reweightning/checkpoint0089.pth",
         "device": "cuda",
         "total_params": 21855736,
         "trainable_params": 21827224,
@@ -2155,7 +2045,6 @@
         }
       },
       "evaluation": {
-        "checkpoint_path": "/kaggle/input/rt-detr-aware-loss-reweightning/checkpoint0089.pth",
         "file_size_mb": 307.13245487213135,
         "keys": [
           "model",
@@ -2174,9 +2063,6 @@
         "has_lr_scheduler": true
       },
       "detailed": {
-        "config": "configs/rtdetr/rtdetr_visdrone_r18vd.yml",
-        "checkpoint": "/kaggle/input/rt-detr-aware-loss-reweightning/checkpoint0089.pth",
-        "epoch": "unknown",
         "overall_metrics": {
           "AP@0.5:0.95": 0.10499402773810998,
           "AP@0.5": 0.18851288122648538,
@@ -2245,11 +2131,7 @@
             "medium": 2821.476985517941,
             "large": 17998.86336965633
           }
-        },
-        "recommendations": [
-          "\u2713 Strong performance on large objects",
-          "\u26a0  Large gap between recall and precision"
-        ]
+        }
       },
       "eval_performance": {
         "mAP_50_95": 0.1142,
@@ -2275,12 +2157,10 @@
   {
     "id": "efficientnet_b_experimental",
     "name": "EfficientNet-B2",
-    "description": "Experimental version of EfficientNet-B2 with 3 decoder layers.",
+    "description": "Experimental validation run of the RT-DETR variant replacing the ResNet-18vd backbone with EfficientNet-B2 for reduced parameter count. Uses the standard RepVGG-based encoder (P3-P5). Trained on a 9-class subset of VisDrone for 90 epochs, with learning rate drops at epochs 60 and 80. Uses 3 decoder layers with 300 queries.",
     "path": "backend/models/efficientnet_b_experimental.onnx",
     "full_metrics": {
       "profiling": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_visdrone_eb2.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_visdrone_eb2/checkpoint0093.pth",
         "layer_analysis": {
           "total_params": 16499354,
           "components": {
@@ -2323,8 +2203,6 @@
         }
       },
       "model_evaluation": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_visdrone_eb2.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_visdrone_eb2/checkpoint0093.pth",
         "device": "cuda",
         "total_params": 18270362,
         "trainable_params": 18270362,
@@ -2354,8 +2232,6 @@
         }
       },
       "fps": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_visdrone_eb2.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_visdrone_eb2/checkpoint0093.pth",
         "device": "cuda",
         "total_params": 18270362,
         "trainable_params": 18270362,
@@ -2395,7 +2271,6 @@
         }
       },
       "evaluation": {
-        "checkpoint_path": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_visdrone_eb2/checkpoint0093.pth",
         "file_size_mb": 249.71197986602783,
         "keys": [
           "model",
@@ -2414,9 +2289,6 @@
         "has_lr_scheduler": true
       },
       "detailed": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_visdrone_eb2.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_visdrone_eb2/checkpoint0093.pth",
-        "epoch": "unknown",
         "overall_metrics": {
           "AP@0.5:0.95": 0.229857664940493,
           "AP@0.5": 0.38663517792449625,
@@ -2485,11 +2357,7 @@
             "medium": 2821.476985517941,
             "large": 17998.86336965633
           }
-        },
-        "recommendations": [
-          "\u26a0  Small object AP is significantly lower than overall AP",
-          "\u2713 Strong performance on large objects"
-        ]
+        }
       },
       "eval_performance": {
         "mAP_50_95": 0.2505,
@@ -2515,12 +2383,10 @@
   {
     "id": "efficientnet_b_p_experimental",
     "name": "EfficientNet-B2+P2",
-    "description": "Experimental version of EfficientNet-B2+P2 with 3 decoder layers.",
+    "description": "Experimental validation run of the RT-DETR variant replacing the ResNet-18vd backbone with EfficientNet-B2 and adding a standard RepVGG-based P2 feature level for improved small object detection. Uses the standard RepVGG-based encoder (P3-P5). Trained on a 9-class subset of VisDrone for 90 epochs, with learning rate drops at epochs 60 and 80. Uses 3 decoder layers with 300 queries.",
     "path": "backend/models/efficientnet_b_p_experimental.onnx",
     "full_metrics": {
       "profiling": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_visdrone_eb2_p2.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_visdrone_eb2/checkpoint0093.pth",
         "layer_analysis": {
           "total_params": 18618298,
           "components": {
@@ -2563,8 +2429,6 @@
         }
       },
       "model_evaluation": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_visdrone_eb2_p2.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_visdrone_eb2/checkpoint0093.pth",
         "device": "cuda",
         "total_params": 21274810,
         "trainable_params": 21274810,
@@ -2594,8 +2458,6 @@
         }
       },
       "fps": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_visdrone_eb2_p2.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_visdrone_eb2/checkpoint0093.pth",
         "device": "cuda",
         "total_params": 21274810,
         "trainable_params": 21274810,
@@ -2635,7 +2497,6 @@
         }
       },
       "evaluation": {
-        "checkpoint_path": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_visdrone_eb2/checkpoint0093.pth",
         "file_size_mb": 282.2527093887329,
         "keys": [
           "model",
@@ -2655,9 +2516,6 @@
         "has_lr_scheduler": true
       },
       "detailed": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_visdrone_eb2_p2.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_visdrone_eb2/checkpoint0093.pth",
-        "epoch": "unknown",
         "overall_metrics": {
           "AP@0.5:0.95": 0.2665830808509217,
           "AP@0.5": 0.43150061023568953,
@@ -2726,11 +2584,7 @@
             "medium": 2821.476985517941,
             "large": 17998.86336965633
           }
-        },
-        "recommendations": [
-          "\u2713 Strong performance on large objects",
-          "\u26a0  Large gap between recall and precision"
-        ]
+        }
       },
       "eval_performance": {
         "mAP_50_95": 0.2874,
@@ -2756,12 +2610,10 @@
   {
     "id": "normal_rt_detr_experimental",
     "name": "Normal RT-DETR",
-    "description": "Experimental version of Normal RT-DETR with 3 decoder layers.",
+    "description": "Experimental validation run of the standard RT-DETR model with a ResNet-18vd backbone. Uses the original AIFI-based encoder with 3 CCFM stages (P3-P5 feature levels). Trained on a 9-class subset of VisDrone for 90 epochs, with learning rate drops at epochs 60 and 80. Uses 3 decoder layers with 300 queries.",
     "path": "backend/models/normal_rt_detr_experimental.onnx",
     "full_metrics": {
       "profiling": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_visdrone_r18vd.yml",
-        "checkpoint": "/kaggle/input/rt-detr-r18-baseline-on-visdrone2019-c/checkpoint0093.pth",
         "layer_analysis": {
           "total_params": 20084728,
           "components": {
@@ -2804,8 +2656,6 @@
         }
       },
       "model_evaluation": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_visdrone_r18vd.yml",
-        "checkpoint": "/kaggle/input/rt-detr-r18-baseline-on-visdrone2019-c/checkpoint0093.pth",
         "device": "cuda",
         "total_params": 21855736,
         "trainable_params": 21827224,
@@ -2835,8 +2685,6 @@
         }
       },
       "fps": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_visdrone_r18vd.yml",
-        "checkpoint": "/kaggle/input/rt-detr-r18-baseline-on-visdrone2019-c/checkpoint0093.pth",
         "device": "cuda",
         "total_params": 21855736,
         "trainable_params": 21827224,
@@ -2876,7 +2724,6 @@
         }
       },
       "evaluation": {
-        "checkpoint_path": "/kaggle/input/rt-detr-r18-baseline-on-visdrone2019-c/checkpoint0093.pth",
         "file_size_mb": 307.13245487213135,
         "keys": [
           "model",
@@ -2895,9 +2742,6 @@
         "has_lr_scheduler": true
       },
       "detailed": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_visdrone_r18vd.yml",
-        "checkpoint": "/kaggle/input/rt-detr-r18-baseline-on-visdrone2019-c/checkpoint0093.pth",
-        "epoch": "unknown",
         "overall_metrics": {
           "AP@0.5:0.95": 0.21837734680809462,
           "AP@0.5": 0.36226276877098595,
@@ -2966,11 +2810,7 @@
             "medium": 2821.476985517941,
             "large": 17998.86336965633
           }
-        },
-        "recommendations": [
-          "\u26a0  Small object AP is significantly lower than overall AP",
-          "\u2713 Strong performance on large objects"
-        ]
+        }
       },
       "eval_performance": {
         "mAP_50_95": 0.2388,
@@ -2996,12 +2836,10 @@
   {
     "id": "p_p_fusion_experimental",
     "name": "P2-P3 fusion",
-    "description": "Experimental version of P2-P3 fusion with 3 decoder layers.",
+    "description": "Experimental validation run of the RT-DETR variant replacing the standard CCFM encoder with a simpler P2-P3 feature fusion mechanism for faster inference. Uses the standard ResNet-18vd backbone. Trained on a 9-class subset of VisDrone for 90 epochs, with learning rate drops at epochs 60 and 80. Uses 3 decoder layers with 300 queries.",
     "path": "backend/models/p_p_fusion_experimental.onnx",
     "full_metrics": {
       "profiling": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_visdrone_p2fusion.yml",
-        "checkpoint": "/kaggle/input/rt-detr-r18-p2-p3-fusion-on-visdrone2019/checkpoint0089.pth",
         "layer_analysis": {
           "total_params": 24461432,
           "components": {
@@ -3044,8 +2882,6 @@
         }
       },
       "model_evaluation": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_visdrone_p2fusion.yml",
-        "checkpoint": "/kaggle/input/rt-detr-r18-p2-p3-fusion-on-visdrone2019/checkpoint0089.pth",
         "device": "cuda",
         "total_params": 27117944,
         "trainable_params": 27117944,
@@ -3075,8 +2911,6 @@
         }
       },
       "fps": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_visdrone_p2fusion.yml",
-        "checkpoint": "/kaggle/input/rt-detr-r18-p2-p3-fusion-on-visdrone2019/checkpoint0089.pth",
         "device": "cuda",
         "total_params": 27117944,
         "trainable_params": 27117944,
@@ -3116,7 +2950,6 @@
         }
       },
       "evaluation": {
-        "checkpoint_path": "/kaggle/input/rt-detr-r18-p2-p3-fusion-on-visdrone2019/checkpoint0089.pth",
         "file_size_mb": 359.1249837875366,
         "keys": [
           "model",
@@ -3135,9 +2968,6 @@
         "has_lr_scheduler": true
       },
       "detailed": {
-        "config": "configs/rtdetr/rtdetr_r18vd_visdrone_p2fusion.yml",
-        "checkpoint": "/kaggle/input/rt-detr-r18-p2-p3-fusion-on-visdrone2019/checkpoint0089.pth",
-        "epoch": "unknown",
         "overall_metrics": {
           "AP@0.5:0.95": 0.25258922633353875,
           "AP@0.5": 0.41181526138042,
@@ -3206,12 +3036,7 @@
             "medium": 2821.476985517941,
             "large": 17998.86336965633
           }
-        },
-        "recommendations": [
-          "\u26a0  Small object AP is significantly lower than overall AP",
-          "\u2713 Strong performance on large objects",
-          "\u26a0  Large gap between recall and precision"
-        ]
+        }
       },
       "eval_performance": {
         "mAP_50_95": 0.2699,
@@ -3237,12 +3062,10 @@
   {
     "id": "query_imp_experimental",
     "name": "Query IMP",
-    "description": "Experimental version of Query IMP with 3 decoder layers.",
+    "description": "Experimental validation run of RT-DETR with scale-aware query selection allocating queries proportionally across feature levels (40% from P3, 30% from P4, 30% from P5) while keeping num_queries at the default 300. Uses the standard ResNet-18vd backbone and RepVGG-based encoder (P3-P5). Trained on a 9-class subset of VisDrone for 90 epochs, with learning rate drops at epochs 60 and 80. Uses 3 decoder layers.",
     "path": "backend/models/query_imp_experimental.onnx",
     "full_metrics": {
       "profiling": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_visdrone_r18vd_scale_aware.yml",
-        "checkpoint": "/kaggle/input/rt-detr-query-imp/checkpoint0093.pth",
         "layer_analysis": {
           "total_params": 20084728,
           "components": {
@@ -3285,8 +3108,6 @@
         }
       },
       "model_evaluation": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_visdrone_r18vd_scale_aware.yml",
-        "checkpoint": "/kaggle/input/rt-detr-query-imp/checkpoint0093.pth",
         "device": "cuda",
         "total_params": 21855736,
         "trainable_params": 21827224,
@@ -3316,8 +3137,6 @@
         }
       },
       "fps": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_visdrone_r18vd_scale_aware.yml",
-        "checkpoint": "/kaggle/input/rt-detr-query-imp/checkpoint0093.pth",
         "device": "cuda",
         "total_params": 21855736,
         "trainable_params": 21827224,
@@ -3357,7 +3176,6 @@
         }
       },
       "evaluation": {
-        "checkpoint_path": "/kaggle/input/rt-detr-query-imp/checkpoint0093.pth",
         "file_size_mb": 307.13245487213135,
         "keys": [
           "model",
@@ -3376,9 +3194,6 @@
         "has_lr_scheduler": true
       },
       "detailed": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_visdrone_r18vd_scale_aware.yml",
-        "checkpoint": "/kaggle/input/rt-detr-query-imp/checkpoint0093.pth",
-        "epoch": "unknown",
         "overall_metrics": {
           "AP@0.5:0.95": 0.22261505027354064,
           "AP@0.5": 0.36741928632777093,
@@ -3447,12 +3262,7 @@
             "medium": 2821.476985517941,
             "large": 17998.86336965633
           }
-        },
-        "recommendations": [
-          "\u26a0  Small object AP is significantly lower than overall AP",
-          "\u2713 Strong performance on large objects",
-          "\u26a0  Large gap between recall and precision"
-        ]
+        }
       },
       "eval_performance": {
         "mAP_50_95": 0.2438,
@@ -3478,12 +3288,10 @@
   {
     "id": "slim_p_layer_experimental",
     "name": "SLIM p2 layer",
-    "description": "Experimental version of SLIM p2 layer with 6 decoder layers.",
+    "description": "Experimental validation run of the RT-DETR variant featuring a slimmed-down P2 feature level (128 channels) using a RepVGG-based block for high-resolution small object features. Uses the standard ResNet-18vd backbone and RepVGG-based encoder (P3-P5). Trained on a 9-class subset of VisDrone for 90 epochs, with learning rate drops at epochs 60 and 80. Uses 6 decoder layers with 300 queries.",
     "path": "backend/models/slim_p_layer_experimental.onnx",
     "full_metrics": {
       "profiling": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_slim.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim/checkpoint0089.pth",
         "layer_analysis": {
           "total_params": 33085122,
           "components": {
@@ -3526,8 +3334,6 @@
         }
       },
       "model_evaluation": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_slim.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim/checkpoint0089.pth",
         "device": "cuda",
         "total_params": 42379074,
         "trainable_params": 42350562,
@@ -3557,8 +3363,6 @@
         }
       },
       "fps": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_slim.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim/checkpoint0089.pth",
         "device": "cuda",
         "total_params": 42379074,
         "trainable_params": 42350562,
@@ -3598,7 +3402,6 @@
         }
       },
       "evaluation": {
-        "checkpoint_path": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim/checkpoint0089.pth",
         "file_size_mb": 505.86369800567627,
         "keys": [
           "model",
@@ -3618,9 +3421,6 @@
         "has_lr_scheduler": true
       },
       "detailed": {
-        "config": "configs/rtdetr/rtdetr_r18vd_p2_slim.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim/checkpoint0089.pth",
-        "epoch": "unknown",
         "overall_metrics": {
           "AP@0.5:0.95": 0.25984849994500225,
           "AP@0.5": 0.42483471495522956,
@@ -3689,11 +3489,7 @@
             "medium": 2821.476985517941,
             "large": 17998.86336965633
           }
-        },
-        "recommendations": [
-          "\u26a0  Small object AP is significantly lower than overall AP",
-          "\u2713 Strong performance on large objects"
-        ]
+        }
       },
       "eval_performance": {
         "mAP_50_95": 0.2604,
@@ -3719,12 +3515,10 @@
   {
     "id": "slim_p_layer_crr_experimental",
     "name": "SLIM p2 layer CRR",
-    "description": "Experimental version of SLIM p2 layer CRR with 3 decoder layers.",
+    "description": "Experimental validation run of the RT-DETR variant featuring a slimmed-down RepVGG-based P2 feature level (128 channels). This is the 3-decoder-layer version of the 6-decoder-layer slim P2 model. Uses the standard ResNet-18vd backbone and RepVGG-based encoder (P3-P5). Trained on a 9-class subset of VisDrone for 90 epochs, with learning rate drops at epochs 60 and 80. Uses 3 decoder layers with 300 queries.",
     "path": "backend/models/slim_p_layer_crr_experimental.onnx",
     "full_metrics": {
       "profiling": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_slim.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim/checkpoint0089.pth",
         "layer_analysis": {
           "total_params": 21351960,
           "components": {
@@ -3767,8 +3561,6 @@
         }
       },
       "model_evaluation": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_slim.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim/checkpoint0089.pth",
         "device": "cuda",
         "total_params": 23676504,
         "trainable_params": 23647992,
@@ -3798,8 +3590,6 @@
         }
       },
       "fps": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_slim.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim/checkpoint0089.pth",
         "device": "cuda",
         "total_params": 23676504,
         "trainable_params": 23647992,
@@ -3839,7 +3629,6 @@
         }
       },
       "evaluation": {
-        "checkpoint_path": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim/checkpoint0089.pth",
         "file_size_mb": 326.6632356643677,
         "keys": [
           "model",
@@ -3858,9 +3647,6 @@
         "has_lr_scheduler": true
       },
       "detailed": {
-        "config": "configs/rtdetr/rtdetr_r18vd_p2_slim.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim/checkpoint0089.pth",
-        "epoch": "unknown",
         "overall_metrics": {
           "AP@0.5:0.95": 0.23831936874203746,
           "AP@0.5": 0.3913239887979471,
@@ -3929,12 +3715,7 @@
             "medium": 2821.476985517941,
             "large": 17998.86336965633
           }
-        },
-        "recommendations": [
-          "\u26a0  Small object AP is significantly lower than overall AP",
-          "\u2713 Strong performance on large objects",
-          "\u26a0  Large gap between recall and precision"
-        ]
+        }
       },
       "eval_performance": {
         "mAP_50_95": 0.2836,
@@ -3960,12 +3741,10 @@
   {
     "id": "gnconv_experimental",
     "name": "gnconv",
-    "description": "Experimental version of gnconv with 3 decoder layers.",
+    "description": "Experimental validation run of RT-DETR replacing standard convolutions with GnConv in the CCFM encoder (P3-P5 levels). Uses the original ResNet-18vd backbone. Does not include a P2 layer. Trained on a 9-class subset of VisDrone for 90 epochs, with learning rate drops at epochs 60 and 80. Uses 3 decoder layers with 300 queries.",
     "path": "backend/models/gnconv_experimental.onnx",
     "full_metrics": {
       "profiling": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_gnconv_neck.yml",
-        "checkpoint": "/kaggle/input/3-10-12-rt-detrr18-train-visdrone2019-gnconv/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_visdrone_r18vd/checkpoint0089.pth",
         "layer_analysis": {
           "total_params": 18985720,
           "components": {
@@ -4008,8 +3787,6 @@
         }
       },
       "model_evaluation": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_gnconv_neck.yml",
-        "checkpoint": "/kaggle/input/3-10-12-rt-detrr18-train-visdrone2019-gnconv/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_visdrone_r18vd/checkpoint0089.pth",
         "device": "cuda",
         "total_params": 18985720,
         "trainable_params": 18957208,
@@ -4039,8 +3816,6 @@
         }
       },
       "fps": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_gnconv_neck.yml",
-        "checkpoint": "/kaggle/input/3-10-12-rt-detrr18-train-visdrone2019-gnconv/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_visdrone_r18vd/checkpoint0089.pth",
         "device": "cuda",
         "total_params": 18985720,
         "trainable_params": 18957208,
@@ -4080,7 +3855,6 @@
         }
       },
       "evaluation": {
-        "checkpoint_path": "/kaggle/input/3-10-12-rt-detrr18-train-visdrone2019-gnconv/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_visdrone_r18vd/checkpoint0089.pth",
         "file_size_mb": 290.4136743545532,
         "keys": [
           "model",
@@ -4099,9 +3873,6 @@
         "has_lr_scheduler": true
       },
       "detailed": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_gnconv_neck.yml",
-        "checkpoint": "/kaggle/input/3-10-12-rt-detrr18-train-visdrone2019-gnconv/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_visdrone_r18vd/checkpoint0089.pth",
-        "epoch": "unknown",
         "overall_metrics": {
           "AP@0.5:0.95": 0.21256285939469588,
           "AP@0.5": 0.3558693710311696,
@@ -4170,11 +3941,7 @@
             "medium": 2821.476985517941,
             "large": 17998.86336965633
           }
-        },
-        "recommendations": [
-          "\u26a0  Small object AP is significantly lower than overall AP",
-          "\u2713 Strong performance on large objects"
-        ]
+        }
       },
       "eval_performance": {
         "mAP_50_95": 0.2336,
@@ -4200,12 +3967,10 @@
   {
     "id": "gnconv_slim_p_layer_repvgg_experimental",
     "name": "gnconv + SLIM p2 layer + Repvgg",
-    "description": "Experimental version of gnconv + SLIM p2 layer + Repvgg with 6 decoder layers.",
+    "description": "Experimental validation run of the RT-DETR variant featuring a slimmed-down RepVGG-based P2 layer (128 channels) combined with a GnConv-based CCFM encoder (P3-P5). Uses the standard ResNet-18vd backbone. Trained on a 9-class subset of VisDrone for 90 epochs, with learning rate drops at epochs 60 and 80. Uses 6 decoder layers with 300 queries.",
     "path": "backend/models/gnconv_slim_p_layer_repvgg_experimental.onnx",
     "full_metrics": {
       "profiling": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_slim_fast.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim_fast/checkpoint0089.pth",
         "layer_analysis": {
           "total_params": 27219522,
           "components": {
@@ -4248,8 +4013,6 @@
         }
       },
       "model_evaluation": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_slim_fast.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim_fast/checkpoint0089.pth",
         "device": "cuda",
         "total_params": 27662274,
         "trainable_params": 27633762,
@@ -4279,8 +4042,6 @@
         }
       },
       "fps": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_slim_fast.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim_fast/checkpoint0089.pth",
         "device": "cuda",
         "total_params": 27662274,
         "trainable_params": 27633762,
@@ -4320,7 +4081,6 @@
         }
       },
       "evaluation": {
-        "checkpoint_path": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim_fast/checkpoint0089.pth",
         "file_size_mb": 416.3667116165161,
         "keys": [
           "model",
@@ -4340,9 +4100,6 @@
         "has_lr_scheduler": true
       },
       "detailed": {
-        "config": "configs/rtdetr/rtdetr_r18vd_p2_slim_fast.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim_fast/checkpoint0089.pth",
-        "epoch": "unknown",
         "overall_metrics": {
           "AP@0.5:0.95": 0.2523865409185051,
           "AP@0.5": 0.41560573332342565,
@@ -4411,11 +4168,7 @@
             "medium": 2821.476985517941,
             "large": 17998.86336965633
           }
-        },
-        "recommendations": [
-          "\u26a0  Small object AP is significantly lower than overall AP",
-          "\u2713 Strong performance on large objects"
-        ]
+        }
       },
       "eval_performance": {
         "mAP_50_95": 0.2761,
@@ -4441,12 +4194,10 @@
   {
     "id": "gnconv_slim_p_layer_repvgg_crr_experimental",
     "name": "gnconv + SLIM p2 layer + Repvgg CRR",
-    "description": "Experimental version of gnconv + SLIM p2 layer + Repvgg CRR with 3 decoder layers.",
+    "description": "Experimental validation run of the RT-DETR variant featuring a slimmed-down RepVGG-based P2 layer (128 channels) combined with a GnConv-based CCFM encoder (P3-P5). This is the 3-decoder-layer (CRR) version. Uses the standard ResNet-18vd backbone. Trained on a 9-class subset of VisDrone for 90 epochs, with learning rate drops at epochs 60 and 80. Uses 3 decoder layers with 300 queries.",
     "path": "backend/models/gnconv_slim_p_layer_repvgg_crr_experimental.onnx",
     "full_metrics": {
       "profiling": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_slim_fast.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim_fast/checkpoint0089.pth",
         "layer_analysis": {
           "total_params": 19978200,
           "components": {
@@ -4489,8 +4240,6 @@
         }
       },
       "model_evaluation": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_slim_fast.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim_fast/checkpoint0089.pth",
         "device": "cuda",
         "total_params": 20088984,
         "trainable_params": 20060472,
@@ -4520,8 +4269,6 @@
         }
       },
       "fps": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_slim_fast.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim_fast/checkpoint0089.pth",
         "device": "cuda",
         "total_params": 20088984,
         "trainable_params": 20060472,
@@ -4561,7 +4308,6 @@
         }
       },
       "evaluation": {
-        "checkpoint_path": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim_fast/checkpoint0089.pth",
         "file_size_mb": 305.7648820877075,
         "keys": [
           "model",
@@ -4581,9 +4327,6 @@
         "has_lr_scheduler": true
       },
       "detailed": {
-        "config": "configs/rtdetr/rtdetr_r18vd_p2_slim_fast.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_slim_fast/checkpoint0089.pth",
-        "epoch": "unknown",
         "overall_metrics": {
           "AP@0.5:0.95": 0.2284413725011107,
           "AP@0.5": 0.3751288765441848,
@@ -4652,12 +4395,7 @@
             "medium": 2821.476985517941,
             "large": 17998.86336965633
           }
-        },
-        "recommendations": [
-          "\u26a0  Small object AP is significantly lower than overall AP",
-          "\u2713 Strong performance on large objects",
-          "\u26a0  Large gap between recall and precision"
-        ]
+        }
       },
       "eval_performance": {
         "mAP_50_95": 0.2499,
@@ -4683,12 +4421,10 @@
   {
     "id": "gnconv_p_layer_experimental",
     "name": "gnconv + p2 layer",
-    "description": "Experimental version of gnconv + p2 layer with 6 decoder layers.",
+    "description": "Experimental validation run of the RT-DETR variant adding a P2 feature level using GnConv, combined with a GnConv-based CCFM encoder (P3-P5). Uses the standard ResNet-18vd backbone. Trained on a 9-class subset of VisDrone for 90 epochs, with learning rate drops at epochs 60 and 80. Uses 6 decoder layers with 300 queries.",
     "path": "backend/models/gnconv_p_layer_experimental.onnx",
     "full_metrics": {
       "profiling": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_gnconv.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_gnconv/checkpoint0089.pth",
         "layer_analysis": {
           "total_params": 28088770,
           "components": {
@@ -4731,8 +4467,6 @@
         }
       },
       "model_evaluation": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_gnconv.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_gnconv/checkpoint0089.pth",
         "device": "cuda",
         "total_params": 28088770,
         "trainable_params": 28060258,
@@ -4762,8 +4496,6 @@
         }
       },
       "fps": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_gnconv.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_gnconv/checkpoint0089.pth",
         "device": "cuda",
         "total_params": 28088770,
         "trainable_params": 28060258,
@@ -4803,7 +4535,6 @@
         }
       },
       "evaluation": {
-        "checkpoint_path": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_gnconv/checkpoint0089.pth",
         "file_size_mb": 429.65106678009033,
         "keys": [
           "model",
@@ -4822,9 +4553,6 @@
         "has_lr_scheduler": true
       },
       "detailed": {
-        "config": "configs/rtdetr/rtdetr_r18vd_p2_gnconv.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_gnconv/checkpoint0089.pth",
-        "epoch": "unknown",
         "overall_metrics": {
           "AP@0.5:0.95": 0.2664584441334206,
           "AP@0.5": 0.431257723402096,
@@ -4893,11 +4621,7 @@
             "medium": 2821.476985517941,
             "large": 17998.86336965633
           }
-        },
-        "recommendations": [
-          "\u26a0  Small object AP is significantly lower than overall AP",
-          "\u2713 Strong performance on large objects"
-        ]
+        }
       },
       "eval_performance": {
         "mAP_50_95": 0.2923,
@@ -4923,12 +4647,10 @@
   {
     "id": "gnconv_p_layer_repvgg_experimental",
     "name": "gnconv + p2 layer + Repvgg",
-    "description": "Experimental version of gnconv + p2 layer + Repvgg with 6 decoder layers.",
+    "description": "Experimental validation run of the RT-DETR variant featuring a RepVGG-based P2 layer added as a high-resolution feature level, combined with a GnConv-based CCFM encoder (P3-P5). Uses the standard ResNet-18vd backbone. Trained on a 9-class subset of VisDrone for 90 epochs, with learning rate drops at epochs 60 and 80. Uses 6 decoder layers with 300 queries.",
     "path": "backend/models/gnconv_p_layer_repvgg_experimental.onnx",
     "full_metrics": {
       "profiling": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_fast_gnconv.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_fast_gnconv/checkpoint0089.pth",
         "layer_analysis": {
           "total_params": 29261890,
           "components": {
@@ -4971,8 +4693,6 @@
         }
       },
       "model_evaluation": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_fast_gnconv.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_fast_gnconv/checkpoint0089.pth",
         "device": "cuda",
         "total_params": 31032130,
         "trainable_params": 31003618,
@@ -5002,8 +4722,6 @@
         }
       },
       "fps": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_fast_gnconv.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_fast_gnconv/checkpoint0089.pth",
         "device": "cuda",
         "total_params": 31032130,
         "trainable_params": 31003618,
@@ -5043,7 +4761,6 @@
         }
       },
       "evaluation": {
-        "checkpoint_path": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_fast_gnconv/checkpoint0089.pth",
         "file_size_mb": 447.55048847198486,
         "keys": [
           "model",
@@ -5062,9 +4779,6 @@
         "has_lr_scheduler": true
       },
       "detailed": {
-        "config": "configs/rtdetr/rtdetr_r18vd_p2_fast_gnconv.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_fast_gnconv/checkpoint0089.pth",
-        "epoch": "unknown",
         "overall_metrics": {
           "AP@0.5:0.95": 0.27117606878798156,
           "AP@0.5": 0.44314164258867567,
@@ -5133,10 +4847,7 @@
             "medium": 2821.476985517941,
             "large": 17998.86336965633
           }
-        },
-        "recommendations": [
-          "\u2713 Strong performance on large objects"
-        ]
+        }
       },
       "eval_performance": {
         "mAP_50_95": 0.2954,
@@ -5162,12 +4873,10 @@
   {
     "id": "gnconv_p_layer_repvgg_crr_experimental",
     "name": "gnconv + p2 layer + Repvgg CRR",
-    "description": "Experimental version of gnconv + p2 layer + Repvgg CRR with 3 decoder layers.",
+    "description": "Experimental validation run of the RT-DETR variant featuring a RepVGG-based P2 layer combined with a GnConv-based CCFM encoder (P3-P5). This is the 3-decoder-layer (CRR) version of the 6-decoder experiment. Uses the standard ResNet-18vd backbone. Trained on a 9-class subset of VisDrone for 90 epochs, with learning rate drops at epochs 60 and 80. Uses 3 decoder layers with 300 queries.",
     "path": "backend/models/gnconv_p_layer_repvgg_crr_experimental.onnx",
     "full_metrics": {
       "profiling": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_fast_gnconv.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_fast_gnconv/checkpoint0089.pth",
         "layer_analysis": {
           "total_params": 20840152,
           "components": {
@@ -5210,8 +4919,6 @@
         }
       },
       "model_evaluation": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_fast_gnconv.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_fast_gnconv/checkpoint0089.pth",
         "device": "cuda",
         "total_params": 21282904,
         "trainable_params": 21254392,
@@ -5241,8 +4948,6 @@
         }
       },
       "fps": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_fast_gnconv.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_fast_gnconv/checkpoint0089.pth",
         "device": "cuda",
         "total_params": 21282904,
         "trainable_params": 21254392,
@@ -5282,7 +4987,6 @@
         }
       },
       "evaluation": {
-        "checkpoint_path": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_fast_gnconv/checkpoint0089.pth",
         "file_size_mb": 318.9308977127075,
         "keys": [
           "model",
@@ -5301,9 +5005,6 @@
         "has_lr_scheduler": true
       },
       "detailed": {
-        "config": "configs/rtdetr/rtdetr_r18vd_p2_fast_gnconv.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_fast_gnconv/checkpoint0089.pth",
-        "epoch": "unknown",
         "overall_metrics": {
           "AP@0.5:0.95": 0.2344595043487289,
           "AP@0.5": 0.3867821327265671,
@@ -5372,12 +5073,7 @@
             "medium": 2821.476985517941,
             "large": 17998.86336965633
           }
-        },
-        "recommendations": [
-          "\u26a0  Small object AP is significantly lower than overall AP",
-          "\u2713 Strong performance on large objects",
-          "\u26a0  Large gap between recall and precision"
-        ]
+        }
       },
       "eval_performance": {
         "mAP_50_95": 0.2565,
@@ -5403,12 +5099,10 @@
   {
     "id": "gnconv_p_layer_crr_experimental",
     "name": "gnconv + p2 layer CRR",
-    "description": "Experimental version of gnconv + p2 layer CRR with 3 decoder layers.",
+    "description": "Experimental validation run of the RT-DETR variant adding a P2 feature level using GnConv, combined with a GnConv-based CCFM encoder (P3-P5). This is the 3-decoder-layer (CRR) version. Uses the standard ResNet-18vd backbone. Trained on a 9-class subset of VisDrone for 90 epochs, with learning rate drops at epochs 60 and 80. Uses 3 decoder layers with 300 queries.",
     "path": "backend/models/gnconv_p_layer_crr_experimental.onnx",
     "full_metrics": {
       "profiling": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_gnconv.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_gnconv/checkpoint0089.pth",
         "layer_analysis": {
           "total_params": 20565400,
           "components": {
@@ -5451,8 +5145,6 @@
         }
       },
       "model_evaluation": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_gnconv.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_gnconv/checkpoint0089.pth",
         "device": "cuda",
         "total_params": 20565400,
         "trainable_params": 20536888,
@@ -5482,8 +5174,6 @@
         }
       },
       "fps": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2_gnconv.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_gnconv/checkpoint0089.pth",
         "device": "cuda",
         "total_params": 20565400,
         "trainable_params": 20536888,
@@ -5523,7 +5213,6 @@
         }
       },
       "evaluation": {
-        "checkpoint_path": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_gnconv/checkpoint0089.pth",
         "file_size_mb": 314.7513246536255,
         "keys": [
           "model",
@@ -5543,9 +5232,6 @@
         "has_lr_scheduler": true
       },
       "detailed": {
-        "config": "configs/rtdetr/rtdetr_r18vd_p2_gnconv.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2_gnconv/checkpoint0089.pth",
-        "epoch": "unknown",
         "overall_metrics": {
           "AP@0.5:0.95": 0.23189316678919433,
           "AP@0.5": 0.3817105883256071,
@@ -5614,11 +5300,7 @@
             "medium": 2821.476985517941,
             "large": 17998.86336965633
           }
-        },
-        "recommendations": [
-          "\u26a0  Small object AP is significantly lower than overall AP",
-          "\u2713 Strong performance on large objects"
-        ]
+        }
       },
       "eval_performance": {
         "mAP_50_95": 0.2513,
@@ -5644,12 +5326,10 @@
   {
     "id": "p_layer_experimental",
     "name": "p2 layer",
-    "description": "Experimental version of p2 layer with 3 decoder layers.",
+    "description": "Experimental validation run of the RT-DETR variant featuring a standard RepVGG-based P2 feature block added for enhanced small object detection. Uses the standard ResNet-18vd backbone and default RepVGG-based encoder (P3-P5). Trained on a 9-class subset of VisDrone for 90 epochs, with learning rate drops at epochs 60 and 80. Uses 3 decoder layers with 300 queries.",
     "path": "backend/models/p_layer_experimental.onnx",
     "full_metrics": {
       "profiling": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2/checkpoint0089.pth",
         "layer_analysis": {
           "total_params": 22213912,
           "components": {
@@ -5692,8 +5372,6 @@
         }
       },
       "model_evaluation": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2/checkpoint0089.pth",
         "device": "cuda",
         "total_params": 24870424,
         "trainable_params": 24841912,
@@ -5723,8 +5401,6 @@
         }
       },
       "fps": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2/checkpoint0089.pth",
         "device": "cuda",
         "total_params": 24870424,
         "trainable_params": 24841912,
@@ -5764,7 +5440,6 @@
         }
       },
       "evaluation": {
-        "checkpoint_path": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2/checkpoint0089.pth",
         "file_size_mb": 339.8293733596802,
         "keys": [
           "model",
@@ -5783,9 +5458,6 @@
         "has_lr_scheduler": true
       },
       "detailed": {
-        "config": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_p2.yml",
-        "checkpoint": "/kaggle/working/RT-DETR_SOD_IMP/rtdetr_pytorch/output/rtdetr_r18vd_p2/checkpoint0089.pth",
-        "epoch": "unknown",
         "overall_metrics": {
           "AP@0.5:0.95": 0.24773583055211965,
           "AP@0.5": 0.39938456731978267,
@@ -5854,12 +5526,7 @@
             "medium": 2821.476985517941,
             "large": 17998.86336965633
           }
-        },
-        "recommendations": [
-          "\u26a0  Small object AP is significantly lower than overall AP",
-          "\u2713 Strong performance on large objects",
-          "\u26a0  Large gap between recall and precision"
-        ]
+        }
       },
       "eval_performance": {
         "mAP_50_95": 0.2696,
