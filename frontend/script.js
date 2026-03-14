@@ -126,24 +126,29 @@ class UIManager {
         // 1. Overview Tab
         let overviewHtml = '<table class="data-table"><tr><th>Metric</th><th>Value</th></tr>';
 
-        if (full.profiling?.layer_analysis) {
-            const totalParams = full.profiling.layer_analysis.total_params;
-            overviewHtml += `
-                <tr><td>Total Params</td><td>${(totalParams / 1e6).toFixed(2)} M</td></tr>
-                <tr><td>Trainable</td><td>${(totalParams / 1e6).toFixed(2)} M</td></tr>
-            `;
+        // AR@100
+        if (full.ar_100 != null) {
+            overviewHtml += `<tr><td>AR@100</td><td>${(full.ar_100 * 100).toFixed(2)}%</td></tr>`;
         } else {
-            overviewHtml += `<tr><td>Params</td><td>N/A</td></tr>`;
+            overviewHtml += `<tr><td>AR@100</td><td>N/A</td></tr>`;
         }
 
+        // Latency
         const bench = full.fps?.fps_benchmark?.['640x640'];
         if (bench) {
-            overviewHtml += `
-                <tr><td>Latency Mean</td><td>${bench.latency_mean_ms.toFixed(2)} ms</td></tr>
-                <tr><td>Latency Min</td><td>${bench.latency_min_ms.toFixed(2)} ms</td></tr>
-                <tr><td>FPS Mean</td><td>${bench.fps_mean.toFixed(2)}</td></tr>
-            `;
+            overviewHtml += `<tr><td>Latency</td><td>${bench.latency_mean_ms.toFixed(2)} ms</td></tr>`;
+        } else {
+            overviewHtml += `<tr><td>Latency</td><td>N/A</td></tr>`;
         }
+
+        // GFLOPs
+        const gflops = full.fps?.flops?.torchinfo_gflops;
+        if (gflops != null) {
+            overviewHtml += `<tr><td>GFLOPs</td><td>${gflops.toFixed(2)}</td></tr>`;
+        } else {
+            overviewHtml += `<tr><td>GFLOPs</td><td>N/A</td></tr>`;
+        }
+
         overviewHtml += '</table>';
         this.dom.tabs.overview.innerHTML = overviewHtml;
 

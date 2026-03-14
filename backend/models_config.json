@@ -231,7 +231,8 @@
                 "mAP_medium": 0.3531,
                 "mAP_large": 0.4694
             },
-            "inference_time_s": 26.86
+            "inference_time_s": 26.86,
+            "ar_100": 0.4005
         },
         "summary_metrics": {
             "mAP_50": "42.95%",
@@ -312,6 +313,11 @@
                         "fps_mean": 21.981327561463555,
                         "fps_std": 1001.3340991734261
                     }
+                },
+                "flops": {
+                    "torchinfo_params": 23117690,
+                    "torchinfo_mult_adds": 32929747846,
+                    "torchinfo_gflops": 32.929747846
                 }
             },
             "profiling": {
@@ -335,7 +341,8 @@
                         }
                     }
                 }
-            }
+            },
+            "ar_100": 0.4413
         },
         "summary_metrics": {
             "mAP_50": "48.28%",
@@ -577,7 +584,8 @@
                 "mAP_medium": 0.3793,
                 "mAP_large": 0.4718
             },
-            "inference_time_s": 43.74
+            "inference_time_s": 43.74,
+            "ar_100": 0.4246
         },
         "summary_metrics": {
             "mAP_50": "43.38%",
@@ -821,7 +829,8 @@
                 "mAP_medium": 0.3694,
                 "mAP_large": 0.5094
             },
-            "inference_time_s": 25.44
+            "inference_time_s": 25.44,
+            "ar_100": 0.4127
         },
         "summary_metrics": {
             "mAP_50": "42.13%",
@@ -902,6 +911,11 @@
                         "fps_mean": 23.59181990251997,
                         "fps_std": 1066.2943270239803
                     }
+                },
+                "flops": {
+                    "torchinfo_params": 22270232,
+                    "torchinfo_mult_adds": 34457652004,
+                    "torchinfo_gflops": 34.457652004
                 }
             },
             "profiling": {
@@ -925,7 +939,8 @@
                         }
                     }
                 }
-            }
+            },
+            "ar_100": 0.4141
         },
         "summary_metrics": {
             "mAP_50": "44.15%",
@@ -1168,7 +1183,8 @@
                 "mAP_medium": 0.3852,
                 "mAP_large": 0.4856
             },
-            "inference_time_s": 32.25
+            "inference_time_s": 32.25,
+            "ar_100": 0.4359
         },
         "summary_metrics": {
             "mAP_50": "44.92%",
@@ -1249,6 +1265,11 @@
                         "fps_mean": 45.62615287122656,
                         "fps_std": 2016.6541554553362
                     }
+                },
+                "flops": {
+                    "torchinfo_params": 24840536,
+                    "torchinfo_mult_adds": 25163571076,
+                    "torchinfo_gflops": 25.163571076
                 }
             },
             "profiling": {
@@ -1272,7 +1293,8 @@
                         }
                     }
                 }
-            }
+            },
+            "ar_100": 0.4298
         },
         "summary_metrics": {
             "mAP_50": "43.83%",
@@ -1514,7 +1536,8 @@
                 "mAP_medium": 0.3748,
                 "mAP_large": 0.4801
             },
-            "inference_time_s": 28.98
+            "inference_time_s": 28.98,
+            "ar_100": 0.4206
         },
         "summary_metrics": {
             "mAP_50": "42.88%",
@@ -1754,7 +1777,8 @@
                 "mAP_medium": 0.3737,
                 "mAP_large": 0.4892
             },
-            "inference_time_s": 44.17
+            "inference_time_s": 44.17,
+            "ar_100": 0.4196
         },
         "summary_metrics": {
             "mAP_50": "39.68%",
@@ -1995,7 +2019,8 @@
                 "mAP_medium": 0.3682,
                 "mAP_large": 0.4727
             },
-            "inference_time_s": 36.28
+            "inference_time_s": 36.28,
+            "ar_100": 0.4223
         },
         "summary_metrics": {
             "mAP_50": "39.56%",
@@ -2234,7 +2259,8 @@
                 "mAP_medium": 0.1894,
                 "mAP_large": 0.183
             },
-            "inference_time_s": 18.51
+            "inference_time_s": 18.51,
+            "ar_100": 0.2966
         },
         "summary_metrics": {
             "mAP_50": "18.85%",
@@ -2473,7 +2499,8 @@
                 "mAP_medium": 0.3561,
                 "mAP_large": 0.5409
             },
-            "inference_time_s": 31.97
+            "inference_time_s": 31.97,
+            "ar_100": 0.4113
         },
         "summary_metrics": {
             "mAP_50": "38.66%",
@@ -2713,7 +2740,8 @@
                 "mAP_medium": 0.3866,
                 "mAP_large": 0.5393
             },
-            "inference_time_s": 36.5
+            "inference_time_s": 36.5,
+            "ar_100": 0.4575
         },
         "summary_metrics": {
             "mAP_50": "43.15%",
@@ -2952,7 +2980,8 @@
                 "mAP_medium": 0.3409,
                 "mAP_large": 0.4793
             },
-            "inference_time_s": 26.39
+            "inference_time_s": 26.39,
+            "ar_100": 0.3985
         },
         "summary_metrics": {
             "mAP_50": "36.23%",
@@ -3192,7 +3221,8 @@
                 "mAP_medium": 0.3715,
                 "mAP_large": 0.4949
             },
-            "inference_time_s": 22.76
+            "inference_time_s": 22.76,
+            "ar_100": 0.4333
         },
         "summary_metrics": {
             "mAP_50": "41.18%",
@@ -3432,7 +3462,8 @@
                 "mAP_medium": 0.3455,
                 "mAP_large": 0.4711
             },
-            "inference_time_s": 12.61
+            "inference_time_s": 12.61,
+            "ar_100": 0.4053
         },
         "summary_metrics": {
             "mAP_50": "36.74%",
@@ -3672,7 +3703,8 @@
                 "mAP_medium": 0.3631,
                 "mAP_large": 0.4659
             },
-            "inference_time_s": 29.4
+            "inference_time_s": 29.4,
+            "ar_100": 0.4382
         },
         "summary_metrics": {
             "mAP_50": "42.48%",
@@ -3912,7 +3944,8 @@
                 "mAP_medium": 0.386,
                 "mAP_large": 0.4941
             },
-            "inference_time_s": 34.11
+            "inference_time_s": 34.11,
+            "ar_100": 0.4221
         },
         "summary_metrics": {
             "mAP_50": "39.13%",
@@ -4151,7 +4184,8 @@
                 "mAP_medium": 0.3306,
                 "mAP_large": 0.4764
             },
-            "inference_time_s": 42.35
+            "inference_time_s": 42.35,
+            "ar_100": 0.3908
         },
         "summary_metrics": {
             "mAP_50": "35.59%",
@@ -4391,7 +4425,8 @@
                 "mAP_medium": 0.3766,
                 "mAP_large": 0.5109
             },
-            "inference_time_s": 57.86
+            "inference_time_s": 57.86,
+            "ar_100": 0.4264
         },
         "summary_metrics": {
             "mAP_50": "41.56%",
@@ -4632,7 +4667,8 @@
                 "mAP_medium": 0.3455,
                 "mAP_large": 0.4701
             },
-            "inference_time_s": 53.53
+            "inference_time_s": 53.53,
+            "ar_100": 0.4106
         },
         "summary_metrics": {
             "mAP_50": "37.51%",
@@ -4871,7 +4907,8 @@
                 "mAP_medium": 0.3985,
                 "mAP_large": 0.5271
             },
-            "inference_time_s": 96.37
+            "inference_time_s": 96.37,
+            "ar_100": 0.4443
         },
         "summary_metrics": {
             "mAP_50": "43.13%",
@@ -5109,7 +5146,8 @@
                 "mAP_medium": 0.3996,
                 "mAP_large": 0.5578
             },
-            "inference_time_s": 75.64
+            "inference_time_s": 75.64,
+            "ar_100": 0.4436
         },
         "summary_metrics": {
             "mAP_50": "44.31%",
@@ -5349,7 +5387,8 @@
                 "mAP_medium": 0.3522,
                 "mAP_large": 0.4974
             },
-            "inference_time_s": 54.25
+            "inference_time_s": 54.25,
+            "ar_100": 0.421
         },
         "summary_metrics": {
             "mAP_50": "38.68%",
@@ -5589,7 +5628,8 @@
                 "mAP_medium": 0.3486,
                 "mAP_large": 0.4884
             },
-            "inference_time_s": 66.42
+            "inference_time_s": 66.42,
+            "ar_100": 0.4082
         },
         "summary_metrics": {
             "mAP_50": "38.17%",
@@ -5829,7 +5869,8 @@
                 "mAP_medium": 0.3661,
                 "mAP_large": 0.4758
             },
-            "inference_time_s": 31.18
+            "inference_time_s": 31.18,
+            "ar_100": 0.4336
         },
         "summary_metrics": {
             "mAP_50": "39.94%",
