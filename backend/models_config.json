@@ -47,35 +47,6 @@
           "total_memory_mb": 76.75129699707031
         }
       },
-      "model_evaluation": {
-        "device": "cuda",
-        "total_params": 19880804,
-        "trainable_params": 21827224,
-        "layer_stats": {
-          "backbone": {
-            "total_params": 11190112,
-            "num_layers": 23
-          },
-          "encoder": {
-            "total_params": 6736128,
-            "num_layers": 165
-          },
-          "decoder": {
-            "total_params": 3929496,
-            "num_layers": 116
-          }
-        },
-        "flops": {
-          "torchinfo_params": 24840536,
-          "torchinfo_mult_adds": 25163571076,
-          "torchinfo_gflops": 25.163571076
-        },
-        "memory": {
-          "allocated_mb": 96.3720703125,
-          "reserved_mb": 268.0,
-          "max_allocated_mb": 186.8564453125
-        }
-      },
       "fps": {
         "device": "cuda",
         "total_params": 21855736,
@@ -113,24 +84,6 @@
             "fps_mean": 164.36
           }
         }
-      },
-      "evaluation": {
-        "file_size_mb": 307.13245487213135,
-        "keys": [
-          "model",
-          "date",
-          "last_epoch",
-          "optimizer",
-          "lr_scheduler",
-          "ema"
-        ],
-        "model_keys": 510,
-        "model_size_mb": 76.74,
-        "ema_keys": 510,
-        "ema_size_mb": 76.75129699707031,
-        "has_ema": true,
-        "has_optimizer": true,
-        "has_lr_scheduler": true
       },
       "detailed": {
         "overall_metrics": {
@@ -339,13 +292,7 @@
           }
         }
       },
-      "ar_100": 0.4412,
-      "model_evaluation": {
-        "total_params": 17546606
-      },
-      "evaluation": {
-        "model_size_mb": 68.47
-      }
+      "ar_100": 0.4412
     },
     "summary_metrics": {
       "mAP_50": "48.29%",
@@ -403,35 +350,6 @@
           "total_memory_mb": 83.84700012207031
         }
       },
-      "model_evaluation": {
-        "device": "cuda",
-        "total_params": 21682884,
-        "trainable_params": 24124408,
-        "layer_stats": {
-          "backbone": {
-            "total_params": 11190112,
-            "num_layers": 23
-          },
-          "encoder": {
-            "total_params": 8893248,
-            "num_layers": 258
-          },
-          "decoder": {
-            "total_params": 4069560,
-            "num_layers": 119
-          }
-        },
-        "flops": {
-          "torchinfo_params": 27211736,
-          "torchinfo_mult_adds": 45100520356,
-          "torchinfo_gflops": 45.100520356
-        },
-        "memory": {
-          "allocated_mb": 106.04052734375,
-          "reserved_mb": 600.0,
-          "max_allocated_mb": 361.75830078125
-        }
-      },
       "fps": {
         "device": "cuda",
         "total_params": 24152920,
@@ -469,24 +387,6 @@
             "fps_mean": 91.61
           }
         }
-      },
-      "evaluation": {
-        "file_size_mb": 335.64967823028564,
-        "keys": [
-          "model",
-          "date",
-          "last_epoch",
-          "optimizer",
-          "lr_scheduler",
-          "ema"
-        ],
-        "model_keys": 648,
-        "model_size_mb": 84.17,
-        "ema_keys": 648,
-        "ema_size_mb": 83.84700012207031,
-        "has_ema": true,
-        "has_optimizer": true,
-        "has_lr_scheduler": true
       },
       "detailed": {
         "overall_metrics": {
@@ -632,35 +532,6 @@
           "total_memory_mb": 81.37641906738281
         }
       },
-      "model_evaluation": {
-        "device": "cuda",
-        "total_params": 21036772,
-        "trainable_params": 23477784,
-        "layer_stats": {
-          "backbone": {
-            "total_params": 11190112,
-            "num_layers": 23
-          },
-          "encoder": {
-            "total_params": 8279392,
-            "num_layers": 258
-          },
-          "decoder": {
-            "total_params": 4036792,
-            "num_layers": 119
-          }
-        },
-        "flops": {
-          "torchinfo_params": 26565112,
-          "torchinfo_mult_adds": 34874445348,
-          "torchinfo_gflops": 34.874445348
-        },
-        "memory": {
-          "allocated_mb": 103.5751953125,
-          "reserved_mb": 452.0,
-          "max_allocated_mb": 297.11083984375
-        }
-      },
       "fps": {
         "device": "cuda",
         "total_params": 23506296,
@@ -698,24 +569,6 @@
             "fps_mean": 106.39
           }
         }
-      },
-      "evaluation": {
-        "file_size_mb": 325.7742509841919,
-        "keys": [
-          "model",
-          "date",
-          "last_epoch",
-          "optimizer",
-          "lr_scheduler",
-          "ema"
-        ],
-        "model_keys": 648,
-        "model_size_mb": 81.7,
-        "ema_keys": 648,
-        "ema_size_mb": 81.37641906738281,
-        "has_ema": true,
-        "has_optimizer": true,
-        "has_lr_scheduler": true
       },
       "detailed": {
         "overall_metrics": {
@@ -924,13 +777,7 @@
           }
         }
       },
-      "ar_100": 0.4144,
-      "model_evaluation": {
-        "total_params": 19199172
-      },
-      "evaluation": {
-        "model_size_mb": 74.87
-      }
+      "ar_100": 0.4144
     },
     "summary_metrics": {
       "mAP_50": "44.16%",
@@ -988,35 +835,6 @@
           "total_memory_mb": 84.9010009765625
         }
       },
-      "model_evaluation": {
-        "device": "cuda",
-        "total_params": 21907332,
-        "trainable_params": 24841912,
-        "layer_stats": {
-          "backbone": {
-            "total_params": 11190112,
-            "num_layers": 23
-          },
-          "encoder": {
-            "total_params": 9610752,
-            "num_layers": 240
-          },
-          "decoder": {
-            "total_params": 4069560,
-            "num_layers": 119
-          }
-        },
-        "flops": {
-          "torchinfo_params": 27929240,
-          "torchinfo_mult_adds": 50866049188,
-          "torchinfo_gflops": 50.866049188
-        },
-        "memory": {
-          "allocated_mb": 108.7841796875,
-          "reserved_mb": 516.0,
-          "max_allocated_mb": 336.814453125
-        }
-      },
       "fps": {
         "device": "cuda",
         "total_params": 24870424,
@@ -1054,25 +872,6 @@
             "fps_mean": 113.96
           }
         }
-      },
-      "evaluation": {
-        "file_size_mb": 339.8294954299927,
-        "keys": [
-          "model",
-          "date",
-          "last_epoch",
-          "optimizer",
-          "lr_scheduler",
-          "ema",
-          "scaler"
-        ],
-        "model_keys": 642,
-        "model_size_mb": 85.0,
-        "ema_keys": 642,
-        "ema_size_mb": 84.9010009765625,
-        "has_ema": true,
-        "has_optimizer": true,
-        "has_lr_scheduler": true
       },
       "detailed": {
         "overall_metrics": {
@@ -1281,13 +1080,7 @@
           }
         }
       },
-      "ar_100": 0.4298,
-      "model_evaluation": {
-        "total_params": 19880804
-      },
-      "evaluation": {
-        "model_size_mb": 76.74
-      }
+      "ar_100": 0.4298
     },
     "summary_metrics": {
       "mAP_50": "43.83%",
@@ -1345,35 +1138,6 @@
           "total_memory_mb": 81.6060791015625
         }
       },
-      "model_evaluation": {
-        "device": "cuda",
-        "total_params": 21083332,
-        "trainable_params": 23647992,
-        "layer_stats": {
-          "backbone": {
-            "total_params": 11190112,
-            "num_layers": 23
-          },
-          "encoder": {
-            "total_params": 8449600,
-            "num_layers": 240
-          },
-          "decoder": {
-            "total_params": 4036792,
-            "num_layers": 119
-          }
-        },
-        "flops": {
-          "torchinfo_params": 26735320,
-          "torchinfo_mult_adds": 36076211364,
-          "torchinfo_gflops": 36.076211364
-        },
-        "memory": {
-          "allocated_mb": 104.2314453125,
-          "reserved_mb": 432.0,
-          "max_allocated_mb": 299.0322265625
-        }
-      },
       "fps": {
         "device": "cuda",
         "total_params": 23676504,
@@ -1411,24 +1175,6 @@
             "fps_mean": 122.03
           }
         }
-      },
-      "evaluation": {
-        "file_size_mb": 326.6631746292114,
-        "keys": [
-          "model",
-          "date",
-          "last_epoch",
-          "optimizer",
-          "lr_scheduler",
-          "ema"
-        ],
-        "model_keys": 642,
-        "model_size_mb": 81.85,
-        "ema_keys": 642,
-        "ema_size_mb": 81.6060791015625,
-        "has_ema": true,
-        "has_optimizer": true,
-        "has_lr_scheduler": true
       },
       "detailed": {
         "overall_metrics": {
@@ -1574,35 +1320,6 @@
           "total_memory_mb": 83.84700012207031
         }
       },
-      "model_evaluation": {
-        "device": "cuda",
-        "total_params": 24152920,
-        "trainable_params": 24124408,
-        "layer_stats": {
-          "backbone": {
-            "total_params": 11190112,
-            "num_layers": 23
-          },
-          "encoder": {
-            "total_params": 8893248,
-            "num_layers": 258
-          },
-          "decoder": {
-            "total_params": 4069560,
-            "num_layers": 119
-          }
-        },
-        "flops": {
-          "torchinfo_params": 27211736,
-          "torchinfo_mult_adds": 45100520356,
-          "torchinfo_gflops": 45.100520356
-        },
-        "memory": {
-          "allocated_mb": 106.04052734375,
-          "reserved_mb": 600.0,
-          "max_allocated_mb": 362.19580078125
-        }
-      },
       "fps": {
         "device": "cuda",
         "total_params": 24152920,
@@ -1640,25 +1357,6 @@
             "fps_mean": 25.295666500744556
           }
         }
-      },
-      "evaluation": {
-        "file_size_mb": 335.6498613357544,
-        "keys": [
-          "model",
-          "date",
-          "last_epoch",
-          "optimizer",
-          "lr_scheduler",
-          "ema",
-          "scaler"
-        ],
-        "model_keys": 648,
-        "model_size_mb": 83.84700012207031,
-        "ema_keys": 648,
-        "ema_size_mb": 83.84700012207031,
-        "has_ema": true,
-        "has_optimizer": true,
-        "has_lr_scheduler": true
       },
       "detailed": {
         "overall_metrics": {
@@ -1800,35 +1498,6 @@
           "total_memory_mb": 81.37641906738281
         }
       },
-      "model_evaluation": {
-        "device": "cuda",
-        "total_params": 23506296,
-        "trainable_params": 23477784,
-        "layer_stats": {
-          "backbone": {
-            "total_params": 11190112,
-            "num_layers": 23
-          },
-          "encoder": {
-            "total_params": 8279392,
-            "num_layers": 258
-          },
-          "decoder": {
-            "total_params": 4036792,
-            "num_layers": 119
-          }
-        },
-        "flops": {
-          "torchinfo_params": 26565112,
-          "torchinfo_mult_adds": 34874445348,
-          "torchinfo_gflops": 34.874445348
-        },
-        "memory": {
-          "allocated_mb": 103.5751953125,
-          "reserved_mb": 486.0,
-          "max_allocated_mb": 298.11083984375
-        }
-      },
       "fps": {
         "device": "cuda",
         "total_params": 23506296,
@@ -1866,25 +1535,6 @@
             "fps_mean": 33.94903445370062
           }
         }
-      },
-      "evaluation": {
-        "file_size_mb": 325.77443408966064,
-        "keys": [
-          "model",
-          "date",
-          "last_epoch",
-          "optimizer",
-          "lr_scheduler",
-          "ema",
-          "scaler"
-        ],
-        "model_keys": 648,
-        "model_size_mb": 81.37641906738281,
-        "ema_keys": 648,
-        "ema_size_mb": 81.37641906738281,
-        "has_ema": true,
-        "has_optimizer": true,
-        "has_lr_scheduler": true
       },
       "detailed": {
         "overall_metrics": {
@@ -2026,35 +1676,6 @@
           "total_memory_mb": 76.75129699707031
         }
       },
-      "model_evaluation": {
-        "device": "cuda",
-        "total_params": 21855736,
-        "trainable_params": 21827224,
-        "layer_stats": {
-          "backbone": {
-            "total_params": 11190112,
-            "num_layers": 23
-          },
-          "encoder": {
-            "total_params": 6736128,
-            "num_layers": 165
-          },
-          "decoder": {
-            "total_params": 3929496,
-            "num_layers": 116
-          }
-        },
-        "flops": {
-          "torchinfo_params": 24840536,
-          "torchinfo_mult_adds": 25163571076,
-          "torchinfo_gflops": 25.163571076
-        },
-        "memory": {
-          "allocated_mb": 96.3720703125,
-          "reserved_mb": 268.0,
-          "max_allocated_mb": 186.8564453125
-        }
-      },
       "fps": {
         "device": "cuda",
         "total_params": 21855736,
@@ -2092,24 +1713,6 @@
             "fps_mean": 46.714938511296296
           }
         }
-      },
-      "evaluation": {
-        "file_size_mb": 307.13245487213135,
-        "keys": [
-          "model",
-          "date",
-          "last_epoch",
-          "optimizer",
-          "lr_scheduler",
-          "ema"
-        ],
-        "model_keys": 510,
-        "model_size_mb": 76.75129699707031,
-        "ema_keys": 510,
-        "ema_size_mb": 76.75129699707031,
-        "has_ema": true,
-        "has_optimizer": true,
-        "has_lr_scheduler": true
       },
       "detailed": {
         "overall_metrics": {
@@ -2251,35 +1854,6 @@
           "total_memory_mb": 63.25726318359375
         }
       },
-      "model_evaluation": {
-        "device": "cuda",
-        "total_params": 18270362,
-        "trainable_params": 18270362,
-        "layer_stats": {
-          "backbone": {
-            "total_params": 7700994,
-            "num_layers": 299
-          },
-          "encoder": {
-            "total_params": 6639872,
-            "num_layers": 165
-          },
-          "decoder": {
-            "total_params": 3929496,
-            "num_layers": 116
-          }
-        },
-        "flops": {
-          "torchinfo_params": 21255162,
-          "torchinfo_mult_adds": 13453191782,
-          "torchinfo_gflops": 13.453191782
-        },
-        "memory": {
-          "allocated_mb": 82.998046875,
-          "reserved_mb": 204.0,
-          "max_allocated_mb": 165.2314453125
-        }
-      },
       "fps": {
         "device": "cuda",
         "total_params": 18270362,
@@ -2317,24 +1891,6 @@
             "fps_mean": 32.26447525908651
           }
         }
-      },
-      "evaluation": {
-        "file_size_mb": 249.71197986602783,
-        "keys": [
-          "model",
-          "date",
-          "last_epoch",
-          "optimizer",
-          "lr_scheduler",
-          "ema"
-        ],
-        "model_keys": 901,
-        "model_size_mb": 63.25726318359375,
-        "ema_keys": 901,
-        "ema_size_mb": 63.25726318359375,
-        "has_ema": true,
-        "has_optimizer": true,
-        "has_lr_scheduler": true
       },
       "detailed": {
         "overall_metrics": {
@@ -2476,35 +2032,6 @@
           "total_memory_mb": 71.36790466308594
         }
       },
-      "model_evaluation": {
-        "device": "cuda",
-        "total_params": 21274810,
-        "trainable_params": 21274810,
-        "layer_stats": {
-          "backbone": {
-            "total_params": 7700994,
-            "num_layers": 299
-          },
-          "encoder": {
-            "total_params": 9504256,
-            "num_layers": 240
-          },
-          "decoder": {
-            "total_params": 4069560,
-            "num_layers": 119
-          }
-        },
-        "flops": {
-          "torchinfo_params": 24333626,
-          "torchinfo_mult_adds": 38893525894,
-          "torchinfo_gflops": 38.893525894
-        },
-        "memory": {
-          "allocated_mb": 94.49609375,
-          "reserved_mb": 378.0,
-          "max_allocated_mb": 316.0419921875
-        }
-      },
       "fps": {
         "device": "cuda",
         "total_params": 21274810,
@@ -2542,25 +2069,6 @@
             "fps_mean": 28.218401995240185
           }
         }
-      },
-      "evaluation": {
-        "file_size_mb": 282.2527093887329,
-        "keys": [
-          "model",
-          "date",
-          "last_epoch",
-          "optimizer",
-          "lr_scheduler",
-          "ema",
-          "scaler"
-        ],
-        "model_keys": 1033,
-        "model_size_mb": 71.36790466308594,
-        "ema_keys": 1033,
-        "ema_size_mb": 71.36790466308594,
-        "has_ema": true,
-        "has_optimizer": true,
-        "has_lr_scheduler": true
       },
       "detailed": {
         "overall_metrics": {
@@ -2702,35 +2210,6 @@
           "total_memory_mb": 76.75129699707031
         }
       },
-      "model_evaluation": {
-        "device": "cuda",
-        "total_params": 21855736,
-        "trainable_params": 21827224,
-        "layer_stats": {
-          "backbone": {
-            "total_params": 11190112,
-            "num_layers": 23
-          },
-          "encoder": {
-            "total_params": 6736128,
-            "num_layers": 165
-          },
-          "decoder": {
-            "total_params": 3929496,
-            "num_layers": 116
-          }
-        },
-        "flops": {
-          "torchinfo_params": 24840536,
-          "torchinfo_mult_adds": 25163571076,
-          "torchinfo_gflops": 25.163571076
-        },
-        "memory": {
-          "allocated_mb": 96.3720703125,
-          "reserved_mb": 268.0,
-          "max_allocated_mb": 186.8564453125
-        }
-      },
       "fps": {
         "device": "cuda",
         "total_params": 21855736,
@@ -2768,24 +2247,6 @@
             "fps_mean": 46.61334002524226
           }
         }
-      },
-      "evaluation": {
-        "file_size_mb": 307.13245487213135,
-        "keys": [
-          "model",
-          "date",
-          "last_epoch",
-          "optimizer",
-          "lr_scheduler",
-          "ema"
-        ],
-        "model_keys": 510,
-        "model_size_mb": 76.75129699707031,
-        "ema_keys": 510,
-        "ema_size_mb": 76.75129699707031,
-        "has_ema": true,
-        "has_optimizer": true,
-        "has_lr_scheduler": true
       },
       "detailed": {
         "overall_metrics": {
@@ -2927,35 +2388,6 @@
           "total_memory_mb": 93.44306945800781
         }
       },
-      "model_evaluation": {
-        "device": "cuda",
-        "total_params": 27117944,
-        "trainable_params": 27117944,
-        "layer_stats": {
-          "backbone": {
-            "total_params": 11199968,
-            "num_layers": 69
-          },
-          "encoder": {
-            "total_params": 11988480,
-            "num_layers": 252
-          },
-          "decoder": {
-            "total_params": 3929496,
-            "num_layers": 116
-          }
-        },
-        "flops": {
-          "torchinfo_params": 30102744,
-          "torchinfo_mult_adds": 52007128580,
-          "torchinfo_gflops": 52.00712858
-        },
-        "memory": {
-          "allocated_mb": 117.33984375,
-          "reserved_mb": 242.0,
-          "max_allocated_mb": 209.9951171875
-        }
-      },
       "fps": {
         "device": "cuda",
         "total_params": 27117944,
@@ -2993,24 +2425,6 @@
             "fps_mean": 44.50238313541824
           }
         }
-      },
-      "evaluation": {
-        "file_size_mb": 359.1249837875366,
-        "keys": [
-          "model",
-          "date",
-          "last_epoch",
-          "optimizer",
-          "lr_scheduler",
-          "ema"
-        ],
-        "model_keys": 683,
-        "model_size_mb": 93.44306945800781,
-        "ema_keys": 683,
-        "ema_size_mb": 93.44306945800781,
-        "has_ema": true,
-        "has_optimizer": true,
-        "has_lr_scheduler": true
       },
       "detailed": {
         "overall_metrics": {
@@ -3152,35 +2566,6 @@
           "total_memory_mb": 76.75129699707031
         }
       },
-      "model_evaluation": {
-        "device": "cuda",
-        "total_params": 21855736,
-        "trainable_params": 21827224,
-        "layer_stats": {
-          "backbone": {
-            "total_params": 11190112,
-            "num_layers": 23
-          },
-          "encoder": {
-            "total_params": 6736128,
-            "num_layers": 165
-          },
-          "decoder": {
-            "total_params": 3929496,
-            "num_layers": 116
-          }
-        },
-        "flops": {
-          "torchinfo_params": 24840536,
-          "torchinfo_mult_adds": 25163571076,
-          "torchinfo_gflops": 25.163571076
-        },
-        "memory": {
-          "allocated_mb": 96.3720703125,
-          "reserved_mb": 268.0,
-          "max_allocated_mb": 186.8564453125
-        }
-      },
       "fps": {
         "device": "cuda",
         "total_params": 21855736,
@@ -3218,24 +2603,6 @@
             "fps_mean": 44.05930095609466
           }
         }
-      },
-      "evaluation": {
-        "file_size_mb": 307.13245487213135,
-        "keys": [
-          "model",
-          "date",
-          "last_epoch",
-          "optimizer",
-          "lr_scheduler",
-          "ema"
-        ],
-        "model_keys": 510,
-        "model_size_mb": 76.75129699707031,
-        "ema_keys": 510,
-        "ema_size_mb": 76.75129699707031,
-        "has_ema": true,
-        "has_optimizer": true,
-        "has_lr_scheduler": true
       },
       "detailed": {
         "overall_metrics": {
@@ -3377,35 +2744,6 @@
           "total_memory_mb": 126.39672088623047
         }
       },
-      "model_evaluation": {
-        "device": "cuda",
-        "total_params": 42379074,
-        "trainable_params": 42350562,
-        "layer_stats": {
-          "backbone": {
-            "total_params": 11190112,
-            "num_layers": 23
-          },
-          "encoder": {
-            "total_params": 23684992,
-            "num_layers": 222
-          },
-          "decoder": {
-            "total_params": 7503970,
-            "num_layers": 209
-          }
-        },
-        "flops": {
-          "torchinfo_params": 48499522,
-          "torchinfo_mult_adds": 68589798192,
-          "torchinfo_gflops": 68.589798192
-        },
-        "memory": {
-          "allocated_mb": 176.474609375,
-          "reserved_mb": 526.0,
-          "max_allocated_mb": 370.712890625
-        }
-      },
       "fps": {
         "device": "cuda",
         "total_params": 42379074,
@@ -3443,25 +2781,6 @@
             "fps_mean": 20.349049030689198
           }
         }
-      },
-      "evaluation": {
-        "file_size_mb": 505.86369800567627,
-        "keys": [
-          "model",
-          "date",
-          "last_epoch",
-          "optimizer",
-          "lr_scheduler",
-          "ema",
-          "scaler"
-        ],
-        "model_keys": 696,
-        "model_size_mb": 126.39672088623047,
-        "ema_keys": 696,
-        "ema_size_mb": 126.39672088623047,
-        "has_ema": true,
-        "has_optimizer": true,
-        "has_lr_scheduler": true
       },
       "detailed": {
         "overall_metrics": {
@@ -3603,35 +2922,6 @@
           "total_memory_mb": 81.6060791015625
         }
       },
-      "model_evaluation": {
-        "device": "cuda",
-        "total_params": 23676504,
-        "trainable_params": 23647992,
-        "layer_stats": {
-          "backbone": {
-            "total_params": 11190112,
-            "num_layers": 23
-          },
-          "encoder": {
-            "total_params": 8449600,
-            "num_layers": 240
-          },
-          "decoder": {
-            "total_params": 4036792,
-            "num_layers": 119
-          }
-        },
-        "flops": {
-          "torchinfo_params": 26735320,
-          "torchinfo_mult_adds": 36076211364,
-          "torchinfo_gflops": 36.076211364
-        },
-        "memory": {
-          "allocated_mb": 104.2314453125,
-          "reserved_mb": 432.0,
-          "max_allocated_mb": 299.0322265625
-        }
-      },
       "fps": {
         "device": "cuda",
         "total_params": 23676504,
@@ -3669,24 +2959,6 @@
             "fps_mean": 38.97049070205978
           }
         }
-      },
-      "evaluation": {
-        "file_size_mb": 326.6632356643677,
-        "keys": [
-          "model",
-          "date",
-          "last_epoch",
-          "optimizer",
-          "lr_scheduler",
-          "ema"
-        ],
-        "model_keys": 642,
-        "model_size_mb": 81.6060791015625,
-        "ema_keys": 642,
-        "ema_size_mb": 81.6060791015625,
-        "has_ema": true,
-        "has_optimizer": true,
-        "has_lr_scheduler": true
       },
       "detailed": {
         "overall_metrics": {
@@ -3828,35 +3100,6 @@
           "total_memory_mb": 72.53529357910156
         }
       },
-      "model_evaluation": {
-        "device": "cuda",
-        "total_params": 18985720,
-        "trainable_params": 18957208,
-        "layer_stats": {
-          "backbone": {
-            "total_params": 11190112,
-            "num_layers": 23
-          },
-          "encoder": {
-            "total_params": 3866112,
-            "num_layers": 237
-          },
-          "decoder": {
-            "total_params": 3929496,
-            "num_layers": 116
-          }
-        },
-        "flops": {
-          "torchinfo_params": 21970520,
-          "torchinfo_mult_adds": 22911414148,
-          "torchinfo_gflops": 22.911414148
-        },
-        "memory": {
-          "allocated_mb": 85.3974609375,
-          "reserved_mb": 258.0,
-          "max_allocated_mb": 175.8818359375
-        }
-      },
       "fps": {
         "device": "cuda",
         "total_params": 18985720,
@@ -3894,24 +3137,6 @@
             "fps_mean": 32.90175179863539
           }
         }
-      },
-      "evaluation": {
-        "file_size_mb": 290.4136743545532,
-        "keys": [
-          "model",
-          "date",
-          "last_epoch",
-          "optimizer",
-          "lr_scheduler",
-          "ema"
-        ],
-        "model_keys": 534,
-        "model_size_mb": 72.53529357910156,
-        "ema_keys": 534,
-        "ema_size_mb": 72.53529357910156,
-        "has_ema": true,
-        "has_optimizer": true,
-        "has_lr_scheduler": true
       },
       "detailed": {
         "overall_metrics": {
@@ -4053,35 +3278,6 @@
           "total_memory_mb": 103.96240997314453
         }
       },
-      "model_evaluation": {
-        "device": "cuda",
-        "total_params": 27662274,
-        "trainable_params": 27633762,
-        "layer_stats": {
-          "backbone": {
-            "total_params": 11190112,
-            "num_layers": 23
-          },
-          "encoder": {
-            "total_params": 8968192,
-            "num_layers": 312
-          },
-          "decoder": {
-            "total_params": 7503970,
-            "num_layers": 209
-          }
-        },
-        "flops": {
-          "torchinfo_params": 33782722,
-          "torchinfo_mult_adds": 52587604272,
-          "torchinfo_gflops": 52.587604272
-        },
-        "memory": {
-          "allocated_mb": 119.3935546875,
-          "reserved_mb": 480.0,
-          "max_allocated_mb": 312.92919921875
-        }
-      },
       "fps": {
         "device": "cuda",
         "total_params": 27662274,
@@ -4119,25 +3315,6 @@
             "fps_mean": 20.082094437282173
           }
         }
-      },
-      "evaluation": {
-        "file_size_mb": 416.3667116165161,
-        "keys": [
-          "model",
-          "date",
-          "last_epoch",
-          "optimizer",
-          "lr_scheduler",
-          "ema",
-          "scaler"
-        ],
-        "model_keys": 726,
-        "model_size_mb": 103.96240997314453,
-        "ema_keys": 726,
-        "ema_size_mb": 103.96240997314453,
-        "has_ema": true,
-        "has_optimizer": true,
-        "has_lr_scheduler": true
       },
       "detailed": {
         "overall_metrics": {
@@ -4279,35 +3456,6 @@
           "total_memory_mb": 76.33607482910156
         }
       },
-      "model_evaluation": {
-        "device": "cuda",
-        "total_params": 20088984,
-        "trainable_params": 20060472,
-        "layer_stats": {
-          "backbone": {
-            "total_params": 11190112,
-            "num_layers": 23
-          },
-          "encoder": {
-            "total_params": 4862080,
-            "num_layers": 330
-          },
-          "decoder": {
-            "total_params": 4036792,
-            "num_layers": 119
-          }
-        },
-        "flops": {
-          "torchinfo_params": 23147800,
-          "torchinfo_mult_adds": 32382672804,
-          "torchinfo_gflops": 32.382672804
-        },
-        "memory": {
-          "allocated_mb": 90.51318359375,
-          "reserved_mb": 420.0,
-          "max_allocated_mb": 285.31396484375
-        }
-      },
       "fps": {
         "device": "cuda",
         "total_params": 20088984,
@@ -4345,25 +3493,6 @@
             "fps_mean": 28.206256119458065
           }
         }
-      },
-      "evaluation": {
-        "file_size_mb": 305.7648820877075,
-        "keys": [
-          "model",
-          "date",
-          "last_epoch",
-          "optimizer",
-          "lr_scheduler",
-          "ema",
-          "scaler"
-        ],
-        "model_keys": 672,
-        "model_size_mb": 76.33607482910156,
-        "ema_keys": 672,
-        "ema_size_mb": 76.33607482910156,
-        "has_ema": true,
-        "has_optimizer": true,
-        "has_lr_scheduler": true
       },
       "detailed": {
         "overall_metrics": {
@@ -4505,35 +3634,6 @@
           "total_memory_mb": 107.27632904052734
         }
       },
-      "model_evaluation": {
-        "device": "cuda",
-        "total_params": 28088770,
-        "trainable_params": 28060258,
-        "layer_stats": {
-          "backbone": {
-            "total_params": 11190112,
-            "num_layers": 23
-          },
-          "encoder": {
-            "total_params": 9361920,
-            "num_layers": 330
-          },
-          "decoder": {
-            "total_params": 7536738,
-            "num_layers": 209
-          }
-        },
-        "flops": {
-          "torchinfo_params": 34209218,
-          "torchinfo_mult_adds": 69771146032,
-          "torchinfo_gflops": 69.771146032
-        },
-        "memory": {
-          "allocated_mb": 121.01708984375,
-          "reserved_mb": 610.0,
-          "max_allocated_mb": 497.35986328125
-        }
-      },
       "fps": {
         "device": "cuda",
         "total_params": 28088770,
@@ -4571,24 +3671,6 @@
             "fps_mean": 14.678591487162327
           }
         }
-      },
-      "evaluation": {
-        "file_size_mb": 429.65106678009033,
-        "keys": [
-          "model",
-          "date",
-          "last_epoch",
-          "optimizer",
-          "lr_scheduler",
-          "ema"
-        ],
-        "model_keys": 732,
-        "model_size_mb": 107.27632904052734,
-        "ema_keys": 732,
-        "ema_size_mb": 107.27632904052734,
-        "has_ema": true,
-        "has_optimizer": true,
-        "has_lr_scheduler": true
       },
       "detailed": {
         "overall_metrics": {
@@ -4730,35 +3812,6 @@
           "total_memory_mb": 111.76319122314453
         }
       },
-      "model_evaluation": {
-        "device": "cuda",
-        "total_params": 31032130,
-        "trainable_params": 31003618,
-        "layer_stats": {
-          "backbone": {
-            "total_params": 11190112,
-            "num_layers": 23
-          },
-          "encoder": {
-            "total_params": 12305280,
-            "num_layers": 312
-          },
-          "decoder": {
-            "total_params": 7536738,
-            "num_layers": 209
-          }
-        },
-        "flops": {
-          "torchinfo_params": 37152578,
-          "torchinfo_mult_adds": 94750190896,
-          "torchinfo_gflops": 94.750190896
-        },
-        "memory": {
-          "allocated_mb": 132.25830078125,
-          "reserved_mb": 544.0,
-          "max_allocated_mb": 354.47705078125
-        }
-      },
       "fps": {
         "device": "cuda",
         "total_params": 31032130,
@@ -4796,24 +3849,6 @@
             "fps_mean": 18.609621967647506
           }
         }
-      },
-      "evaluation": {
-        "file_size_mb": 447.55048847198486,
-        "keys": [
-          "model",
-          "date",
-          "last_epoch",
-          "optimizer",
-          "lr_scheduler",
-          "ema"
-        ],
-        "model_keys": 726,
-        "model_size_mb": 111.76319122314453,
-        "ema_keys": 726,
-        "ema_size_mb": 111.76319122314453,
-        "has_ema": true,
-        "has_optimizer": true,
-        "has_lr_scheduler": true
       },
       "detailed": {
         "overall_metrics": {
@@ -4955,35 +3990,6 @@
           "total_memory_mb": 79.63099670410156
         }
       },
-      "model_evaluation": {
-        "device": "cuda",
-        "total_params": 21282904,
-        "trainable_params": 21254392,
-        "layer_stats": {
-          "backbone": {
-            "total_params": 11190112,
-            "num_layers": 23
-          },
-          "encoder": {
-            "total_params": 6023232,
-            "num_layers": 330
-          },
-          "decoder": {
-            "total_params": 4069560,
-            "num_layers": 119
-          }
-        },
-        "flops": {
-          "torchinfo_params": 24341720,
-          "torchinfo_mult_adds": 47172510628,
-          "torchinfo_gflops": 47.172510628
-        },
-        "memory": {
-          "allocated_mb": 95.06591796875,
-          "reserved_mb": 504.0,
-          "max_allocated_mb": 323.53369140625
-        }
-      },
       "fps": {
         "device": "cuda",
         "total_params": 21282904,
@@ -5021,24 +4027,6 @@
             "fps_mean": 27.532359654485667
           }
         }
-      },
-      "evaluation": {
-        "file_size_mb": 318.9308977127075,
-        "keys": [
-          "model",
-          "date",
-          "last_epoch",
-          "optimizer",
-          "lr_scheduler",
-          "ema"
-        ],
-        "model_keys": 672,
-        "model_size_mb": 79.63099670410156,
-        "ema_keys": 672,
-        "ema_size_mb": 79.63099670410156,
-        "has_ema": true,
-        "has_optimizer": true,
-        "has_lr_scheduler": true
       },
       "detailed": {
         "overall_metrics": {
@@ -5180,35 +4168,6 @@
           "total_memory_mb": 78.57699584960938
         }
       },
-      "model_evaluation": {
-        "device": "cuda",
-        "total_params": 20565400,
-        "trainable_params": 20536888,
-        "layer_stats": {
-          "backbone": {
-            "total_params": 11190112,
-            "num_layers": 23
-          },
-          "encoder": {
-            "total_params": 5305728,
-            "num_layers": 348
-          },
-          "decoder": {
-            "total_params": 4069560,
-            "num_layers": 119
-          }
-        },
-        "flops": {
-          "torchinfo_params": 23624216,
-          "torchinfo_mult_adds": 41406981796,
-          "torchinfo_gflops": 41.406981796
-        },
-        "memory": {
-          "allocated_mb": 92.322265625,
-          "reserved_mb": 588.0,
-          "max_allocated_mb": 348.4775390625
-        }
-      },
       "fps": {
         "device": "cuda",
         "total_params": 20565400,
@@ -5246,25 +4205,6 @@
             "fps_mean": 23.220339139681716
           }
         }
-      },
-      "evaluation": {
-        "file_size_mb": 314.7513246536255,
-        "keys": [
-          "model",
-          "date",
-          "last_epoch",
-          "optimizer",
-          "lr_scheduler",
-          "ema",
-          "scaler"
-        ],
-        "model_keys": 678,
-        "model_size_mb": 78.57699584960938,
-        "ema_keys": 678,
-        "ema_size_mb": 78.57699584960938,
-        "has_ema": true,
-        "has_optimizer": true,
-        "has_lr_scheduler": true
       },
       "detailed": {
         "overall_metrics": {
@@ -5406,35 +4346,6 @@
           "total_memory_mb": 84.9010009765625
         }
       },
-      "model_evaluation": {
-        "device": "cuda",
-        "total_params": 24870424,
-        "trainable_params": 24841912,
-        "layer_stats": {
-          "backbone": {
-            "total_params": 11190112,
-            "num_layers": 23
-          },
-          "encoder": {
-            "total_params": 9610752,
-            "num_layers": 240
-          },
-          "decoder": {
-            "total_params": 4069560,
-            "num_layers": 119
-          }
-        },
-        "flops": {
-          "torchinfo_params": 27929240,
-          "torchinfo_mult_adds": 50866049188,
-          "torchinfo_gflops": 50.866049188
-        },
-        "memory": {
-          "allocated_mb": 108.7841796875,
-          "reserved_mb": 516.0,
-          "max_allocated_mb": 337.251953125
-        }
-      },
       "fps": {
         "device": "cuda",
         "total_params": 24870424,
@@ -5472,24 +4383,6 @@
             "fps_mean": 37.397575391931774
           }
         }
-      },
-      "evaluation": {
-        "file_size_mb": 339.8293733596802,
-        "keys": [
-          "model",
-          "date",
-          "last_epoch",
-          "optimizer",
-          "lr_scheduler",
-          "ema"
-        ],
-        "model_keys": 642,
-        "model_size_mb": 84.9010009765625,
-        "ema_keys": 642,
-        "ema_size_mb": 84.9010009765625,
-        "has_ema": true,
-        "has_optimizer": true,
-        "has_lr_scheduler": true
       },
       "detailed": {
         "overall_metrics": {
