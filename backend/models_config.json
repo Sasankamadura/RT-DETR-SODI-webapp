@@ -49,7 +49,7 @@
       },
       "model_evaluation": {
         "device": "cuda",
-        "total_params": 21855736,
+        "total_params": 19880804,
         "trainable_params": 21827224,
         "layer_stats": {
           "backbone": {
@@ -106,12 +106,11 @@
         },
         "fps_benchmark": {
           "640x640": {
-            "latency_mean_ms": 24.56230600007075,
-            "latency_std_ms": 0.5669982171622278,
-            "latency_min_ms": 23.754131001624046,
-            "latency_max_ms": 26.915474998531863,
-            "fps_mean": 40.71278975178958,
-            "fps_std": 1763.6739759163706
+            "latency_mean_ms": 6.084,
+            "latency_std_ms": 0.126,
+            "latency_min_ms": 6.01,
+            "latency_max_ms": 7.289,
+            "fps_mean": 164.36
           }
         }
       },
@@ -126,7 +125,7 @@
           "ema"
         ],
         "model_keys": 510,
-        "model_size_mb": 76.75129699707031,
+        "model_size_mb": 76.74,
         "ema_keys": 510,
         "ema_size_mb": 76.75129699707031,
         "has_ema": true,
@@ -135,18 +134,18 @@
       },
       "detailed": {
         "overall_metrics": {
-          "AP@0.5:0.95": 0.25224693939696263,
-          "AP@0.5": 0.4294888624942396,
-          "AP@0.75": 0.2493437509305837,
-          "AP_small": 0.16438980750275747,
-          "AP_medium": 0.35582943705913794,
-          "AP_large": 0.4805458470589834,
-          "AR@1": 0.10613020231927242,
-          "AR@10": 0.306517424074577,
-          "AR@100": 0.4085364663881683,
-          "AR_small": 0.31530268773263503,
-          "AR_medium": 0.5366226481061507,
-          "AR_large": 0.6759637194915746
+          "AP@0.5:0.95": 0.2493,
+          "AP@0.5": 0.4233,
+          "AP@0.75": 0.2472,
+          "AP_small": 0.1629,
+          "AP_medium": 0.3531,
+          "AP_large": 0.4694,
+          "AR@1": 0.1059,
+          "AR@10": 0.3,
+          "AR@100": 0.4005,
+          "AR_small": 0.3066,
+          "AR_medium": 0.5271,
+          "AR_large": 0.6582
         },
         "per_class_metrics": {
           "pedestrian": {
@@ -158,12 +157,12 @@
             "AP_50_95": 0.1646
           },
           "bicycle": {
-            "AP_50": 0.1796,
-            "AP_50_95": 0.0805
+            "AP_50": 0.1797,
+            "AP_50_95": 0.0806
           },
           "car": {
-            "AP_50": 0.8205,
-            "AP_50_95": 0.5675
+            "AP_50": 0.8206,
+            "AP_50_95": 0.5677
           },
           "van": {
             "AP_50": 0.4872,
@@ -174,20 +173,20 @@
             "AP_50_95": 0.2314
           },
           "tricycle": {
-            "AP_50": 0.2731,
-            "AP_50_95": 0.1525
+            "AP_50": 0.2733,
+            "AP_50_95": 0.1526
           },
           "awning-tricycle": {
-            "AP_50": 0.157,
+            "AP_50": 0.1571,
             "AP_50_95": 0.0963
           },
           "bus": {
-            "AP_50": 0.5422,
+            "AP_50": 0.5423,
             "AP_50_95": 0.4003
           },
           "motor": {
             "AP_50": 0.5364,
-            "AP_50_95": 0.2445
+            "AP_50_95": 0.2447
           }
         },
         "size_distribution": {
@@ -210,20 +209,20 @@
       },
       "eval_performance": {
         "mAP_50_95": 0.2493,
-        "mAP_50": 0.4232,
+        "mAP_50": 0.4233,
         "mAP_75": 0.2472,
-        "mAP_small": 0.1628,
+        "mAP_small": 0.1629,
         "mAP_medium": 0.3531,
         "mAP_large": 0.4694
       },
-      "inference_time_s": 26.86,
+      "inference_time_s": 11.21,
       "ar_100": 0.4005
     },
     "summary_metrics": {
-      "mAP_50": "42.95%",
-      "mAP_small": "16.28%",
-      "FPS": "40.7",
-      "Params": "20.1 M",
+      "mAP_50": "42.33%",
+      "mAP_small": "16.29%",
+      "FPS": "164.36",
+      "Params": "19.88M",
       "Decoders": "3"
     },
     "version": "Final",
@@ -235,68 +234,81 @@
     "description": "RT-DETR variant replacing the ResNet-18vd backbone with EfficientNet-B2, combined with a GnConv-based encoder and an additional P2 feature level for improved small object detection. The EfficientNet-B2 backbone reduces parameter count while the GnConv blocks replace standard convolutions in the CCFM encoder. Uses 3 decoder layers with 300 queries. Trained on VisDrone for 101 epochs.",
     "path": "backend/models/efficientnet_b_gnconv_p_layer_final.onnx",
     "full_metrics": {
-      "inference_time_s": 49.66,
+      "inference_time_s": 14.39,
       "eval_performance": {
         "mAP_50_95": 0.2863,
-        "mAP_50": 0.4828,
-        "mAP_75": 0.2865,
-        "mAP_small": 0.2012,
+        "mAP_50": 0.4829,
+        "mAP_75": 0.2864,
+        "mAP_small": 0.2013,
         "mAP_medium": 0.3894,
-        "mAP_large": 0.5237
+        "mAP_large": 0.5269
       },
       "detailed": {
         "per_class_metrics": {
           "pedestrian": {
-            "AP_50": 0.5471,
-            "AP_50_95": 0.2519
+            "AP_50": 0.5473,
+            "AP_50_95": 0.252
           },
           "people": {
-            "AP_50": 0.4557,
-            "AP_50_95": 0.1892
+            "AP_50": 0.4561,
+            "AP_50_95": 0.1891
           },
           "bicycle": {
-            "AP_50": 0.2411,
-            "AP_50_95": 0.1134
+            "AP_50": 0.2415,
+            "AP_50_95": 0.1132
           },
           "car": {
             "AP_50": 0.854,
-            "AP_50_95": 0.5962
+            "AP_50_95": 0.5959
           },
           "van": {
-            "AP_50": 0.5441,
-            "AP_50_95": 0.3814
+            "AP_50": 0.5442,
+            "AP_50_95": 0.3815
           },
           "truck": {
-            "AP_50": 0.4034,
-            "AP_50_95": 0.2665
+            "AP_50": 0.4033,
+            "AP_50_95": 0.2663
           },
           "tricycle": {
-            "AP_50": 0.3602,
+            "AP_50": 0.3603,
             "AP_50_95": 0.2013
           },
           "awning-tricycle": {
-            "AP_50": 0.1925,
-            "AP_50_95": 0.1169
+            "AP_50": 0.1922,
+            "AP_50_95": 0.1166
           },
           "bus": {
-            "AP_50": 0.6271,
-            "AP_50_95": 0.4632
+            "AP_50": 0.6273,
+            "AP_50_95": 0.4633
           },
           "motor": {
-            "AP_50": 0.6029,
+            "AP_50": 0.6028,
             "AP_50_95": 0.2832
           }
+        },
+        "overall_metrics": {
+          "AP@0.5:0.95": 0.2863,
+          "AP@0.5": 0.4829,
+          "AP@0.75": 0.2864,
+          "AP_small": 0.2013,
+          "AP_medium": 0.3894,
+          "AP_large": 0.5269,
+          "AR@1": 0.1168,
+          "AR@10": 0.3327,
+          "AR@100": 0.4412,
+          "AR_small": 0.3537,
+          "AR_medium": 0.5599,
+          "AR_large": 0.7306
         }
       },
       "fps": {
         "fps_benchmark": {
           "640x640": {
-            "latency_mean_ms": 45.49315764499796,
-            "latency_std_ms": 0.9986676782758848,
-            "latency_min_ms": 44.558898999980556,
-            "latency_max_ms": 56.66467600008218,
-            "fps_mean": 21.981327561463555,
-            "fps_std": 1001.3340991734261
+            "latency_mean_ms": 13.324,
+            "latency_std_ms": 0.023,
+            "latency_min_ms": 13.275,
+            "latency_max_ms": 13.497,
+            "fps_mean": 75.05
           }
         },
         "flops": {
@@ -327,13 +339,19 @@
           }
         }
       },
-      "ar_100": 0.4413
+      "ar_100": 0.4412,
+      "model_evaluation": {
+        "total_params": 17546606
+      },
+      "evaluation": {
+        "model_size_mb": 68.47
+      }
     },
     "summary_metrics": {
-      "mAP_50": "48.28%",
-      "mAP_small": "20.12%",
-      "FPS": "21.98",
-      "Params": "17.85 M",
+      "mAP_50": "48.29%",
+      "mAP_small": "20.13%",
+      "FPS": "75.05",
+      "Params": "17.55M",
       "Decoders": "3"
     }
   },
@@ -387,7 +405,7 @@
       },
       "model_evaluation": {
         "device": "cuda",
-        "total_params": 24152920,
+        "total_params": 21682884,
         "trainable_params": 24124408,
         "layer_stats": {
           "backbone": {
@@ -444,12 +462,11 @@
         },
         "fps_benchmark": {
           "640x640": {
-            "latency_mean_ms": 39.97295302495331,
-            "latency_std_ms": 0.37364787298285235,
-            "latency_min_ms": 39.7604739991948,
-            "latency_max_ms": 44.820769002399174,
-            "fps_mean": 25.016915797432958,
-            "fps_std": 2676.316586568372
+            "latency_mean_ms": 10.916,
+            "latency_std_ms": 0.026,
+            "latency_min_ms": 10.87,
+            "latency_max_ms": 11.136,
+            "fps_mean": 91.61
           }
         }
       },
@@ -464,7 +481,7 @@
           "ema"
         ],
         "model_keys": 648,
-        "model_size_mb": 83.84700012207031,
+        "model_size_mb": 84.17,
         "ema_keys": 648,
         "ema_size_mb": 83.84700012207031,
         "has_ema": true,
@@ -473,59 +490,59 @@
       },
       "detailed": {
         "overall_metrics": {
-          "AP@0.5:0.95": 0.25621603528375736,
-          "AP@0.5": 0.43378385494212096,
-          "AP@0.75": 0.25413900902736436,
-          "AP_small": 0.17425508958310706,
-          "AP_medium": 0.3543163084581648,
-          "AP_large": 0.4730377162621821,
-          "AR@1": 0.10844451251614043,
-          "AR@10": 0.30950289409378984,
-          "AR@100": 0.4132408785043236,
-          "AR_small": 0.32548293314142684,
-          "AR_medium": 0.5367518594556738,
-          "AR_large": 0.6728597280937286
+          "AP@0.5:0.95": 0.274,
+          "AP@0.5": 0.4576,
+          "AP@0.75": 0.2785,
+          "AP_small": 0.1896,
+          "AP_medium": 0.3794,
+          "AP_large": 0.4715,
+          "AR@1": 0.1119,
+          "AR@10": 0.3199,
+          "AR@100": 0.4245,
+          "AR_small": 0.3363,
+          "AR_medium": 0.5461,
+          "AR_large": 0.685
         },
         "per_class_metrics": {
           "pedestrian": {
             "AP_50": 0.5283,
-            "AP_50_95": 0.2502
+            "AP_50_95": 0.2501
           },
           "people": {
-            "AP_50": 0.4346,
-            "AP_50_95": 0.1784
+            "AP_50": 0.4345,
+            "AP_50_95": 0.1783
           },
           "bicycle": {
-            "AP_50": 0.2083,
+            "AP_50": 0.2084,
             "AP_50_95": 0.1004
           },
           "car": {
             "AP_50": 0.843,
-            "AP_50_95": 0.5917
+            "AP_50_95": 0.5918
           },
           "van": {
-            "AP_50": 0.5256,
+            "AP_50": 0.5257,
             "AP_50_95": 0.3697
           },
           "truck": {
-            "AP_50": 0.3761,
+            "AP_50": 0.376,
             "AP_50_95": 0.2515
           },
           "tricycle": {
-            "AP_50": 0.3205,
-            "AP_50_95": 0.1811
+            "AP_50": 0.3207,
+            "AP_50_95": 0.1812
           },
           "awning-tricycle": {
-            "AP_50": 0.196,
-            "AP_50_95": 0.1178
+            "AP_50": 0.1962,
+            "AP_50_95": 0.118
           },
           "bus": {
-            "AP_50": 0.5802,
-            "AP_50_95": 0.4345
+            "AP_50": 0.5805,
+            "AP_50_95": 0.4346
           },
           "motor": {
             "AP_50": 0.5624,
-            "AP_50_95": 0.2642
+            "AP_50_95": 0.2641
           }
         },
         "size_distribution": {
@@ -547,21 +564,21 @@
         }
       },
       "eval_performance": {
-        "mAP_50_95": 0.2739,
-        "mAP_50": 0.4575,
+        "mAP_50_95": 0.274,
+        "mAP_50": 0.4576,
         "mAP_75": 0.2785,
-        "mAP_small": 0.1897,
-        "mAP_medium": 0.3793,
-        "mAP_large": 0.4718
+        "mAP_small": 0.1896,
+        "mAP_medium": 0.3794,
+        "mAP_large": 0.4715
       },
-      "inference_time_s": 43.74,
-      "ar_100": 0.4246
+      "inference_time_s": 13.05,
+      "ar_100": 0.4245
     },
     "summary_metrics": {
-      "mAP_50": "43.38%",
-      "mAP_small": "18.97%",
-      "FPS": "25.0",
-      "Params": "21.9 M",
+      "mAP_50": "45.76%",
+      "mAP_small": "18.96%",
+      "FPS": "91.61",
+      "Params": "21.68M",
       "Decoders": "3"
     },
     "version": "Final",
@@ -617,7 +634,7 @@
       },
       "model_evaluation": {
         "device": "cuda",
-        "total_params": 23506296,
+        "total_params": 21036772,
         "trainable_params": 23477784,
         "layer_stats": {
           "backbone": {
@@ -674,12 +691,11 @@
         },
         "fps_benchmark": {
           "640x640": {
-            "latency_mean_ms": 32.715688594996095,
-            "latency_std_ms": 0.24400546514247992,
-            "latency_min_ms": 32.3984639999253,
-            "latency_max_ms": 33.9436269999851,
-            "fps_mean": 30.56637481727807,
-            "fps_std": 4098.268862199783
+            "latency_mean_ms": 9.399,
+            "latency_std_ms": 0.059,
+            "latency_min_ms": 9.328,
+            "latency_max_ms": 9.924,
+            "fps_mean": 106.39
           }
         }
       },
@@ -694,7 +710,7 @@
           "ema"
         ],
         "model_keys": 648,
-        "model_size_mb": 81.37641906738281,
+        "model_size_mb": 81.7,
         "ema_keys": 648,
         "ema_size_mb": 81.37641906738281,
         "has_ema": true,
@@ -703,59 +719,59 @@
       },
       "detailed": {
         "overall_metrics": {
-          "AP@0.5:0.95": 0.24755043384037792,
-          "AP@0.5": 0.4213496306058865,
-          "AP@0.75": 0.24761552110645332,
-          "AP_small": 0.1623970310448611,
-          "AP_medium": 0.34895568126803167,
-          "AP_large": 0.4496162248810979,
-          "AR@1": 0.10677280772874619,
-          "AR@10": 0.3006901150808749,
-          "AR@100": 0.40341293361677544,
-          "AR_small": 0.31416584806612524,
-          "AR_medium": 0.5249348225144526,
-          "AR_large": 0.6712951622597833
+          "AP@0.5:0.95": 0.2648,
+          "AP@0.5": 0.4441,
+          "AP@0.75": 0.2684,
+          "AP_small": 0.1805,
+          "AP_medium": 0.3694,
+          "AP_large": 0.5078,
+          "AR@1": 0.1112,
+          "AR@10": 0.3076,
+          "AR@100": 0.4126,
+          "AR_small": 0.326,
+          "AR_medium": 0.5296,
+          "AR_large": 0.6614
         },
         "per_class_metrics": {
           "pedestrian": {
-            "AP_50": 0.5171,
-            "AP_50_95": 0.2402
+            "AP_50": 0.517,
+            "AP_50_95": 0.2401
           },
           "people": {
             "AP_50": 0.4284,
-            "AP_50_95": 0.1719
+            "AP_50_95": 0.172
           },
           "bicycle": {
-            "AP_50": 0.1891,
-            "AP_50_95": 0.0902
+            "AP_50": 0.1885,
+            "AP_50_95": 0.0901
           },
           "car": {
-            "AP_50": 0.8339,
+            "AP_50": 0.8338,
             "AP_50_95": 0.5828
           },
           "van": {
-            "AP_50": 0.514,
-            "AP_50_95": 0.3604
+            "AP_50": 0.5137,
+            "AP_50_95": 0.3603
           },
           "truck": {
-            "AP_50": 0.351,
-            "AP_50_95": 0.2372
+            "AP_50": 0.3512,
+            "AP_50_95": 0.2373
           },
           "tricycle": {
-            "AP_50": 0.2992,
-            "AP_50_95": 0.1692
+            "AP_50": 0.2991,
+            "AP_50_95": 0.1691
           },
           "awning-tricycle": {
-            "AP_50": 0.1708,
-            "AP_50_95": 0.1053
+            "AP_50": 0.172,
+            "AP_50_95": 0.1056
           },
           "bus": {
-            "AP_50": 0.5944,
-            "AP_50_95": 0.4403
+            "AP_50": 0.5945,
+            "AP_50_95": 0.4401
           },
           "motor": {
             "AP_50": 0.5424,
-            "AP_50_95": 0.2503
+            "AP_50_95": 0.2504
           }
         },
         "size_distribution": {
@@ -778,20 +794,20 @@
       },
       "eval_performance": {
         "mAP_50_95": 0.2648,
-        "mAP_50": 0.444,
+        "mAP_50": 0.4441,
         "mAP_75": 0.2684,
         "mAP_small": 0.1805,
         "mAP_medium": 0.3694,
-        "mAP_large": 0.5094
+        "mAP_large": 0.5078
       },
-      "inference_time_s": 25.44,
-      "ar_100": 0.4127
+      "inference_time_s": 12.65,
+      "ar_100": 0.4126
     },
     "summary_metrics": {
-      "mAP_50": "42.13%",
+      "mAP_50": "44.41%",
       "mAP_small": "18.05%",
-      "FPS": "30.6",
-      "Params": "21.3 M",
+      "FPS": "106.39",
+      "Params": "21.04M",
       "Decoders": "3"
     },
     "version": "Final",
@@ -803,23 +819,23 @@
     "description": "RT-DETR with the original ResNet-18vd backbone, extended with a P2 feature level alongside P3-P5. All feature extraction blocks (P2-P5) in the CCFM encoder use an improved GnConv that replaces the recursive loops of standard GnConv with parallel horizontal/vertical pooling and multiplicative gating for better efficiency. Uses 3 decoder layers with 300 queries. Trained on VisDrone for 101 epochs.",
     "path": "backend/models/improved_gnconv_final.onnx",
     "full_metrics": {
-      "inference_time_s": 35.43,
+      "inference_time_s": 13.64,
       "eval_performance": {
         "mAP_50_95": 0.2633,
-        "mAP_50": 0.4415,
+        "mAP_50": 0.4416,
         "mAP_75": 0.266,
-        "mAP_small": 0.1816,
-        "mAP_medium": 0.3626,
-        "mAP_large": 0.4535
+        "mAP_small": 0.1817,
+        "mAP_medium": 0.3627,
+        "mAP_large": 0.4543
       },
       "detailed": {
         "per_class_metrics": {
           "pedestrian": {
-            "AP_50": 0.5106,
+            "AP_50": 0.5107,
             "AP_50_95": 0.2383
           },
           "people": {
-            "AP_50": 0.4247,
+            "AP_50": 0.4248,
             "AP_50_95": 0.1719
           },
           "bicycle": {
@@ -827,19 +843,19 @@
             "AP_50_95": 0.0877
           },
           "car": {
-            "AP_50": 0.839,
-            "AP_50_95": 0.5829
+            "AP_50": 0.8389,
+            "AP_50_95": 0.5826
           },
           "van": {
-            "AP_50": 0.5161,
-            "AP_50_95": 0.3639
+            "AP_50": 0.5162,
+            "AP_50_95": 0.3638
           },
           "truck": {
-            "AP_50": 0.3464,
-            "AP_50_95": 0.2324
+            "AP_50": 0.3468,
+            "AP_50_95": 0.2328
           },
           "tricycle": {
-            "AP_50": 0.2956,
+            "AP_50": 0.2957,
             "AP_50_95": 0.1657
           },
           "awning-tricycle": {
@@ -847,24 +863,37 @@
             "AP_50_95": 0.1081
           },
           "bus": {
-            "AP_50": 0.582,
-            "AP_50_95": 0.4337
+            "AP_50": 0.5823,
+            "AP_50_95": 0.4339
           },
           "motor": {
-            "AP_50": 0.5354,
-            "AP_50_95": 0.248
+            "AP_50": 0.5353,
+            "AP_50_95": 0.2479
           }
+        },
+        "overall_metrics": {
+          "AP@0.5:0.95": 0.2633,
+          "AP@0.5": 0.4416,
+          "AP@0.75": 0.266,
+          "AP_small": 0.1817,
+          "AP_medium": 0.3627,
+          "AP_large": 0.4543,
+          "AR@1": 0.1101,
+          "AR@10": 0.3098,
+          "AR@100": 0.4144,
+          "AR_small": 0.3275,
+          "AR_medium": 0.5336,
+          "AR_large": 0.6517
         }
       },
       "fps": {
         "fps_benchmark": {
           "640x640": {
-            "latency_mean_ms": 42.387573495047945,
-            "latency_std_ms": 0.93782736591218,
-            "latency_min_ms": 41.87073700040855,
-            "latency_max_ms": 53.515415000219946,
-            "fps_mean": 23.59181990251997,
-            "fps_std": 1066.2943270239803
+            "latency_mean_ms": 11.502,
+            "latency_std_ms": 0.341,
+            "latency_min_ms": 11.363,
+            "latency_max_ms": 13.832,
+            "fps_mean": 86.94
           }
         },
         "flops": {
@@ -895,13 +924,19 @@
           }
         }
       },
-      "ar_100": 0.4141
+      "ar_100": 0.4144,
+      "model_evaluation": {
+        "total_params": 19199172
+      },
+      "evaluation": {
+        "model_size_mb": 74.87
+      }
     },
     "summary_metrics": {
-      "mAP_50": "44.15%",
-      "mAP_small": "18.16%",
-      "FPS": "23.59",
-      "Params": "19.21 M",
+      "mAP_50": "44.16%",
+      "mAP_small": "18.17%",
+      "FPS": "86.94",
+      "Params": "19.20M",
       "Decoders": "3"
     }
   },
@@ -955,7 +990,7 @@
       },
       "model_evaluation": {
         "device": "cuda",
-        "total_params": 24870424,
+        "total_params": 21907332,
         "trainable_params": 24841912,
         "layer_stats": {
           "backbone": {
@@ -1012,12 +1047,11 @@
         },
         "fps_benchmark": {
           "640x640": {
-            "latency_mean_ms": 31.184642980078934,
-            "latency_std_ms": 0.39514077071883746,
-            "latency_min_ms": 30.862616997183068,
-            "latency_max_ms": 35.33185400010552,
-            "fps_mean": 32.06706585157349,
-            "fps_std": 2530.7436592301187
+            "latency_mean_ms": 8.775,
+            "latency_std_ms": 0.03,
+            "latency_min_ms": 8.744,
+            "latency_max_ms": 9.116,
+            "fps_mean": 113.96
           }
         }
       },
@@ -1033,7 +1067,7 @@
           "scaler"
         ],
         "model_keys": 642,
-        "model_size_mb": 84.9010009765625,
+        "model_size_mb": 85.0,
         "ema_keys": 642,
         "ema_size_mb": 84.9010009765625,
         "has_ema": true,
@@ -1042,55 +1076,55 @@
       },
       "detailed": {
         "overall_metrics": {
-          "AP@0.5:0.95": 0.26996401871727654,
-          "AP@0.5": 0.44923726535912106,
-          "AP@0.75": 0.27346514537612726,
-          "AP_small": 0.18507572463963554,
-          "AP_medium": 0.36877219351807505,
-          "AP_large": 0.48125316795258904,
-          "AR@1": 0.11288262235823521,
-          "AR@10": 0.32141274691307653,
-          "AR@100": 0.42964983451121036,
-          "AR_small": 0.3455009785387778,
-          "AR_medium": 0.5448542176831316,
-          "AR_large": 0.6555876736008486
+          "AP@0.5:0.95": 0.2825,
+          "AP@0.5": 0.4682,
+          "AP@0.75": 0.2878,
+          "AP_small": 0.1975,
+          "AP_medium": 0.385,
+          "AP_large": 0.4854,
+          "AR@1": 0.1166,
+          "AR@10": 0.3278,
+          "AR@100": 0.4358,
+          "AR_small": 0.3517,
+          "AR_medium": 0.5507,
+          "AR_large": 0.6669
         },
         "per_class_metrics": {
           "pedestrian": {
-            "AP_50": 0.5479,
+            "AP_50": 0.5478,
             "AP_50_95": 0.2636
           },
           "people": {
-            "AP_50": 0.4579,
-            "AP_50_95": 0.189
+            "AP_50": 0.4581,
+            "AP_50_95": 0.1894
           },
           "bicycle": {
             "AP_50": 0.2211,
-            "AP_50_95": 0.1072
+            "AP_50_95": 0.1071
           },
           "car": {
-            "AP_50": 0.8449,
-            "AP_50_95": 0.5979
+            "AP_50": 0.845,
+            "AP_50_95": 0.598
           },
           "van": {
-            "AP_50": 0.5327,
-            "AP_50_95": 0.3795
+            "AP_50": 0.5328,
+            "AP_50_95": 0.3793
           },
           "truck": {
             "AP_50": 0.3854,
-            "AP_50_95": 0.2609
+            "AP_50_95": 0.2611
           },
           "tricycle": {
             "AP_50": 0.3176,
-            "AP_50_95": 0.1822
+            "AP_50_95": 0.1821
           },
           "awning-tricycle": {
-            "AP_50": 0.1903,
-            "AP_50_95": 0.1179
+            "AP_50": 0.1907,
+            "AP_50_95": 0.1182
           },
           "bus": {
-            "AP_50": 0.6238,
-            "AP_50_95": 0.4608
+            "AP_50": 0.6235,
+            "AP_50_95": 0.46
           },
           "motor": {
             "AP_50": 0.5603,
@@ -1118,19 +1152,19 @@
       "eval_performance": {
         "mAP_50_95": 0.2825,
         "mAP_50": 0.4682,
-        "mAP_75": 0.2877,
+        "mAP_75": 0.2878,
         "mAP_small": 0.1975,
-        "mAP_medium": 0.3852,
-        "mAP_large": 0.4856
+        "mAP_medium": 0.385,
+        "mAP_large": 0.4854
       },
-      "inference_time_s": 32.25,
-      "ar_100": 0.4359
+      "inference_time_s": 12.1,
+      "ar_100": 0.4358
     },
     "summary_metrics": {
-      "mAP_50": "44.92%",
+      "mAP_50": "46.82%",
       "mAP_small": "19.75%",
-      "FPS": "32.1",
-      "Params": "22.2 M",
+      "FPS": "113.96",
+      "Params": "21.91M",
       "Decoders": "3"
     },
     "version": "Final",
@@ -1142,68 +1176,81 @@
     "description": "RT-DETR with the original ResNet-18vd backbone and standard encoder (P3-P5), with modifications to the decoder query mechanism. Increases num_queries to 500 and introduces scale-aware query selection that allocates queries proportionally across feature levels (40% from P3, 30% from P4, 30% from P5), biasing detection toward smaller objects captured at higher-resolution P3 features. Uses 3 decoder layers. Trained on VisDrone for 101 epochs.",
     "path": "backend/models/query_improvement_final.onnx",
     "full_metrics": {
-      "inference_time_s": 13.75,
+      "inference_time_s": 12.04,
       "eval_performance": {
         "mAP_50_95": 0.2576,
         "mAP_50": 0.4383,
-        "mAP_75": 0.2583,
+        "mAP_75": 0.2585,
         "mAP_small": 0.1674,
         "mAP_medium": 0.3642,
-        "mAP_large": 0.486
+        "mAP_large": 0.4861
       },
       "detailed": {
         "per_class_metrics": {
           "pedestrian": {
-            "AP_50": 0.4883,
-            "AP_50_95": 0.2224
+            "AP_50": 0.4884,
+            "AP_50_95": 0.2225
           },
           "people": {
             "AP_50": 0.4266,
             "AP_50_95": 0.1703
           },
           "bicycle": {
-            "AP_50": 0.1859,
-            "AP_50_95": 0.0839
+            "AP_50": 0.186,
+            "AP_50_95": 0.0838
           },
           "car": {
             "AP_50": 0.826,
             "AP_50_95": 0.5719
           },
           "van": {
-            "AP_50": 0.4962,
-            "AP_50_95": 0.3449
+            "AP_50": 0.4963,
+            "AP_50_95": 0.345
           },
           "truck": {
-            "AP_50": 0.3601,
-            "AP_50_95": 0.239
+            "AP_50": 0.36,
+            "AP_50_95": 0.2392
           },
           "tricycle": {
             "AP_50": 0.3029,
             "AP_50_95": 0.1686
           },
           "awning-tricycle": {
-            "AP_50": 0.1747,
+            "AP_50": 0.1748,
             "AP_50_95": 0.1074
           },
           "bus": {
-            "AP_50": 0.5753,
-            "AP_50_95": 0.4194
+            "AP_50": 0.5751,
+            "AP_50_95": 0.4192
           },
           "motor": {
-            "AP_50": 0.5467,
-            "AP_50_95": 0.2485
+            "AP_50": 0.5466,
+            "AP_50_95": 0.2486
           }
+        },
+        "overall_metrics": {
+          "AP@0.5:0.95": 0.2576,
+          "AP@0.5": 0.4383,
+          "AP@0.75": 0.2585,
+          "AP_small": 0.1674,
+          "AP_medium": 0.3642,
+          "AP_large": 0.4861,
+          "AR@1": 0.1087,
+          "AR@10": 0.3099,
+          "AR@100": 0.4298,
+          "AR_small": 0.3341,
+          "AR_medium": 0.5617,
+          "AR_large": 0.6958
         }
       },
       "fps": {
         "fps_benchmark": {
           "640x640": {
-            "latency_mean_ms": 21.917254404997948,
-            "latency_std_ms": 0.495870844931372,
-            "latency_min_ms": 21.267740000439517,
-            "latency_max_ms": 24.130970000442176,
-            "fps_mean": 45.62615287122656,
-            "fps_std": 2016.6541554553362
+            "latency_mean_ms": 6.242,
+            "latency_std_ms": 0.05,
+            "latency_min_ms": 6.2,
+            "latency_max_ms": 6.815,
+            "fps_mean": 160.21
           }
         },
         "flops": {
@@ -1234,13 +1281,19 @@
           }
         }
       },
-      "ar_100": 0.4298
+      "ar_100": 0.4298,
+      "model_evaluation": {
+        "total_params": 19880804
+      },
+      "evaluation": {
+        "model_size_mb": 76.74
+      }
     },
     "summary_metrics": {
       "mAP_50": "43.83%",
       "mAP_small": "16.74%",
-      "FPS": "45.63",
-      "Params": "20.08 M",
+      "FPS": "160.21",
+      "Params": "19.88M",
       "Decoders": "3"
     }
   },
@@ -1294,7 +1347,7 @@
       },
       "model_evaluation": {
         "device": "cuda",
-        "total_params": 23676504,
+        "total_params": 21083332,
         "trainable_params": 23647992,
         "layer_stats": {
           "backbone": {
@@ -1351,12 +1404,11 @@
         },
         "fps_benchmark": {
           "640x640": {
-            "latency_mean_ms": 27.616180400000022,
-            "latency_std_ms": 0.12201241855604654,
-            "latency_min_ms": 27.47106999999005,
-            "latency_max_ms": 28.195240000002286,
-            "fps_mean": 36.21065569226942,
-            "fps_std": 8195.887040306876
+            "latency_mean_ms": 8.194,
+            "latency_std_ms": 0.019,
+            "latency_min_ms": 8.155,
+            "latency_max_ms": 8.351,
+            "fps_mean": 122.03
           }
         }
       },
@@ -1371,7 +1423,7 @@
           "ema"
         ],
         "model_keys": 642,
-        "model_size_mb": 81.6060791015625,
+        "model_size_mb": 81.85,
         "ema_keys": 642,
         "ema_size_mb": 81.6060791015625,
         "has_ema": true,
@@ -1380,30 +1432,30 @@
       },
       "detailed": {
         "overall_metrics": {
-          "AP@0.5:0.95": 0.2544343726046601,
-          "AP@0.5": 0.42878555190016643,
-          "AP@0.75": 0.2545047670990594,
-          "AP_small": 0.17177392120484727,
-          "AP_medium": 0.3550130404266742,
-          "AP_large": 0.46214919095848506,
-          "AR@1": 0.10745554052951256,
-          "AR@10": 0.30469976755554073,
-          "AR@100": 0.40944831455892733,
-          "AR_small": 0.3210730654052066,
-          "AR_medium": 0.5299279127494556,
-          "AR_large": 0.696737385542283
+          "AP@0.5:0.95": 0.2701,
+          "AP@0.5": 0.4518,
+          "AP@0.75": 0.2726,
+          "AP_small": 0.1872,
+          "AP_medium": 0.3751,
+          "AP_large": 0.4798,
+          "AR@1": 0.1125,
+          "AR@10": 0.3171,
+          "AR@100": 0.4208,
+          "AR_small": 0.3361,
+          "AR_medium": 0.5381,
+          "AR_large": 0.66
         },
         "per_class_metrics": {
           "pedestrian": {
-            "AP_50": 0.5193,
+            "AP_50": 0.5191,
             "AP_50_95": 0.2451
           },
           "people": {
             "AP_50": 0.4375,
-            "AP_50_95": 0.1775
+            "AP_50_95": 0.1776
           },
           "bicycle": {
-            "AP_50": 0.1954,
+            "AP_50": 0.1957,
             "AP_50_95": 0.0931
           },
           "car": {
@@ -1412,26 +1464,26 @@
           },
           "van": {
             "AP_50": 0.5269,
-            "AP_50_95": 0.369
+            "AP_50_95": 0.3692
           },
           "truck": {
-            "AP_50": 0.3592,
-            "AP_50_95": 0.2394
+            "AP_50": 0.3609,
+            "AP_50_95": 0.2403
           },
           "tricycle": {
-            "AP_50": 0.3062,
+            "AP_50": 0.3063,
             "AP_50_95": 0.1766
           },
           "awning-tricycle": {
-            "AP_50": 0.1801,
+            "AP_50": 0.1803,
             "AP_50_95": 0.1129
           },
           "bus": {
-            "AP_50": 0.6035,
-            "AP_50_95": 0.4431
+            "AP_50": 0.6036,
+            "AP_50_95": 0.443
           },
           "motor": {
-            "AP_50": 0.546,
+            "AP_50": 0.5463,
             "AP_50_95": 0.2542
           }
         },
@@ -1454,21 +1506,21 @@
         }
       },
       "eval_performance": {
-        "mAP_50_95": 0.2699,
-        "mAP_50": 0.4516,
-        "mAP_75": 0.2724,
+        "mAP_50_95": 0.2701,
+        "mAP_50": 0.4518,
+        "mAP_75": 0.2726,
         "mAP_small": 0.1872,
-        "mAP_medium": 0.3748,
-        "mAP_large": 0.4801
+        "mAP_medium": 0.3751,
+        "mAP_large": 0.4798
       },
-      "inference_time_s": 28.98,
-      "ar_100": 0.4206
+      "inference_time_s": 12.1,
+      "ar_100": 0.4208
     },
     "summary_metrics": {
-      "mAP_50": "42.88%",
+      "mAP_50": "45.18%",
       "mAP_small": "18.72%",
-      "FPS": "36.2",
-      "Params": "21.4 M",
+      "FPS": "122.03",
+      "Params": "21.08M",
       "Decoders": "3"
     },
     "version": "Final",
@@ -1585,8 +1637,7 @@
             "latency_std_ms": 1.4021083359588933,
             "latency_min_ms": 37.56311499455478,
             "latency_max_ms": 54.63776500255335,
-            "fps_mean": 25.295666500744556,
-            "fps_std": 713.2116501654675
+            "fps_mean": 25.295666500744556
           }
         }
       },
@@ -1812,8 +1863,7 @@
             "latency_std_ms": 1.106631895005465,
             "latency_min_ms": 28.21629499521805,
             "latency_max_ms": 38.76832200330682,
-            "fps_mean": 33.94903445370062,
-            "fps_std": 903.642850448533
+            "fps_mean": 33.94903445370062
           }
         }
       },
@@ -2039,8 +2089,7 @@
             "latency_std_ms": 0.7235679297270735,
             "latency_min_ms": 20.19617400014795,
             "latency_max_ms": 25.234325999917928,
-            "fps_mean": 46.714938511296296,
-            "fps_std": 1382.0402465559735
+            "fps_mean": 46.714938511296296
           }
         }
       },
@@ -2265,8 +2314,7 @@
             "latency_std_ms": 1.7261308220758824,
             "latency_min_ms": 29.151018999982625,
             "latency_max_ms": 49.122758999146754,
-            "fps_mean": 32.26447525908651,
-            "fps_std": 579.330365468695
+            "fps_mean": 32.26447525908651
           }
         }
       },
@@ -2491,8 +2539,7 @@
             "latency_std_ms": 1.215814145758866,
             "latency_min_ms": 33.99263100072858,
             "latency_max_ms": 47.551267000017106,
-            "fps_mean": 28.218401995240185,
-            "fps_std": 822.4941315975865
+            "fps_mean": 28.218401995240185
           }
         }
       },
@@ -2718,8 +2765,7 @@
             "latency_std_ms": 0.5843375059122965,
             "latency_min_ms": 20.158408000042982,
             "latency_max_ms": 23.974814999974114,
-            "fps_mean": 46.61334002524226,
-            "fps_std": 1711.3397478033705
+            "fps_mean": 46.61334002524226
           }
         }
       },
@@ -2944,8 +2990,7 @@
             "latency_std_ms": 1.3584014782322729,
             "latency_min_ms": 21.085083000116356,
             "latency_max_ms": 35.90757500001018,
-            "fps_mean": 44.50238313541824,
-            "fps_std": 736.1593873567695
+            "fps_mean": 44.50238313541824
           }
         }
       },
@@ -3170,8 +3215,7 @@
             "latency_std_ms": 1.2317360100234835,
             "latency_min_ms": 20.994877000021006,
             "latency_max_ms": 31.67026400001305,
-            "fps_mean": 44.05930095609466,
-            "fps_std": 811.8622755706676
+            "fps_mean": 44.05930095609466
           }
         }
       },
@@ -3396,8 +3440,7 @@
             "latency_std_ms": 5.394755958260875,
             "latency_min_ms": 40.227141995273996,
             "latency_max_ms": 68.46154799859505,
-            "fps_mean": 20.349049030689198,
-            "fps_std": 185.36519682020486
+            "fps_mean": 20.349049030689198
           }
         }
       },
@@ -3623,8 +3666,7 @@
             "latency_std_ms": 0.7540634506566026,
             "latency_min_ms": 24.589647000539117,
             "latency_max_ms": 30.527834001986776,
-            "fps_mean": 38.97049070205978,
-            "fps_std": 1326.1483488282684
+            "fps_mean": 38.97049070205978
           }
         }
       },
@@ -3849,8 +3891,7 @@
             "latency_std_ms": 1.583719895408033,
             "latency_min_ms": 28.821866000043883,
             "latency_max_ms": 44.835748999958014,
-            "fps_mean": 32.90175179863539,
-            "fps_std": 631.4247884992049
+            "fps_mean": 32.90175179863539
           }
         }
       },
@@ -4075,8 +4116,7 @@
             "latency_std_ms": 1.7229524832241239,
             "latency_min_ms": 47.77694299991708,
             "latency_max_ms": 67.0328870000958,
-            "fps_mean": 20.082094437282173,
-            "fps_std": 580.399059020317
+            "fps_mean": 20.082094437282173
           }
         }
       },
@@ -4302,8 +4342,7 @@
             "latency_std_ms": 1.619524853740874,
             "latency_min_ms": 33.70876000190037,
             "latency_max_ms": 48.9894460006326,
-            "fps_mean": 28.206256119458065,
-            "fps_std": 617.4650532161585
+            "fps_mean": 28.206256119458065
           }
         }
       },
@@ -4529,8 +4568,7 @@
             "latency_std_ms": 1.207972223422429,
             "latency_min_ms": 65.98976500026765,
             "latency_max_ms": 76.57350400040741,
-            "fps_mean": 14.678591487162327,
-            "fps_std": 827.8336046227936
+            "fps_mean": 14.678591487162327
           }
         }
       },
@@ -4755,8 +4793,7 @@
             "latency_std_ms": 1.3294412056049334,
             "latency_min_ms": 51.85627100036072,
             "latency_max_ms": 62.83878999965964,
-            "fps_mean": 18.609621967647506,
-            "fps_std": 752.1957313975173
+            "fps_mean": 18.609621967647506
           }
         }
       },
@@ -4981,8 +5018,7 @@
             "latency_std_ms": 1.0042063853601984,
             "latency_min_ms": 34.675611001148354,
             "latency_max_ms": 43.618039999273606,
-            "fps_mean": 27.532359654485667,
-            "fps_std": 995.8112342029277
+            "fps_mean": 27.532359654485667
           }
         }
       },
@@ -5207,8 +5243,7 @@
             "latency_std_ms": 0.9823774725972243,
             "latency_min_ms": 41.267967004387174,
             "latency_max_ms": 51.18733899871586,
-            "fps_mean": 23.220339139681716,
-            "fps_std": 1017.9386517854333
+            "fps_mean": 23.220339139681716
           }
         }
       },
@@ -5434,8 +5469,7 @@
             "latency_std_ms": 0.6785211705937894,
             "latency_min_ms": 25.345595000544563,
             "latency_max_ms": 30.710364999322337,
-            "fps_mean": 37.397575391931774,
-            "fps_std": 1473.7933661301638
+            "fps_mean": 37.397575391931774
           }
         }
       },
