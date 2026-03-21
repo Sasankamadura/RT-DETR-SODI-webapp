@@ -175,7 +175,7 @@
       "mAP_50": "42.33%",
       "mAP_small": "16.29%",
       "FPS": "164.36",
-      "Params": "19.88M",
+      "Params": "20.08 M",
       "Decoders": "3"
     },
     "version": "Final",
@@ -298,7 +298,7 @@
       "mAP_50": "48.29%",
       "mAP_small": "20.13%",
       "FPS": "75.05",
-      "Params": "17.55M",
+      "Params": "20.06 M",
       "Decoders": "3"
     }
   },
@@ -478,7 +478,7 @@
       "mAP_50": "45.76%",
       "mAP_small": "18.96%",
       "FPS": "91.61",
-      "Params": "21.68M",
+      "Params": "22.04 M",
       "Decoders": "3"
     },
     "version": "Final",
@@ -660,7 +660,7 @@
       "mAP_50": "44.41%",
       "mAP_small": "18.05%",
       "FPS": "106.39",
-      "Params": "21.04M",
+      "Params": "21.40 M",
       "Decoders": "3"
     },
     "version": "Final",
@@ -783,7 +783,7 @@
       "mAP_50": "44.16%",
       "mAP_small": "18.17%",
       "FPS": "86.94",
-      "Params": "19.20M",
+      "Params": "19.21 M",
       "Decoders": "3"
     }
   },
@@ -963,7 +963,7 @@
       "mAP_50": "46.82%",
       "mAP_small": "19.75%",
       "FPS": "113.96",
-      "Params": "21.91M",
+      "Params": "22.26 M",
       "Decoders": "3"
     },
     "version": "Final",
@@ -1086,7 +1086,7 @@
       "mAP_50": "43.83%",
       "mAP_small": "16.74%",
       "FPS": "160.21",
-      "Params": "19.88M",
+      "Params": "21.86 M",
       "Decoders": "3"
     }
   },
@@ -1266,7 +1266,7 @@
       "mAP_50": "45.18%",
       "mAP_small": "18.72%",
       "FPS": "122.03",
-      "Params": "21.08M",
+      "Params": "21.44 M",
       "Decoders": "3"
     },
     "version": "Final",
