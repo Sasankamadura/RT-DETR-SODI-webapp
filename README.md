@@ -17,18 +17,20 @@ The prototype features a high-performance FastAPI/ONNX backend and a premium gla
 *   **Research Visibility**: Comprehensive visualization of backbone vs. encoder/decoder complexity.
 *   **Premium Web Experience**: Fully responsive, dark-themed glassmorphism UI with micro-animations.
 
-## 🚀 Comparison of Key Variants
+## 🚀 Comparison of Final Models
 
-Below is a subset of the final models available in this prototype (trained for 101 epochs on VisDrone):
+The following performance metrics were verified on the **VisDrone2019** dataset after 101 epochs of training:
 
-| Model Name | Backbone | Innovation | mAP (50) | mAP (Small) | FPS (GPU) |
+| Model Variant | Backbone | Innovation | mAP (50) | mAP (Small) | FPS (GPU) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Baseline** | ResNet-18 | Standard P3-P5 | 42.33% | 16.29% | 164.36 |
-| **EfficientNet + GnConv + P2** | EfficientNet-B2 | **Backbone swap + GnConv Encoder + P2 Layer** | **48.29%** | **20.13%** | 75.05 |
-| **GnConv + P2 Layer** | ResNet-18 | **GnConv-based High-Res Fusion** | 45.76% | 18.96% | 91.61 |
-| **GnConv + SLIM P2** | ResNet-18 | **Balanced Efficiency/Resolution** | 44.41% | 18.05% | 106.39 |
-| **Final Improved Gnconv** | ResNet-18 | Parallel horizontal/vertical pooling | 44.16% | 18.17% | 86.94 |
-| **P2 Layer (Fusion)** | ResNet-18 | Standard RepVGG Fusion | 41.18% | 15.65% | 114.28 |
+| **Baseline** | ResNet-18 | **Reference Model** | 42.33% | 16.29% | 164.36 |
+| **EfficientNet + GnConv + P2** | EfficientNet-B2 | Backbone swap + GnConv Encoder + P2 | **48.29%** | **20.13%** | 75.05 |
+| **GnConv + P2 Layer** | ResNet-18 | GnConv-based High-Res Fusion | 45.76% | 18.96% | 91.61 |
+| **P2 Layer (Fusion)** | ResNet-18 | Standard RepVGG Fusion | 46.82% | 19.75% | 113.96 |
+| **Slim P2 Layer** | ResNet-18 | Efficient RepVGG Fusion | 45.18% | 18.72% | 122.03 |
+| **GnConv + SLIM P2** | ResNet-18 | Balanced Efficiency/Resolution | 44.41% | 18.05% | 106.39 |
+| **Final Improved Gnconv** | ResNet-18 | Parallel Pooling & Gating | 44.16% | 18.17% | 86.94 |
+| **Final Query Improvement** | ResNet-18 | Scale-aware Query Selection | 43.83% | 16.74% | 160.21 |
 
 ## 🛠️ Tech Stack
 
