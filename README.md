@@ -1,101 +1,76 @@
----
-title: RT-DETR Research
-emoji: 🦀
-colorFrom: indigo
-colorTo: blue
-sdk: docker
-pinned: false
----
-
-# RT-DETR Research Prototype: Small Object Detection Enhancement
+# RT-DETR Research Prototype: Small Object Detection (SOD)
 
 ![Project Status](https://img.shields.io/badge/Status-Research_Prototype-blue)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-green)
 ![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688)
 ![ONNX](https://img.shields.io/badge/Inference-ONNX_Runtime-blueviolet)
 
-A full-stack web application demonstrating enhancements to the RT-DETR architecture, specifically targeting **Small Object Detection (SOD)** in drone imagery (VisDrone2019 dataset).
+This repository demonstrates advanced architectural enhancements to the **RT-DETR** (Real-Time DEtection TRansformer) model, specifically optimized for **Small Object Detection (SOD)** in drone-captured aerial imagery using the **VisDrone2019** dataset.
 
-This repository contains the deployment code for serving 4 variants of the RT-DETR ResNet-18 model, complete with a glassmorphic user interface for real-time inference and metric analysis.
+The prototype features a high-performance FastAPI/ONNX backend and a premium glassmorphic web interface for real-time inference and comparative analysis of multiple research variants.
 
 ## ✨ Key Features
 
-*   **Multi-Model Interface**: Seamlessly switch between the Baseline RT-DETR and 3 improved research variants.
-*   **Real-Time Inference**: Drag-and-drop image upload with instant bounding box generation using ONNX Runtime.
-*   **Detailed Metrics Dashboard**: Interactive tabs displaying:
-    *   **Class Metrics**: Per-class AP scores (e.g., Pedestrian, Bicycle).
-    *   **Layer Analysis**: Parameter distribution between Backbone and Decoder.
-    *   **Inference Stats**: Latency and FPS benchmarks.
-*   **Premium UI**: Fully responsive, dark-themed glassmorphism design.
+*   **Multi-Model Dashboard**: Compare 10+ research variants including Baseline, P2-enhanced, GnConv-integrated, and EfficientNet backbones.
+*   **Real-Time Inference**: Drag-and-drop imagery for instant object detection with sub-millisecond latency visualization.
+*   **Deep Metric Analysis**: Interactive tabs for Class-wise Precision (AP), Parameter Distribution, and GFLOPs profiling.
+*   **Research Visibility**: Comprehensive visualization of backbone vs. encoder/decoder complexity.
+*   **Premium Web Experience**: Fully responsive, dark-themed glassmorphism UI with micro-animations.
 
-## 🚀 The Models
+## 🚀 Comparison of Key Variants
 
-This application compares four model variants trained on the **VisDrone2019** dataset:
+Below is a subset of the final models available in this prototype (trained for 101 epochs on VisDrone):
 
-| Model ID | Variant Name | Key Innovation | mAP (50) | FPS (GPU) |
-| :--- | :--- | :--- | :--- | :--- |
-| `base_rtdetr` | **Baseline** | Standard RT-DETR-R18 | *Baseline* | *N/A* |
-| `p2_p3_fusion` | **P2-P3 Fusion** | High-resolution feature fusion | **41.18%** | ~60 |
-| `query_imp` | **Query IMP** | Scale-aware query initialization | **36.74%** | ~58 |
-| `aware_loss` | **Aware Loss** | Difficulty-aware loss reweighting| **18.85%** | ~60 |
+| Model Name | Backbone | Innovation | mAP (50) | mAP (Small) | FPS (GPU) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Baseline** | ResNet-18 | Standard P3-P5 | 42.33% | 16.29% | 164.36 |
+| **EfficientNet + GnConv + P2** | EfficientNet-B2 | **Backbone swap + GnConv Encoder + P2 Layer** | **48.29%** | **20.13%** | 75.05 |
+| **GnConv + P2 Layer** | ResNet-18 | **GnConv-based High-Res Fusion** | 45.76% | 18.96% | 91.61 |
+| **GnConv + SLIM P2** | ResNet-18 | **Balanced Efficiency/Resolution** | 44.41% | 18.05% | 106.39 |
+| **Final Improved Gnconv** | ResNet-18 | Parallel horizontal/vertical pooling | 44.16% | 18.17% | 86.94 |
+| **P2 Layer (Fusion)** | ResNet-18 | Standard RepVGG Fusion | 41.18% | 15.65% | 114.28 |
 
 ## 🛠️ Tech Stack
 
 *   **Frontend**: Vanilla HTML5, CSS3 (Glassmorphism), JavaScript (ES6).
-*   **Backend**: Python FastAPI.
-*   **ML Inference**: ONNX Runtime (GPU/CPU).
-*   **Containerization**: Docker.
+*   **Backend**: Python FastAPI (Async Engine).
+*   **ML Inference**: ONNX Runtime (GPU-accelerated via CUDA).
+*   **Containerization**: Docker (Production-ready).
 
-## 💻 Quick Start
+## 💻 Running the App
 
-### Option A: Docker (Recommended)
-You can build and run the entire application with a single command:
-
-```bash
-docker build -t rtdetr-app .
-docker run -p 8000:8000 rtdetr-app
-```
-Access the app at `http://localhost:8000`.
-
-### Option B: Local Development
-1.  **Clone the repository** (Ensure you use Git LFS for models):
+### Option A: Local Development
+1.  **Clone the repository**:
     ```bash
-    git clone https://github.com/YourUsername/rt-detr-webapp.git
-    cd rt-detr-webapp
+    git clone [repository-url]
+    cd [repository-name]
     ```
-
 2.  **Install Dependencies**:
     ```bash
     pip install -r backend/requirements.txt
     ```
-
 3.  **Run Server**:
     ```bash
     python run.py
     ```
+4.  **Access App**:
+    Navigate to `http://localhost:8000`.
 
-4.  **Open in Browser**:
-    Navigate to `http://localhost:8000/frontend/index.html` (or `http://localhost:8000` if using the unified serving method).
+### Option B: Docker
+```bash
+docker build -t rtdetr-research .
+docker run -p 8000:8000 rtdetr-research
+```
 
 ## 📂 Project Structure
 
-```
-├── backend/
-│   ├── models/          # .onnx model files (tracked by LFS)
-│   ├── main.py          # FastAPI application
-│   ├── model_utils.py   # Preprocessing & Inference logic
-│   └── models_config.json # Auto-generated metrics DB
-├── frontend/
-│   ├── index.html       # Main UI
-│   ├── style.css        # Premium styling
-│   └── script.js        # UI Logic & API calls
-├── Dockerfile           # Deployment configuration
-├── run.py               # Local execution script
-└── requirements.txt     # Python dependencies
-```
-
-## ⚠️ Note on Large Files
-This repository uses **Git LFS** to store the `.onnx` model files (~300MB each). Ensure you have Git LFS installed before cloning.
+*   `backend/`: FastAPI application, model handlers, and `models_config.json`.
+*   `frontend/`: Source code for the glassmorphic web UI.
+*   `Normal RT-DETR/`: Core model architecture and local inference test scripts.
+*   `Final Models/`: Comprehensive benchmarks and validation reports.
+*   `kaggle_scripts/`: Training scripts optimized for Kaggle/Colab environments.
+*   `Sample Visdrone Images/`: Curated dataset samples for testing.
+*   `run.py`: Entry point for starting the unified server.
 
 ---
-*Created for Research Prototype Demonstration.*
+*Developed for RT-DETR Research and Small Object Detection Profiling.*
