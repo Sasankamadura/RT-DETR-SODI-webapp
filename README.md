@@ -9,7 +9,7 @@ This repository demonstrates advanced architectural enhancements to the **RT-DET
 
 The prototype features a high-performance FastAPI/ONNX backend and a premium glassmorphic web interface for real-time inference and comparative analysis of multiple research variants.
 
-## ✨ Key Features
+##  Key Features
 
 *   **Multi-Model Dashboard**: Compare 10+ research variants including Baseline, P2-enhanced, GnConv-integrated, and EfficientNet backbones.
 *   **Real-Time Inference**: Drag-and-drop imagery for instant object detection with sub-millisecond latency visualization.
@@ -17,7 +17,7 @@ The prototype features a high-performance FastAPI/ONNX backend and a premium gla
 *   **Research Visibility**: Comprehensive visualization of backbone vs. encoder/decoder complexity.
 *   **Premium Web Experience**: Fully responsive, dark-themed glassmorphism UI with micro-animations.
 
-## 🚀 Comparison of Final Models
+##  Comparison of Final Models
 
 The following performance metrics were verified on the **VisDrone2019** dataset after 101 epochs of training:
 
@@ -32,14 +32,14 @@ The following performance metrics were verified on the **VisDrone2019** dataset 
 | **Final Improved Gnconv** | ResNet-18 | Parallel Pooling & Gating | 44.16% | 18.17% | 86.94 |
 | **Final Query Improvement** | ResNet-18 | Scale-aware Query Selection | 43.83% | 16.74% | 160.21 |
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 *   **Frontend**: Vanilla HTML5, CSS3 (Glassmorphism), JavaScript (ES6).
 *   **Backend**: Python FastAPI (Async Engine).
 *   **ML Inference**: ONNX Runtime (GPU-accelerated via CUDA).
 *   **Containerization**: Docker (Production-ready).
 
-## 💻 Running the App
+##  Running the App
 
 ### Option A: Local Development
 1.  **Clone the repository**:
@@ -64,7 +64,7 @@ docker build -t rtdetr-research .
 docker run -p 8000:8000 rtdetr-research
 ```
 
-## 📂 Project Structure
+##  Project Structure
 
 *   `backend/`: FastAPI application, model handlers, and `models_config.json`.
 *   `frontend/`: Source code for the glassmorphic web UI.
