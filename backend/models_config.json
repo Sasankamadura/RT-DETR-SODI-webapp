@@ -182,6 +182,127 @@
     "decoder_layers": 3
   },
   {
+    "id": "improved_gnconv_final",
+    "name": "Final Improved Gnconv",
+    "description": "RT-DETR with the original ResNet-18vd backbone, extended with a P2 feature level alongside P3-P5. All feature extraction blocks (P2-P5) in the CCFM encoder use an improved GnConv that replaces the recursive loops of standard GnConv with parallel horizontal/vertical pooling and multiplicative gating for better efficiency. Uses 3 decoder layers with 300 queries. Trained on VisDrone for 101 epochs.",
+    "path": "backend/models/improved_gnconv_final.onnx",
+    "full_metrics": {
+      "inference_time_s": 13.64,
+      "eval_performance": {
+        "mAP_50_95": 0.2633,
+        "mAP_50": 0.4416,
+        "mAP_75": 0.266,
+        "mAP_small": 0.1817,
+        "mAP_medium": 0.3627,
+        "mAP_large": 0.4543
+      },
+      "detailed": {
+        "per_class_metrics": {
+          "pedestrian": {
+            "AP_50": 0.5107,
+            "AP_50_95": 0.2383
+          },
+          "people": {
+            "AP_50": 0.4248,
+            "AP_50_95": 0.1719
+          },
+          "bicycle": {
+            "AP_50": 0.1915,
+            "AP_50_95": 0.0877
+          },
+          "car": {
+            "AP_50": 0.8389,
+            "AP_50_95": 0.5826
+          },
+          "van": {
+            "AP_50": 0.5162,
+            "AP_50_95": 0.3638
+          },
+          "truck": {
+            "AP_50": 0.3468,
+            "AP_50_95": 0.2328
+          },
+          "tricycle": {
+            "AP_50": 0.2957,
+            "AP_50_95": 0.1657
+          },
+          "awning-tricycle": {
+            "AP_50": 0.1739,
+            "AP_50_95": 0.1081
+          },
+          "bus": {
+            "AP_50": 0.5823,
+            "AP_50_95": 0.4339
+          },
+          "motor": {
+            "AP_50": 0.5353,
+            "AP_50_95": 0.2479
+          }
+        },
+        "overall_metrics": {
+          "AP@0.5:0.95": 0.2633,
+          "AP@0.5": 0.4416,
+          "AP@0.75": 0.266,
+          "AP_small": 0.1817,
+          "AP_medium": 0.3627,
+          "AP_large": 0.4543,
+          "AR@1": 0.1101,
+          "AR@10": 0.3098,
+          "AR@100": 0.4144,
+          "AR_small": 0.3275,
+          "AR_medium": 0.5336,
+          "AR_large": 0.6517
+        }
+      },
+      "fps": {
+        "fps_benchmark": {
+          "640x640": {
+            "latency_mean_ms": 11.502,
+            "latency_std_ms": 0.341,
+            "latency_min_ms": 11.363,
+            "latency_max_ms": 13.832,
+            "fps_mean": 86.94
+          }
+        },
+        "flops": {
+          "torchinfo_params": 22270232,
+          "torchinfo_mult_adds": 34457652004,
+          "torchinfo_gflops": 34.457652004
+        }
+      },
+      "profiling": {
+        "layer_analysis": {
+          "total_params": 19211416,
+          "components": {
+            "backbone": {
+              "total_params": 11190112,
+              "percentage": 58.247201,
+              "num_layers": 23
+            },
+            "encoder": {
+              "total_params": 3951744,
+              "percentage": 20.56977,
+              "num_layers": 348
+            },
+            "decoder": {
+              "total_params": 4069560,
+              "percentage": 21.18303,
+              "num_layers": 119
+            }
+          }
+        }
+      },
+      "ar_100": 0.4144
+    },
+    "summary_metrics": {
+      "mAP_50": "44.16%",
+      "mAP_small": "18.17%",
+      "FPS": "86.94",
+      "Params": "19.21 M",
+      "Decoders": "3"
+    }
+  },
+  {
     "id": "efficientnet_b_gnconv_p_layer_final",
     "name": "Final Efficientnet-B2 + GnConv + P2",
     "description": "RT-DETR variant replacing the ResNet-18vd backbone with EfficientNet-B2, combined with a GnConv-based encoder and an additional P2 feature level for improved small object detection. The EfficientNet-B2 backbone reduces parameter count while the GnConv blocks replace standard convolutions in the CCFM encoder. Uses 3 decoder layers with 300 queries. Trained on VisDrone for 101 epochs.",
@@ -665,127 +786,6 @@
     },
     "version": "Final",
     "decoder_layers": 3
-  },
-  {
-    "id": "improved_gnconv_final",
-    "name": "Final Improved Gnconv",
-    "description": "RT-DETR with the original ResNet-18vd backbone, extended with a P2 feature level alongside P3-P5. All feature extraction blocks (P2-P5) in the CCFM encoder use an improved GnConv that replaces the recursive loops of standard GnConv with parallel horizontal/vertical pooling and multiplicative gating for better efficiency. Uses 3 decoder layers with 300 queries. Trained on VisDrone for 101 epochs.",
-    "path": "backend/models/improved_gnconv_final.onnx",
-    "full_metrics": {
-      "inference_time_s": 13.64,
-      "eval_performance": {
-        "mAP_50_95": 0.2633,
-        "mAP_50": 0.4416,
-        "mAP_75": 0.266,
-        "mAP_small": 0.1817,
-        "mAP_medium": 0.3627,
-        "mAP_large": 0.4543
-      },
-      "detailed": {
-        "per_class_metrics": {
-          "pedestrian": {
-            "AP_50": 0.5107,
-            "AP_50_95": 0.2383
-          },
-          "people": {
-            "AP_50": 0.4248,
-            "AP_50_95": 0.1719
-          },
-          "bicycle": {
-            "AP_50": 0.1915,
-            "AP_50_95": 0.0877
-          },
-          "car": {
-            "AP_50": 0.8389,
-            "AP_50_95": 0.5826
-          },
-          "van": {
-            "AP_50": 0.5162,
-            "AP_50_95": 0.3638
-          },
-          "truck": {
-            "AP_50": 0.3468,
-            "AP_50_95": 0.2328
-          },
-          "tricycle": {
-            "AP_50": 0.2957,
-            "AP_50_95": 0.1657
-          },
-          "awning-tricycle": {
-            "AP_50": 0.1739,
-            "AP_50_95": 0.1081
-          },
-          "bus": {
-            "AP_50": 0.5823,
-            "AP_50_95": 0.4339
-          },
-          "motor": {
-            "AP_50": 0.5353,
-            "AP_50_95": 0.2479
-          }
-        },
-        "overall_metrics": {
-          "AP@0.5:0.95": 0.2633,
-          "AP@0.5": 0.4416,
-          "AP@0.75": 0.266,
-          "AP_small": 0.1817,
-          "AP_medium": 0.3627,
-          "AP_large": 0.4543,
-          "AR@1": 0.1101,
-          "AR@10": 0.3098,
-          "AR@100": 0.4144,
-          "AR_small": 0.3275,
-          "AR_medium": 0.5336,
-          "AR_large": 0.6517
-        }
-      },
-      "fps": {
-        "fps_benchmark": {
-          "640x640": {
-            "latency_mean_ms": 11.502,
-            "latency_std_ms": 0.341,
-            "latency_min_ms": 11.363,
-            "latency_max_ms": 13.832,
-            "fps_mean": 86.94
-          }
-        },
-        "flops": {
-          "torchinfo_params": 22270232,
-          "torchinfo_mult_adds": 34457652004,
-          "torchinfo_gflops": 34.457652004
-        }
-      },
-      "profiling": {
-        "layer_analysis": {
-          "total_params": 19211416,
-          "components": {
-            "backbone": {
-              "total_params": 11190112,
-              "percentage": 58.247201,
-              "num_layers": 23
-            },
-            "encoder": {
-              "total_params": 3951744,
-              "percentage": 20.56977,
-              "num_layers": 348
-            },
-            "decoder": {
-              "total_params": 4069560,
-              "percentage": 21.18303,
-              "num_layers": 119
-            }
-          }
-        }
-      },
-      "ar_100": 0.4144
-    },
-    "summary_metrics": {
-      "mAP_50": "44.16%",
-      "mAP_small": "18.17%",
-      "FPS": "86.94",
-      "Params": "19.21 M",
-      "Decoders": "3"
-    }
   },
   {
     "id": "p_layer_final",
