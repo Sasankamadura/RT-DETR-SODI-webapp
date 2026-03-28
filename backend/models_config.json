@@ -1443,7 +1443,7 @@
     "summary_metrics": {
       "mAP_50": "42.94%",
       "mAP_small": "17.01%",
-      "FPS": "25.3",
+      "FPS": "92.11",
       "Params": "21.9 M",
       "Decoders": "3"
     },
@@ -1621,7 +1621,7 @@
     "summary_metrics": {
       "mAP_50": "42.65%",
       "mAP_small": "16.69%",
-      "FPS": "33.9",
+      "FPS": "105.66",
       "Params": "21.3 M",
       "Decoders": "3"
     },
@@ -1799,7 +1799,7 @@
     "summary_metrics": {
       "mAP_50": "20.27%",
       "mAP_small": "9.12%",
-      "FPS": "46.7",
+      "FPS": "163.74",
       "Params": "20.1 M",
       "Decoders": "3"
     },
@@ -1977,7 +1977,7 @@
     "summary_metrics": {
       "mAP_50": "41.97%",
       "mAP_small": "15.40%",
-      "FPS": "32.3",
+      "FPS": "120.01",
       "Params": "16.5 M",
       "Decoders": "3"
     },
@@ -2155,7 +2155,7 @@
     "summary_metrics": {
       "mAP_50": "46.60%",
       "mAP_small": "19.92%",
-      "FPS": "28.2",
+      "FPS": "86.67",
       "Params": "18.6 M",
       "Decoders": "3"
     },
@@ -2333,7 +2333,7 @@
     "summary_metrics": {
       "mAP_50": "39.34%",
       "mAP_small": "14.61%",
-      "FPS": "46.6",
+      "FPS": "167.49",
       "Params": "20.1 M",
       "Decoders": "3"
     },
@@ -2511,7 +2511,7 @@
     "summary_metrics": {
       "mAP_50": "43.82%",
       "mAP_small": "17.71%",
-      "FPS": "44.5",
+      "FPS": "149.44",
       "Params": "24.5 M",
       "Decoders": "3"
     },
@@ -2689,7 +2689,7 @@
     "summary_metrics": {
       "mAP_50": "40.12%",
       "mAP_small": "14.68%",
-      "FPS": "44.1",
+      "FPS": "160.25",
       "Params": "20.1 M",
       "Decoders": "3"
     },
@@ -2867,7 +2867,7 @@
     "summary_metrics": {
       "mAP_50": "46.04%",
       "mAP_small": "19.51%",
-      "FPS": "20.3",
+      "FPS": "91.05",
       "Params": "33.1 M",
       "Decoders": "6"
     },
@@ -3045,7 +3045,7 @@
     "summary_metrics": {
       "mAP_50": "42.36%",
       "mAP_small": "16.96%",
-      "FPS": "39.0",
+      "FPS": "121.71",
       "Params": "21.4 M",
       "Decoders": "3"
     },
@@ -3223,7 +3223,7 @@
     "summary_metrics": {
       "mAP_50": "38.85%",
       "mAP_small": "14.15%",
-      "FPS": "32.9",
+      "FPS": "115.63",
       "Params": "19.0 M",
       "Decoders": "3"
     },
@@ -3401,7 +3401,7 @@
     "summary_metrics": {
       "mAP_50": "45.15%",
       "mAP_small": "18.87%",
-      "FPS": "20.1",
+      "FPS": "67.86",
       "Params": "27.2 M",
       "Decoders": "6"
     },
@@ -3579,7 +3579,7 @@
     "summary_metrics": {
       "mAP_50": "40.87%",
       "mAP_small": "16.23%",
-      "FPS": "28.2",
+      "FPS": "88.62",
       "Params": "20.0 M",
       "Decoders": "3"
     },
@@ -3757,7 +3757,7 @@
     "summary_metrics": {
       "mAP_50": "47.04%",
       "mAP_small": "20.13%",
-      "FPS": "14.7",
+      "FPS": "50.05",
       "Params": "28.1 M",
       "Decoders": "6"
     },
@@ -3935,7 +3935,7 @@
     "summary_metrics": {
       "mAP_50": "48.08%",
       "mAP_small": "20.59%",
-      "FPS": "18.6",
+      "FPS": "63.32",
       "Params": "29.3 M",
       "Decoders": "6"
     },
@@ -4113,7 +4113,7 @@
     "summary_metrics": {
       "mAP_50": "41.87%",
       "mAP_small": "17.01%",
-      "FPS": "27.5",
+      "FPS": "84.59",
       "Params": "20.8 M",
       "Decoders": "3"
     },
@@ -4291,7 +4291,7 @@
     "summary_metrics": {
       "mAP_50": "41.06%",
       "mAP_small": "16.39%",
-      "FPS": "23.2",
+      "FPS": "71.51",
       "Params": "20.6 M",
       "Decoders": "3"
     },
@@ -4469,7 +4469,7 @@
     "summary_metrics": {
       "mAP_50": "43.23%",
       "mAP_small": "18.38%",
-      "FPS": "37.4",
+      "FPS": "114.20",
       "Params": "22.2 M",
       "Decoders": "3"
     },
