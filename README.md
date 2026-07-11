@@ -70,7 +70,6 @@ docker run -p 8000:8000 rtdetr-research
 *   `frontend/`: Source code for the glassmorphic web UI.
 *   `Normal RT-DETR/`: Core model architecture and local inference test scripts.
 *   `Final Models/`: Comprehensive benchmarks and validation reports.
-*   `kaggle_scripts/`: Training scripts optimized for Kaggle/Colab environments.
 *   `Sample Visdrone Images/`: Curated dataset samples for testing.
 *   `run.py`: Entry point for starting the unified server.
 

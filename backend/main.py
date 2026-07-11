@@ -40,12 +40,7 @@ class RTDETRBackendApp:
         else:
             print(f"Warning: Samples directory not found at {self.samples_dir}")
 
-        # Mount Frontend (Must be last to avoid overriding API routes)
-        # We will mount this AFTER routes or ensure explicit routes take precedence.
-        # But FastAPI mounts match by longest prefix so explicit paths usually win.
-        # However, mounting "/" usually catches everything not matched.
-        # Better to do this in _setup_routes or at the end of __init__.
-        pass # Will do at end of setup
+        pass
 
     def _setup_routes(self):
         # Define routes with class methods as handlers
